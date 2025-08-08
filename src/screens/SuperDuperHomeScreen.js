@@ -1,8 +1,9 @@
-// src/screens/SuperDuperHomeScreen.js - Communication #60.6: Enhanced with Advanced Gallery Scrolling
+// src/screens/SuperDuperHomeScreen.js - Communication #60.2: Enhanced with Production Categories
 // 🎨 LUXURY: Premium dark theme with Qatar branding and stunning visuals
 // 🌐 i18n: Full Arabic/English support with LanguageSwitcher integration
-// 🍰 PRODUCTION: Real cake data from CakeCrafter backend API
+// 🍰 PRODUCTION: Real cake data from CakeCrafter backend API + Enhanced Categories
 // ✨ ENHANCED: Advanced masonry gallery with infinite scrolling and beautiful animations
+// 📱 CATEGORIES: Horizontal scrollable categories with production images
 
 import React, { useState, useEffect, useRef } from 'react';
 import {
@@ -63,6 +64,72 @@ const GALLERY_IMAGES = [
 ];
 
 // ================================
+// ✨ NEW: PRODUCTION CAKE CATEGORIES
+// ================================
+const CAKE_CATEGORIES = [
+  {
+    id: 1,
+    name: 'Sports',
+    nameAr: 'رياضة',
+    image: 'https://cakecrafterapi.ebita.ai/media/cake_categories_images/sports.png',
+    color: '#FF6B35',
+    count: 25,
+    description: 'Sports themed cakes',
+    descriptionAr: 'كيكات بتصاميم رياضية',
+  },
+  {
+    id: 2,
+    name: 'Custom',
+    nameAr: 'مخصص',
+    image: 'https://cakecrafterapi.ebita.ai/media/cake_categories_images/custom.png',
+    color: '#8B5CF6',
+    count: 45,
+    description: 'Custom designed cakes',
+    descriptionAr: 'كيكات مصممة خصيصاً',
+  },
+  {
+    id: 3,
+    name: 'Corporate',
+    nameAr: 'شركات',
+    image: 'https://cakecrafterapi.ebita.ai/media/cake_categories_images/corporate.png',
+    color: '#3B82F6',
+    count: 18,
+    description: 'Corporate event cakes',
+    descriptionAr: 'كيكات المناسبات الشركات',
+  },
+  {
+    id: 4,
+    name: 'Birthday',
+    nameAr: 'أعياد ميلاد',
+    image: 'https://cakecrafterapi.ebita.ai/media/cake_categories_images/birthday.png',
+    color: '#F59E0B',
+    count: 67,
+    description: 'Birthday celebration cakes',
+    descriptionAr: 'كيكات أعياد الميلاد',
+  },
+  {
+    id: 5,
+    name: 'Wedding',
+    nameAr: 'زفاف',
+    image: 'https://cakecrafterapi.ebita.ai/media/cake_categories_images/wedding.png',
+    color: '#EC4899',
+    count: 32,
+    description: 'Wedding celebration cakes',
+    descriptionAr: 'كيكات الزفاف',
+  },
+  {
+    id: 6,
+    name: 'Cultural',
+    nameAr: 'ثقافي',
+    image: 'https://cakecrafterapi.ebita.ai/media/cake_categories_images/cultural.png',
+    color: '#10B981',
+    count: 23,
+    description: 'Cultural celebration cakes',
+    descriptionAr: 'كيكات المناسبات الثقافية',
+  },
+];
+
+// ================================
 // LUXURY SUPERDUPERHOMESCREEN COMPONENT
 // ================================
 const SuperDuperHomeScreen = ({ navigation }) => {
@@ -75,7 +142,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [cakes, setCakes] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState(CAKE_CATEGORIES); // ✨ NEW: Use production categories
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showLanguageSwitcher, setShowLanguageSwitcher] = useState(false);
@@ -133,22 +200,20 @@ const SuperDuperHomeScreen = ({ navigation }) => {
       console.log('🔄 Loading production data from API...');
       
       // Load real cake data from production API
-      const [cakesResponse, categoriesResponse] = await Promise.all([
-        ApiService.getCakes({ limit: 20 }),
-        ApiService.getCategories(),
-      ]);
+      // ✨ ENHANCED: Categories are now static with production images
+      const cakesResponse = await ApiService.getCakes({ limit: 20 });
       
       setCakes(cakesResponse.results || []);
-      setCategories(categoriesResponse || []);
+      // Categories are already set with CAKE_CATEGORIES
       
       console.log('✅ Loaded cakes:', cakesResponse.results?.length || 0);
-      console.log('✅ Loaded categories:', categoriesResponse?.length || 0);
+      console.log('✅ Using production categories:', CAKE_CATEGORIES.length);
       
     } catch (error) {
       console.error('❌ Failed to load data:', error);
-      // Fallback to mock data
+      // Fallback to mock data for cakes only
       setCakes(ApiService.getMockCakes());
-      setCategories(ApiService.getMockCategories());
+      // Categories remain as CAKE_CATEGORIES
     } finally {
       setIsLoading(false);
     }
@@ -198,13 +263,27 @@ const SuperDuperHomeScreen = ({ navigation }) => {
     console.log('🌐 SuperDuperHome: Language changed to:', languageCode);
   };
   
+  // ✨ ENHANCED: Category press handler with better feedback
   const handleCategoryPress = (category) => {
     setSelectedCategory(category);
     const categoryName = currentLanguage === 'ar' ? category.nameAr : category.name;
+    const categoryDesc = currentLanguage === 'ar' ? category.descriptionAr : category.description;
+    
+    console.log('🎯 Category pressed:', categoryName);
+    
     Alert.alert(
-      t('superDuperHome.categories.title', 'Categories'),
-      `${categoryName} - ${category.count} ${t('common.cakes', 'cakes')}`,
-      [{ text: t('common.ok', 'OK') }]
+      categoryName,
+      `${categoryDesc}\n\n${category.count} ${t('common.cakes', 'cakes available')}`,
+      [
+        { text: t('common.cancel', 'Cancel'), style: 'cancel' },
+        { 
+          text: t('common.explore', 'Explore'), 
+          onPress: () => {
+            console.log('🍰 Exploring category:', category.name);
+            // TODO: Navigate to category screen
+          }
+        }
+      ]
     );
   };
   
@@ -358,6 +437,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
     </LinearGradient>
   );
   
+  // ✨ ENHANCED: Categories with production images and improved styling
   const renderCategories = () => (
     <Animated.View 
       style={[
@@ -366,12 +446,20 @@ const SuperDuperHomeScreen = ({ navigation }) => {
       ]}
     >
       <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>
-          {t('superDuperHome.categories.title', 'Categories')}
-        </Text>
-        <Text style={styles.sectionSubtitle}>
-          {currentLanguage === 'ar' ? 'فئات الكيك' : 'Cake Categories'}
-        </Text>
+        <View style={styles.sectionTitleContainer}>
+          <Text style={styles.sectionTitle}>
+            {t('superDuperHome.categories.title', 'Categories')}
+          </Text>
+          <Text style={styles.sectionSubtitle}>
+            {currentLanguage === 'ar' ? 'فئات الكيك' : 'Cake Categories'}
+          </Text>
+        </View>
+        <TouchableOpacity style={styles.seeAllButton}>
+          <Text style={styles.seeAllText}>
+            {t('superDuperHome.categories.seeAll', 'All categories')}
+          </Text>
+          <Text style={styles.seeAllArrow}>→</Text>
+        </TouchableOpacity>
       </View>
       
       <FlatList
@@ -382,31 +470,59 @@ const SuperDuperHomeScreen = ({ navigation }) => {
         contentContainerStyle={styles.categoriesList}
         renderItem={({ item, index }) => (
           <TouchableOpacity
-            style={styles.categoryCard}
+            style={[styles.categoryCard, { 
+              marginLeft: index === 0 ? Spacing.md : 0 
+            }]}
             onPress={() => handleCategoryPress(item)}
-            activeOpacity={0.8}
+            activeOpacity={0.7}
           >
-            <View style={[styles.categoryImageContainer, { backgroundColor: item.color + '20' }]}>
+            {/* Enhanced Category Image Container */}
+            <View style={[
+              styles.categoryImageContainer, 
+              { backgroundColor: item.color + '15' }
+            ]}>
               <Image
                 source={{ uri: item.image }}
                 style={styles.categoryImage}
                 resizeMode="cover"
+                onError={(error) => {
+                  console.warn('❌ Category image failed to load:', item.name, error);
+                }}
               />
+              
+              {/* Enhanced Badge with count */}
               <LinearGradient
-                colors={[item.color + '80', item.color]}
+                colors={[item.color + 'CC', item.color]}
                 style={styles.categoryBadge}
               >
                 <Text style={styles.categoryCount}>{item.count}</Text>
               </LinearGradient>
+              
+              {/* Subtle overlay for better text visibility */}
+              <LinearGradient
+                colors={['transparent', 'rgba(0,0,0,0.3)']}
+                style={styles.categoryOverlay}
+              />
             </View>
             
+            {/* Enhanced Category Info */}
             <View style={styles.categoryInfo}>
-              <Text style={styles.categoryName}>
+              <Text style={styles.categoryName} numberOfLines={1}>
                 {currentLanguage === 'ar' ? item.nameAr : item.name}
               </Text>
             </View>
           </TouchableOpacity>
         )}
+        // Enhanced scroll performance
+        removeClippedSubviews={true}
+        maxToRenderPerBatch={6}
+        windowSize={10}
+        initialNumToRender={6}
+        getItemLayout={(data, index) => ({
+          length: CATEGORY_SIZE + Spacing.md,
+          offset: (CATEGORY_SIZE + Spacing.md) * index,
+          index,
+        })}
       />
     </Animated.View>
   );
@@ -559,7 +675,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
 };
 
 // ============================================================================
-// LUXURY STYLES (Updated with Enhanced Gallery Styles)
+// LUXURY STYLES (Enhanced with Production Categories Styles)
 // ============================================================================
 
 const styles = StyleSheet.create({
@@ -726,6 +842,11 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.md,
   },
   
+  // ✨ ENHANCED: Section Title Container
+  sectionTitleContainer: {
+    flex: 1,
+  },
+  
   sectionTitle: {
     fontSize: Typography.fontSize.xl,
     fontWeight: Typography.fontWeight.bold,
@@ -735,8 +856,16 @@ const styles = StyleSheet.create({
   sectionSubtitle: {
     fontSize: Typography.fontSize.sm,
     color: QatarColors.secondary,
-    marginLeft: Spacing.sm,
+    marginTop: Spacing.xs,
     fontWeight: Typography.fontWeight.medium,
+  },
+  
+  // ✨ ENHANCED: See All Button
+  seeAllButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: Spacing.xs,
+    paddingHorizontal: Spacing.sm,
   },
   
   seeAllText: {
@@ -745,40 +874,59 @@ const styles = StyleSheet.create({
     fontWeight: Typography.fontWeight.medium,
   },
   
-  // Categories Styles
+  seeAllArrow: {
+    fontSize: Typography.fontSize.sm,
+    color: QatarColors.secondary,
+    marginLeft: Spacing.xs,
+    fontWeight: Typography.fontWeight.bold,
+  },
+  
+  // ✨ ENHANCED: Categories Styles
   categoriesList: {
-    paddingLeft: Spacing.md,
+    paddingRight: Spacing.md,
   },
   
   categoryCard: {
     marginRight: Spacing.md,
     alignItems: 'center',
+    width: CATEGORY_SIZE + 20, // Slightly wider for better touch target
   },
   
   categoryImageContainer: {
     width: CATEGORY_SIZE,
     height: CATEGORY_SIZE,
     borderRadius: ComponentStyles.borderRadius.lg,
-    padding: Spacing.sm,
+    overflow: 'hidden',
     position: 'relative',
     ...ComponentStyles.shadows.medium,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
   
   categoryImage: {
     width: '100%',
     height: '100%',
-    borderRadius: ComponentStyles.borderRadius.md,
+  },
+  
+  // ✨ ENHANCED: Category Overlay
+  categoryOverlay: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '40%',
   },
   
   categoryBadge: {
     position: 'absolute',
-    top: -5,
-    right: -5,
-    borderRadius: 15,
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 2,
+    top: 8,
+    right: 8,
+    borderRadius: 12,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
     minWidth: 30,
     alignItems: 'center',
+    ...ComponentStyles.shadows.small,
   },
   
   categoryCount: {
@@ -790,12 +938,14 @@ const styles = StyleSheet.create({
   categoryInfo: {
     marginTop: Spacing.sm,
     alignItems: 'center',
+    paddingHorizontal: Spacing.xs,
   },
   
   categoryName: {
     fontSize: Typography.fontSize.sm,
     fontWeight: Typography.fontWeight.medium,
     color: QatarColors.textPrimary,
+    textAlign: 'center',
   },
   
   // Featured Cakes Styles

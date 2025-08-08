@@ -1,5 +1,5 @@
-// App.js - Communication #64.9: Updated with React Navigation
-// Navigation setup for SuperDuperHomeScreen with language switcher integration
+// App.js - Communication #60.7: Fixed App.js (Clean i18n Import)
+// Navigation setup for SuperDuperHomeScreen with CLEAN language switching
 
 import React, { useState, useEffect } from 'react';
 import {
@@ -12,7 +12,7 @@ import {
   Alert,
 } from 'react-native';
 
-// Import i18n FIRST (very important!)
+// Import i18n FIRST (very important!) - CLEAN VERSION
 import './src/i18n';
 import { useTranslation } from 'react-i18next';
 
@@ -74,7 +74,7 @@ const WelcomeScreen = ({ navigation }) => {
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>CakeCrafter.AI</Text>
-        <Text style={styles.headerSubtitle}>Language Test & Navigation</Text>
+        <Text style={styles.headerSubtitle}>Categories Testing - Communication #60.7</Text>
       </View>
 
       {/* Main Content */}
@@ -85,72 +85,40 @@ const WelcomeScreen = ({ navigation }) => {
             {t('language.current', 'Current Language')}:
           </Text>
           <Text style={styles.currentLanguageValue}>
-            {currentLanguage === 'ar' ? '🇶🇦 العربية' : '🇺🇸 English'}
+            {currentLanguage === 'ar' ? 'العربية (Arabic)' : 'English'}
           </Text>
         </View>
 
-        {/* Test Text with Translations */}
-        <View style={styles.testSection}>
-          <Text style={styles.sectionTitle}>
-            {t('app.title', 'CakeCrafter.AI')}
+        {/* Language Switcher Button */}
+        <TouchableOpacity
+          style={styles.languageButton}
+          onPress={() => setShowLanguageSwitcher(true)}
+        >
+          <Text style={styles.languageButtonText}>
+            {t('language.selectLanguage', 'Change Language')}
           </Text>
-          <Text style={styles.sectionSubtitle}>
-            {t('app.subtitle', 'AI-Powered Cake Design Platform')}
-          </Text>
-          <Text style={styles.sectionDescription}>
-            {t('app.description', 'Create stunning custom cakes with the power of artificial intelligence')}
-          </Text>
-        </View>
+        </TouchableOpacity>
 
-        {/* Action Buttons */}
-        <View style={styles.actionButtons}>
-          {/* Language Switcher Button */}
-          <TouchableOpacity
-            style={styles.languageButton}
-            onPress={() => setShowLanguageSwitcher(true)}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.languageButtonText}>
-              {t('language.choose', 'Choose Language')} 🌐
-            </Text>
-          </TouchableOpacity>
-
-          {/* Get Started Button - Navigates to SuperDuperHomeScreen */}
-          <TouchableOpacity
-            style={styles.getStartedButton}
-            onPress={handleGetStarted}
-            activeOpacity={0.7}
-          >
-            <Text style={styles.getStartedButtonText}>
-              {t('app.getStarted', 'Get Started')} 🚀
-            </Text>
-          </TouchableOpacity>
-        </View>
-
-        {/* Navigation Info */}
-        <View style={styles.navigationInfo}>
-          <Text style={styles.navigationTitle}>
-            {currentLanguage === 'ar' ? 'معلومات التنقل' : 'Navigation Info'}
+        {/* Get Started Button */}
+        <TouchableOpacity
+          style={styles.getStartedButton}
+          onPress={handleGetStarted}
+        >
+          <Text style={styles.getStartedText}>
+            🍰 Test Categories Scrolling
           </Text>
-          <Text style={styles.navigationText}>
-            {currentLanguage === 'ar' 
-              ? 'اضغط "ابدأ الآن" للانتقال إلى الشاشة الرئيسية المتقدمة'
-              : 'Tap "Get Started" to navigate to SuperDuperHomeScreen'
-            }
-          </Text>
-        </View>
+        </TouchableOpacity>
 
-        {/* Debug Info */}
-        <View style={styles.debugInfo}>
-          <Text style={styles.debugTitle}>Debug Info:</Text>
-          <Text style={styles.debugText}>Language: {currentLanguage}</Text>
-          <Text style={styles.debugText}>Direction: {currentLanguage === 'ar' ? 'RTL' : 'LTR'}</Text>
-          <Text style={styles.debugText}>i18n Ready: {i18n.isInitialized ? 'Yes' : 'No'}</Text>
-          <Text style={styles.debugText}>Navigation: React Navigation v6</Text>
-        </View>
+        {/* Info */}
+        <Text style={styles.infoText}>
+          {currentLanguage === 'ar' 
+            ? 'اختبار التمرير الأفقي للفئات'
+            : 'Testing horizontal categories scrolling with production images'
+          }
+        </Text>
       </View>
 
-      {/* LanguageSwitcher Modal */}
+      {/* Language Switcher Modal */}
       <LanguageSwitcher
         visible={showLanguageSwitcher}
         onClose={() => setShowLanguageSwitcher(false)}
@@ -161,34 +129,22 @@ const WelcomeScreen = ({ navigation }) => {
 };
 
 // ================================
-// MAIN APP COMPONENT WITH NAVIGATION
+// MAIN APP COMPONENT
 // ================================
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      <Stack.Navigator 
         initialRouteName="Welcome"
-        screenOptions={{
-          headerShown: false, // Hide default navigation header
-          cardStyle: { backgroundColor: '#F8F9FA' },
-          animationEnabled: true,
-          animationTypeForReplace: 'push',
-        }}
+        screenOptions={{ headerShown: false }}
       >
         <Stack.Screen 
           name="Welcome" 
-          component={WelcomeScreen}
-          options={{
-            title: 'CakeCrafter.AI Welcome',
-          }}
+          component={WelcomeScreen} 
         />
         <Stack.Screen 
           name="SuperDuperHome" 
-          component={SuperDuperHomeScreen}
-          options={{
-            title: 'CakeCrafter.AI Home',
-            gestureEnabled: true,
-          }}
+          component={SuperDuperHomeScreen} 
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -203,167 +159,92 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F8F9FA',
   },
+  
   header: {
+    padding: 20,
+    paddingTop: 40,
     backgroundColor: '#8B1538',
-    paddingVertical: 20,
-    paddingHorizontal: 24,
     alignItems: 'center',
   },
+  
   headerTitle: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
     color: '#FFFFFF',
-    marginBottom: 4,
+    marginBottom: 5,
   },
+  
   headerSubtitle: {
     fontSize: 14,
-    color: '#FFFFFF',
-    opacity: 0.9,
+    color: '#FFD700',
+    textAlign: 'center',
   },
+  
   content: {
     flex: 1,
-    paddingHorizontal: 20,
-    paddingVertical: 24,
-  },
-  languageDisplay: {
-    backgroundColor: '#FFFFFF',
-    padding: 16,
-    borderRadius: 12,
-    marginBottom: 24,
+    padding: 20,
+    justifyContent: 'center',
     alignItems: 'center',
-    elevation: 2,
-    shadowColor: '#8B1538',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
   },
-  currentLanguageLabel: {
-    fontSize: 14,
-    color: '#7F8C8D',
-    marginBottom: 4,
-  },
-  currentLanguageValue: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#8B1538',
-  },
-  testSection: {
+  
+  languageDisplay: {
     backgroundColor: '#FFFFFF',
     padding: 20,
     borderRadius: 12,
-    marginBottom: 24,
-    elevation: 2,
-    shadowColor: '#8B1538',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
+    marginBottom: 20,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
+    elevation: 3,
   },
-  sectionTitle: {
+  
+  currentLanguageLabel: {
+    fontSize: 16,
+    color: '#666',
+    marginBottom: 8,
+  },
+  
+  currentLanguageValue: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#8B1538',
-    marginBottom: 8,
-    textAlign: 'center',
   },
-  sectionSubtitle: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#2C3E50',
-    marginBottom: 8,
-    textAlign: 'center',
-  },
-  sectionDescription: {
-    fontSize: 14,
-    color: '#7F8C8D',
-    textAlign: 'center',
-    lineHeight: 20,
-  },
-  actionButtons: {
-    marginBottom: 24,
-  },
+  
   languageButton: {
     backgroundColor: '#8B1538',
-    paddingVertical: 16,
-    paddingHorizontal: 24,
-    borderRadius: 24,
-    marginBottom: 16,
-    elevation: 4,
-    shadowColor: '#8B1538',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 8,
+    paddingHorizontal: 30,
+    paddingVertical: 15,
+    borderRadius: 25,
+    marginBottom: 20,
   },
+  
   languageButtonText: {
     color: '#FFFFFF',
     fontSize: 16,
     fontWeight: '600',
-    textAlign: 'center',
   },
+  
   getStartedButton: {
-    backgroundColor: '#28A745',
+    backgroundColor: '#FFD700',
+    paddingHorizontal: 40,
     paddingVertical: 18,
-    paddingHorizontal: 32,
-    borderRadius: 24,
-    elevation: 6,
-    shadowColor: '#28A745',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 8,
+    borderRadius: 30,
+    marginBottom: 20,
   },
-  getStartedButtonText: {
-    color: '#FFFFFF',
+  
+  getStartedText: {
+    color: '#8B1538',
     fontSize: 18,
     fontWeight: 'bold',
-    textAlign: 'center',
   },
-  navigationInfo: {
-    backgroundColor: '#E8F5E8',
-    padding: 16,
-    borderRadius: 12,
-    marginBottom: 16,
-    borderLeftWidth: 4,
-    borderLeftColor: '#28A745',
-  },
-  navigationTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#2C3E50',
-    marginBottom: 4,
-  },
-  navigationText: {
+  
+  infoText: {
     fontSize: 14,
-    color: '#5D6D7E',
+    color: '#666',
+    textAlign: 'center',
     lineHeight: 20,
-  },
-  debugInfo: {
-    backgroundColor: '#2C3E50',
-    padding: 16,
-    borderRadius: 8,
-    marginTop: 'auto',
-  },
-  debugTitle: {
-    color: '#FFFFFF',
-    fontSize: 12,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-  debugText: {
-    color: '#FFFFFF',
-    fontSize: 11,
-    marginBottom: 2,
-    fontFamily: 'monospace',
   },
 });
 
