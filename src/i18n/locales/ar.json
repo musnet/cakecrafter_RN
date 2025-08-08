@@ -1,0 +1,157 @@
+﻿{
+  "app": {
+    "name": "كيك كرافتر.إيه آي",
+    "tagline": "تصميم الكيك بالذكاء الاصطناعي لقطر",
+    "version": "إصدار رياكت نيتيف v1.0"
+  },
+  "common": {
+    "welcome": "أهلاً وسهلاً",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب",
+    "close": "إغلاق",
+    "ok": "موافق",
+    "yes": "نعم",
+    "no": "لا",
+    "back": "عودة",
+    "next": "التالي",
+    "done": "تم",
+    "skip": "تخطي"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "menu": "القائمة",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "cart": "السلة",
+    "orders": "الطلبات",
+    "favorites": "المفضلة",
+    "help": "المساعدة",
+    "about": "حول التطبيق"
+  },
+  "helloWorld": {
+    "title": "كيك كرافتر.إيه آي",
+    "subtitle": "تصميم الكيك بالذكاء الاصطناعي لقطر",
+    "version": "إصدار رياكت نيتيف v1.0",
+    "welcomeTitle": "مرحباً بكم في مستقبل تصميم الكيك",
+    "welcomeText": "اختبروا تخصيص الكيك بالذكاء الاصطناعي مع منصة تصميم الكيك الرائدة في قطر. أنشئوا كعكات مذهلة لكل مناسبة مع مساعد التصميم الذكي.",
+    "getStarted": "ابدأ الآن",
+    "testApi": "اختبار اتصال API",
+    "status": {
+      "checking": "جاري الاتصال...",
+      "connected": "متصل بـ API الإنتاج",
+      "failed": "فشل الاتصال"
+    },
+    "footer": "صُنع بـ ❤️ لقطر • متصل بخادم الإنتاج",
+    "footerUrl": "https://cakecrafterapi.ebita.ai/api"
+  },
+  "home": {
+    "title": "كيك كرافتر.إيه آي",
+    "subtitle": "الشاشة الرئيسية الأساسية",
+    "apiStatus": "حالة API الإنتاج",
+    "apiConnected": "متصل بـ: https://cakecrafterapi.ebita.ai/api",
+    "apiActive": "اتصال الخادم نشط",
+    "ultimateExperience": "التجربة المتقدمة",
+    "ultimateDescription": "اختبر الشاشة الرئيسية المتقدمة مع المرئيات المذهلة ومعرض الكيك الجميل والتصميم المستوحى من قطر",
+    "features": {
+      "showcase": "عرض جميل للكيك",
+      "categories": "فئات تفاعلية",
+      "theme": "طابع ثقافي قطري",
+      "ai": "جاهز لإنتاج الذكاء الاصطناعي"
+    },
+    "launchSuperDuper": "تشغيل الشاشة المتقدمة",
+    "availableCakes": "الكيك المتاح",
+    "availableActions": "الإجراءات المتاحة",
+    "developmentProgress": "تقدم التطوير",
+    "testApiFeatures": "اختبار ميزات API",
+    "refreshCakes": "تحديث الكيك",
+    "backToWelcome": "العودة للترحيب"
+  },
+  "superDuperHome": {
+    "welcome": "أهلاً وسهلاً",
+    "searchPlaceholder": "ابحث عن الكيك الرائع...",
+    "quickActions": {
+      "aiGenerate": "إنتاج بالذكاء الاصطناعي",
+      "scanQr": "مسح QR",
+      "custom": "مخصص"
+    },
+    "categories": {
+      "title": "الفئات",
+      "seeAll": "عرض الكل",
+      "birthday": "عيد ميلاد",
+      "wedding": "زفاف",
+      "corporate": "شركات",
+      "cultural": "ثقافي",
+      "sports": "رياضي",
+      "custom": "مخصص"
+    },
+    "featured": {
+      "title": "الكيك المميز",
+      "seeAll": "عرض الكل"
+    },
+    "gallery": {
+      "title": "معرض الكيك"
+    },
+    "loadingCakes": "جاري تحميل الكيك الرائع...",
+    "cakes": {
+      "luxuryBirthday": {
+        "name": "كيك عيد ميلاد فاخر",
+        "description": "كيك احتفال عيد ميلاد رائع مع زينة فاخرة"
+      },
+      "royalWedding": {
+        "name": "كيك زفاف ملكي",
+        "description": "كيك زفاف أنيق متعدد الطبقات ليومكم المميز"
+      },
+      "chocolateDream": {
+        "name": "كيك حلم الشوكولاتة",
+        "description": "طبقات شوكولاتة غنية مع كاكاو بلجيكي فاخر"
+      },
+      "vanillaParadise": {
+        "name": "كيك جنة الفانيليا",
+        "description": "إسفنج فانيليا كلاسيكي مع خلاصة فانيليا مدغشقر"
+      },
+      "aiCustom": {
+        "name": "إبداع مخصص بالذكاء الاصطناعي",
+        "description": "كيك مخصص مصمم بالذكاء الاصطناعي مع عناصر فنية فريدة"
+      }
+    }
+  },
+  "language": {
+    "current": "العربية",
+    "switch": "تبديل اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية",
+    "changeLanguage": "تغيير اللغة"
+  },
+  "currency": {
+    "qar": "ريال قطري",
+    "priceFormat": "{{amount}} ريال قطري"
+  },
+  "time": {
+    "morning": "صباح الخير",
+    "afternoon": "مساء الخير",
+    "evening": "مساء الخير",
+    "night": "تصبح على خير"
+  },
+  "errors": {
+    "networkError": "خطأ في اتصال الشبكة",
+    "apiError": "فشل اتصال API",
+    "loadingFailed": "فشل في تحميل البيانات",
+    "tryAgain": "يرجى المحاولة مرة أخرى",
+    "somethingWrong": "حدث خطأ ما"
+  },
+  "success": {
+    "dataSaved": "تم حفظ البيانات بنجاح",
+    "languageChanged": "تم تغيير اللغة بنجاح",
+    "actionCompleted": "تم إنجاز العملية بنجاح"
+  }
+}

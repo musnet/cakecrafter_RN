@@ -1,0 +1,76 @@
+// App.js - Communication #62: Updated with SuperDuperHomeScreen Integration
+// Production API: https://cakecrafterapi.ebita.ai/api
+// 🎨 NEW: Added SuperDuperHomeScreen with stunning visuals and Qatar branding
+
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+// Import custom theme and components
+import { qatarTheme } from './src/styles/theme';
+
+// Import screens
+import HelloWorldScreen from './src/screens/HelloWorldScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import SuperDuperHomeScreen from './src/screens/SuperDuperHomeScreen'; // ✨ NEW: Ultimate home screen
+
+const Stack = createStackNavigator();
+
+// Main App Component
+export default function App() {
+  return (
+    <PaperProvider theme={qatarTheme}>
+      <NavigationContainer>
+        <StatusBar style="light" backgroundColor="#8B0000" />
+        <Stack.Navigator
+          initialRouteName="HelloWorld"
+          screenOptions={{
+            headerStyle: {
+              backgroundColor: '#8B0000',
+            },
+            headerTintColor: '#FFD700',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+              fontSize: 18,
+            },
+            cardStyle: {
+              backgroundColor: '#0A0A0A',
+            },
+          }}
+        >
+          {/* Hello World - Initial Welcome Screen */}
+          <Stack.Screen 
+            name="HelloWorld" 
+            component={HelloWorldScreen} 
+            options={{ 
+              title: 'CakeCrafter.AI',
+              headerShown: false 
+            }} 
+          />
+          
+          {/* Basic Home Screen */}
+          <Stack.Screen 
+            name="Home" 
+            component={HomeScreen} 
+            options={{ 
+              title: 'Home',
+              headerLeft: null, // Prevent back navigation
+            }} 
+          />
+          
+          {/* ✨ NEW: Super Duper Home Screen - Ultimate Experience */}
+          <Stack.Screen 
+            name="SuperDuperHome" 
+            component={SuperDuperHomeScreen} 
+            options={{ 
+              title: 'CakeCrafter.AI',
+              headerShown: false, // Full immersive experience
+            }} 
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </PaperProvider>
+  );
+}

@@ -1,0 +1,454 @@
+// src/components/gallery/CakeCardAnimated.js
+// Communication #61.8 - FIXED: Stable animations without vibrating
+// 🔧 PERFORMANCE: Optimized animations to prevent jittering
+// ✨ SMOOTH: 60fps stable animations
+// 🎨 QATAR: Beautiful luxury design
+
+import React, { useRef, useEffect, useState } from 'react';
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Animated,
+  Dimensions,
+  StyleSheet,
+} from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { BlurView } from 'expo-blur';
+
+import { QatarColors, Spacing, Typography, ComponentStyles } from '../../styles/theme';
+
+const { width } = Dimensions.get('window');
+
+// ================================
+// STABLE ANIMATED CAKE CARD COMPONENT
+// ================================
+const CakeCardAnimated = ({
+  item,
+  index = 0,
+  style,
+  onPress,
+  currentLanguage = 'en',
+  layoutMode = 'masonry',
+  onLayout,
+}) => {
+  
+  // ============================================================================
+  // HOOKS & STATE
+  // ============================================================================
+  
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [cardHeight, setCardHeight] = useState(item.height || 200);
+  const [imageError, setImageError] = useState(false);
+  const [animationsStarted, setAnimationsStarted] = useState(false);
+  
+  // Simplified animation values - PREVENT VIBRATING
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+  const scaleAnim = useRef(new Animated.Value(0.9)).current;
+  const pressAnim = useRef(new Animated.Value(1)).current;
+  
+  // ============================================================================
+  // LIFECYCLE & EFFECTS
+  // ============================================================================
+  
+  useEffect(() => {
+    // Only start animations once
+    if (!animationsStarted) {
+      startEntranceAnimation();
+      setAnimationsStarted(true);
+    }
+  }, [animationsStarted]);
+  
+  useEffect(() => {
+    if (imageLoaded && onLayout) {
+      onLayout(cardHeight);
+    }
+  }, [imageLoaded, cardHeight, onLayout]);
+  
+  // ============================================================================
+  // STABLE ANIMATIONS - NO VIBRATING
+  // ============================================================================
+  
+  const startEntranceAnimation = () => {
+    // Simple, stable entrance animation
+    const delay = Math.min(index * 100, 800); // Cap delay to prevent issues
+    
+    Animated.parallel([
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 500,
+        delay,
+        useNativeDriver: true,
+      }),
+      Animated.timing(scaleAnim, {
+        toValue: 1,
+        duration: 500,
+        delay,
+        useNativeDriver: true,
+      }),
+    ]).start();
+  };
+  
+  const handlePressIn = () => {
+    Animated.timing(pressAnim, {
+      toValue: 0.96,
+      duration: 100,
+      useNativeDriver: true,
+    }).start();
+  };
+  
+  const handlePressOut = () => {
+    Animated.timing(pressAnim, {
+      toValue: 1,
+      duration: 100,
+      useNativeDriver: true,
+    }).start();
+  };
+  
+  const handlePress = () => {
+    if (onPress) {
+      onPress(item);
+    }
+  };
+  
+  // ============================================================================
+  // RENDER HELPERS
+  // ============================================================================
+  
+  const renderImagePlaceholder = () => {
+    if (imageLoaded && !imageError) return null;
+    
+    return (
+      <View style={styles.imagePlaceholder}>
+        <Text style={styles.placeholderIcon}>🍰</Text>
+        <Text style={styles.placeholderText}>
+          {imageError ? 'Image not available' : 'Loading...'}
+        </Text>
+      </View>
+    );
+  };
+  
+  const renderCardContent = () => {
+    const isGallery = item.type === 'gallery';
+    const displayName = item.name || 'Creative Cake Design';
+    
+    return (
+      <View style={styles.cardContent}>
+        {/* Image Container */}
+        <View style={[styles.imageContainer, { height: cardHeight - 80 }]}>
+          {!imageError && (
+            <Image
+              source={{ uri: item.image }}
+              style={styles.cardImage}
+              resizeMode="cover"
+              onLoad={() => setImageLoaded(true)}
+              onError={() => {
+                setImageError(true);
+                setImageLoaded(true);
+              }}
+            />
+          )}
+          
+          {renderImagePlaceholder()}
+          
+          {/* Simple Overlay - NO COMPLEX GRADIENTS */}
+          {imageLoaded && !imageError && (
+            <View style={styles.simpleOverlay} />
+          )}
+          
+          {/* Favorite Button - SIMPLIFIED */}
+          <TouchableOpacity style={styles.favoriteButton}>
+            <View style={styles.favoriteBackground}>
+              <Text style={styles.favoriteIcon}>❤️</Text>
+            </View>
+          </TouchableOpacity>
+          
+          {/* Category Badge - SIMPLIFIED */}
+          {item.category && (
+            <View style={styles.categoryBadge}>
+              <View style={styles.categoryBackground}>
+                <Text style={styles.categoryText}>
+                  {item.category.charAt(0).toUpperCase() + item.category.slice(1)}
+                </Text>
+              </View>
+            </View>
+          )}
+        </View>
+        
+        {/* Info Section */}
+        <View style={styles.infoSection}>
+          <View style={styles.titleRow}>
+            <Text 
+              style={styles.cardTitle}
+              numberOfLines={2}
+            >
+              {displayName}
+            </Text>
+            
+            {item.rating && (
+              <View style={styles.ratingContainer}>
+                <Text style={styles.ratingText}>⭐</Text>
+                <Text style={styles.ratingValue}>{item.rating}</Text>
+              </View>
+            )}
+          </View>
+          
+          {item.price && (
+            <View style={styles.priceRow}>
+              <Text style={styles.priceText}>{item.price}</Text>
+              <TouchableOpacity style={styles.addButton}>
+                <View style={styles.addButtonBackground}>
+                  <Text style={styles.addButtonText}>+</Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+          )}
+          
+          {isGallery && (
+            <View style={styles.galleryInfo}>
+              <Text style={styles.galleryLabel}>View Design</Text>
+              <Text style={styles.galleryIcon}>👁️</Text>
+            </View>
+          )}
+        </View>
+      </View>
+    );
+  };
+  
+  // ============================================================================
+  // MAIN RENDER - SIMPLIFIED ANIMATIONS
+  // ============================================================================
+  
+  return (
+    <Animated.View
+      style={[
+        styles.cardWrapper,
+        style,
+        {
+          opacity: fadeAnim,
+          transform: [
+            { scale: Animated.multiply(scaleAnim, pressAnim) },
+          ],
+        },
+      ]}
+    >
+      <TouchableOpacity
+        style={[styles.card, { height: cardHeight }]}
+        activeOpacity={0.9}
+        onPress={handlePress}
+        onPressIn={handlePressIn}
+        onPressOut={handlePressOut}
+      >
+        <View style={styles.cardBackground}>
+          {renderCardContent()}
+        </View>
+      </TouchableOpacity>
+    </Animated.View>
+  );
+};
+
+// ============================================================================
+// OPTIMIZED STYLES - PERFORMANCE FOCUSED
+// ============================================================================
+
+const styles = StyleSheet.create({
+  cardWrapper: {
+    marginBottom: Spacing.sm,
+  },
+  
+  card: {
+    borderRadius: ComponentStyles.borderRadius.lg,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  
+  cardBackground: {
+    flex: 1,
+    backgroundColor: QatarColors.surface,
+  },
+  
+  cardContent: {
+    flex: 1,
+  },
+  
+  // Image Styles - SIMPLIFIED
+  imageContainer: {
+    position: 'relative',
+    overflow: 'hidden',
+    backgroundColor: QatarColors.surface,
+  },
+  
+  cardImage: {
+    width: '100%',
+    height: '100%',
+  },
+  
+  imagePlaceholder: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: QatarColors.surface,
+  },
+  
+  placeholderIcon: {
+    fontSize: 32,
+    marginBottom: Spacing.sm,
+  },
+  
+  placeholderText: {
+    fontSize: Typography.fontSize.sm,
+    color: QatarColors.textSecondary,
+    textAlign: 'center',
+  },
+  
+  // Simple overlay instead of gradient
+  simpleOverlay: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '50%',
+    backgroundColor: 'rgba(0,0,0,0.3)',
+  },
+  
+  // Simplified Interactive Elements
+  favoriteButton: {
+    position: 'absolute',
+    top: Spacing.sm,
+    right: Spacing.sm,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    overflow: 'hidden',
+  },
+  
+  favoriteBackground: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  
+  favoriteIcon: {
+    fontSize: 16,
+  },
+  
+  categoryBadge: {
+    position: 'absolute',
+    top: Spacing.sm,
+    left: Spacing.sm,
+    borderRadius: ComponentStyles.borderRadius.sm,
+    overflow: 'hidden',
+  },
+  
+  categoryBackground: {
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: 4,
+    backgroundColor: 'rgba(139, 21, 56, 0.8)', // Qatar maroon with transparency
+  },
+  
+  categoryText: {
+    fontSize: Typography.fontSize.xs,
+    color: QatarColors.textOnPrimary,
+    fontWeight: Typography.fontWeight.medium,
+  },
+  
+  // Info Section
+  infoSection: {
+    padding: Spacing.sm,
+  },
+  
+  titleRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginBottom: Spacing.xs,
+  },
+  
+  cardTitle: {
+    flex: 1,
+    fontSize: Typography.fontSize.sm,
+    fontWeight: Typography.fontWeight.semibold,
+    color: QatarColors.textPrimary,
+    marginRight: Spacing.xs,
+  },
+  
+  ratingContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: ComponentStyles.borderRadius.sm,
+    paddingHorizontal: Spacing.xs,
+    paddingVertical: 2,
+  },
+  
+  ratingText: {
+    fontSize: Typography.fontSize.xs,
+    marginRight: 2,
+  },
+  
+  ratingValue: {
+    fontSize: Typography.fontSize.xs,
+    color: QatarColors.textPrimary,
+    fontWeight: Typography.fontWeight.medium,
+  },
+  
+  priceRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  
+  priceText: {
+    fontSize: Typography.fontSize.md,
+    fontWeight: Typography.fontWeight.bold,
+    color: QatarColors.secondary,
+  },
+  
+  addButton: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    overflow: 'hidden',
+  },
+  
+  addButtonBackground: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: QatarColors.secondary,
+  },
+  
+  addButtonText: {
+    fontSize: Typography.fontSize.md,
+    fontWeight: Typography.fontWeight.bold,
+    color: QatarColors.textOnPrimary,
+  },
+  
+  galleryInfo: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  
+  galleryLabel: {
+    fontSize: Typography.fontSize.sm,
+    color: QatarColors.textSecondary,
+    fontWeight: Typography.fontWeight.medium,
+  },
+  
+  galleryIcon: {
+    fontSize: Typography.fontSize.md,
+  },
+});
+
+export default CakeCardAnimated;

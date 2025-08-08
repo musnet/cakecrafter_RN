@@ -1,0 +1,157 @@
+﻿{
+  "app": {
+    "name": "CakeCrafter.AI",
+    "tagline": "AI-Powered Cake Design for Qatar",
+    "version": "React Native Edition v1.0"
+  },
+  "common": {
+    "welcome": "Welcome",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "close": "Close",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "skip": "Skip"
+  },
+  "navigation": {
+    "home": "Home",
+    "menu": "Menu",
+    "profile": "Profile",
+    "settings": "Settings",
+    "cart": "Cart",
+    "orders": "Orders",
+    "favorites": "Favorites",
+    "help": "Help",
+    "about": "About"
+  },
+  "helloWorld": {
+    "title": "CakeCrafter.AI",
+    "subtitle": "AI-Powered Cake Design for Qatar",
+    "version": "React Native Edition v1.0",
+    "welcomeTitle": "Welcome to the Future of Cake Design",
+    "welcomeText": "Experience AI-powered cake customization with Qatar's premier cake design platform. Create stunning cakes for every occasion with our intelligent design assistant.",
+    "getStarted": "Get Started",
+    "testApi": "Test API Connection",
+    "status": {
+      "checking": "Connecting...",
+      "connected": "Connected to Production API",
+      "failed": "Connection Failed"
+    },
+    "footer": "Made with ❤️ for Qatar • Production Backend Connected",
+    "footerUrl": "https://cakecrafterapi.ebita.ai/api"
+  },
+  "home": {
+    "title": "CakeCrafter.AI",
+    "subtitle": "Basic Home Screen",
+    "apiStatus": "Production API Status",
+    "apiConnected": "Connected to: https://cakecrafterapi.ebita.ai/api",
+    "apiActive": "Backend Connection Active",
+    "ultimateExperience": "Ultimate Experience",
+    "ultimateDescription": "Experience the Super Duper Home Screen with stunning visuals, beautiful cake galleries, and Qatar-inspired design",
+    "features": {
+      "showcase": "Beautiful cake showcase",
+      "categories": "Interactive categories", 
+      "theme": "Qatar cultural theme",
+      "ai": "AI generation ready"
+    },
+    "launchSuperDuper": "Launch Super Duper Home",
+    "availableCakes": "Available Cakes",
+    "availableActions": "Available Actions",
+    "developmentProgress": "Development Progress",
+    "testApiFeatures": "Test API Features",
+    "refreshCakes": "Refresh Cakes",
+    "backToWelcome": "Back to Welcome"
+  },
+  "superDuperHome": {
+    "welcome": "Welcome",
+    "searchPlaceholder": "Search amazing cakes...",
+    "quickActions": {
+      "aiGenerate": "AI Generate",
+      "scanQr": "Scan QR",
+      "custom": "Custom"
+    },
+    "categories": {
+      "title": "Categories",
+      "seeAll": "See All",
+      "birthday": "Birthday",
+      "wedding": "Wedding", 
+      "corporate": "Corporate",
+      "cultural": "Cultural",
+      "sports": "Sports",
+      "custom": "Custom"
+    },
+    "featured": {
+      "title": "Featured Cakes",
+      "seeAll": "See All"
+    },
+    "gallery": {
+      "title": "Cake Gallery"
+    },
+    "loadingCakes": "Loading amazing cakes...",
+    "cakes": {
+      "luxuryBirthday": {
+        "name": "Luxury Birthday Cake",
+        "description": "Exquisite birthday celebration cake with premium decorations"
+      },
+      "royalWedding": {
+        "name": "Royal Wedding Cake", 
+        "description": "Elegant multi-tier wedding cake for your special day"
+      },
+      "chocolateDream": {
+        "name": "Chocolate Dream Cake",
+        "description": "Rich chocolate layers with premium Belgian cocoa"
+      },
+      "vanillaParadise": {
+        "name": "Vanilla Paradise Cake",
+        "description": "Classic vanilla sponge with Madagascar vanilla extract"
+      },
+      "aiCustom": {
+        "name": "AI Custom Creation",
+        "description": "AI-designed custom cake with unique artistic elements"
+      }
+    }
+  },
+  "language": {
+    "current": "English",
+    "switch": "Switch Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "changeLanguage": "Change Language"
+  },
+  "currency": {
+    "qar": "QAR",
+    "priceFormat": "{{amount}} QAR"
+  },
+  "time": {
+    "morning": "Good Morning",
+    "afternoon": "Good Afternoon", 
+    "evening": "Good Evening",
+    "night": "Good Night"
+  },
+  "errors": {
+    "networkError": "Network connection error",
+    "apiError": "API connection failed",
+    "loadingFailed": "Failed to load data",
+    "tryAgain": "Please try again",
+    "somethingWrong": "Something went wrong"
+  },
+  "success": {
+    "dataSaved": "Data saved successfully",
+    "languageChanged": "Language changed successfully",
+    "actionCompleted": "Action completed successfully"
+  }
+}
