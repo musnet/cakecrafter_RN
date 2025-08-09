@@ -1,10 +1,13 @@
-// App.js - Communication #60.7: PRODUCTION VERSION without Polyfill Dependencies
-// 🎯 FINAL: This version removes polyfill imports and relies on Expo's built-in Intl support
+// App.js - Communication #60.3: ENHANCED with CakeDetailScreen Navigation
+// 🎯 NEW: Added CakeDetailScreen to navigation stack  
 // 🛒 CART: Complete CartProvider integration with enterprise-grade state management
 // 🌐 i18n: Clean internationalization setup WITHOUT external polyfill dependencies
 // ⚡ PERFORMANCE: Optimized provider hierarchy and error boundary protection
 // 🇶🇦 QATAR: Full Arabic/English support with proper RTL handling
 // 📱 EXPO: Fully compatible with Expo managed workflow
+// 🍰 NAVIGATION: Welcome → SuperDuperHome → CakeDetail flow
+
+
 
 import React, { useState, useEffect } from 'react';
 import {
@@ -28,20 +31,21 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 // ================================
-// ✨ CART PROVIDER INTEGRATION - Communication #60.7
+// ✨ CART PROVIDER INTEGRATION - Communication #60.3
 // ================================
 import { CartProvider } from './src/context/CartContext';
 
 // Import screens and components
 import LanguageSwitcher from './src/components/LanguageSwitcher';
 import SuperDuperHomeScreen from './src/screens/SuperDuperHomeScreen';
+import CakeDetailScreen from './src/screens/CakeDetailScreen'; // ✨ NEW - Communication #60.3
 import { ApiService } from './src/services/ApiService';
 
 // Create Stack Navigator
 const Stack = createStackNavigator();
 
 // ================================
-// ERROR BOUNDARY FOR CART INTEGRATION - Communication #60.7
+// ERROR BOUNDARY FOR CART INTEGRATION - Communication #60.3
 // ================================
 class CartErrorBoundary extends React.Component {
   constructor(props) {
@@ -54,7 +58,7 @@ class CartErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.error('🚨 Communication #60.7 - Cart Error Boundary:', error, errorInfo);
+    console.error('🚨 Communication #60.3 - Cart Error Boundary:', error, errorInfo);
   }
 
   render() {
@@ -63,7 +67,7 @@ class CartErrorBoundary extends React.Component {
         <View style={styles.errorContainer}>
           <Text style={styles.errorTitle}>⚠️ Cart System Error</Text>
           <Text style={styles.errorMessage}>
-            Communication #60.7: There was an issue with the cart system.
+            Communication #60.3: There was an issue with the cart system.
           </Text>
           <TouchableOpacity
             style={styles.errorButton}
@@ -80,7 +84,7 @@ class CartErrorBoundary extends React.Component {
 }
 
 // ================================
-// ENHANCED WELCOME SCREEN WITH CART INTEGRATION - Communication #60.7
+// ENHANCED WELCOME SCREEN WITH CART INTEGRATION - Communication #60.3
 // ================================
 const WelcomeScreen = ({ navigation }) => {
   const { t, i18n } = useTranslation();
@@ -94,7 +98,7 @@ const WelcomeScreen = ({ navigation }) => {
   // Handle language change
   const handleLanguageChange = (languageCode) => {
     setCurrentLanguage(languageCode);
-    console.log('🌐 Communication #60.7 - Language changed to:', languageCode);
+    console.log('🌐 Communication #60.3 - Language changed to:', languageCode);
     
     // Show confirmation alert
     setTimeout(() => {
@@ -110,7 +114,7 @@ const WelcomeScreen = ({ navigation }) => {
 
   // Navigate to SuperDuperHomeScreen with cart support
   const handleGetStarted = () => {
-    console.log('🚀 Communication #60.7 - Navigating to SuperDuperHomeScreen with FULL CART SUPPORT (No Polyfills)');
+    console.log('🚀 Communication #60.3 - Navigating to SuperDuperHomeScreen with CAKE DETAIL SUPPORT');
     navigation.navigate('SuperDuperHome');
   };
 
@@ -120,7 +124,7 @@ const WelcomeScreen = ({ navigation }) => {
       setIsCheckingHealth(true);
       setHealthStatus(null);
       
-      console.log('🏥 Communication #60.7 - Starting database health check...');
+      console.log('🏥 Communication #60.3 - Starting database health check...');
       
       const healthResult = await ApiService.checkDatabaseHealth();
       
@@ -141,7 +145,7 @@ const WelcomeScreen = ({ navigation }) => {
       ]);
       
     } catch (error) {
-      console.error('❌ Communication #60.7 - Database health check error:', error);
+      console.error('❌ Communication #60.3 - Database health check error:', error);
       setHealthStatus({ connected: false, error: error.message });
       
       Alert.alert(
@@ -181,8 +185,8 @@ const WelcomeScreen = ({ navigation }) => {
         
         <Text style={styles.welcomeSubtitle}>
           {currentLanguage === 'ar' 
-            ? 'تجربة التسوق الكاملة مع السلة والدفع'
-            : 'Complete shopping experience with cart & checkout'
+            ? 'تجربة التسوق الكاملة مع تفاصيل الكيك والسلة والدفع'
+            : 'Complete shopping experience with cake details, cart & checkout'
           }
         </Text>
 
@@ -218,28 +222,28 @@ const WelcomeScreen = ({ navigation }) => {
           )}
         </TouchableOpacity>
 
-        {/* Get Started Button - NOW WITH FULL CART SUPPORT */}
+        {/* Get Started Button - NOW WITH CAKE DETAIL SUPPORT */}
         <TouchableOpacity
           style={styles.getStartedButton}
           onPress={handleGetStarted}
         >
           <Text style={styles.getStartedText}>
-            🛒 Explore Cakes & Shopping Cart
+            🍰 Explore Cakes with Detail Views & Cart
           </Text>
         </TouchableOpacity>
 
         {/* Info */}
         <Text style={styles.infoText}>
           {currentLanguage === 'ar' 
-            ? 'تجربة كاملة للتسوق مع السلة وإدارة الطلبات'
-            : 'Full shopping experience with cart & order management'
+            ? 'تجربة كاملة للتسوق مع عرض تفاصيل الكيك والسلة وإدارة الطلبات'
+            : 'Full shopping experience with detailed cake views, cart & order management'
           }
         </Text>
         
         {/* ✅ EXPO COMPATIBLE NOTICE */}
         <View style={styles.productionNotice}>
           <Text style={styles.productionNoticeText}>
-            ✅ Communication #60.7: EXPO COMPATIBLE - No external polyfill dependencies!
+            ✅ Communication #60.3: EXPO COMPATIBLE with Cake Detail Screen Navigation!
           </Text>
         </View>
       </View>
@@ -255,7 +259,7 @@ const WelcomeScreen = ({ navigation }) => {
 };
 
 // ================================
-// MAIN APP COMPONENT WITH COMPLETE PROVIDER HIERARCHY - Communication #60.7
+// MAIN APP COMPONENT WITH ENHANCED NAVIGATION - Communication #60.3
 // ================================
 const App = () => {
   const [isInitializing, setIsInitializing] = useState(true);
@@ -264,27 +268,27 @@ const App = () => {
   useEffect(() => {
     const initializeApp = async () => {
       try {
-        console.log('🚀 Communication #60.7 - Initializing Expo-compatible app with cart integration (no polyfills)...');
+        console.log('🚀 Communication #60.3 - Initializing Expo-compatible app with cake detail navigation...');
         
         // Basic Intl support check (non-blocking)
         try {
           if (typeof Intl !== 'undefined') {
-            console.log('✅ Communication #60.7 - Native Intl support detected');
+            console.log('✅ Communication #60.3 - Native Intl support detected');
           } else {
-            console.log('⚠️ Communication #60.7 - Limited Intl support, using fallbacks');
+            console.log('⚠️ Communication #60.3 - Limited Intl support, using fallbacks');
           }
         } catch (intlError) {
-          console.warn('⚠️ Communication #60.7 - Intl check warning (non-blocking):', intlError);
+          console.warn('⚠️ Communication #60.3 - Intl check warning (non-blocking):', intlError);
         }
         
         // Simulate initialization delay for proper provider setup
         await new Promise(resolve => setTimeout(resolve, 500));
         
-        console.log('✅ Communication #60.7 - App initialization complete with cart system ready (Expo compatible)');
+        console.log('✅ Communication #60.3 - App initialization complete with cake detail navigation system ready');
         setIsInitializing(false);
         
       } catch (error) {
-        console.error('❌ Communication #60.7 - App initialization failed:', error);
+        console.error('❌ Communication #60.3 - App initialization failed:', error);
         setInitError(error);
         setIsInitializing(false);
       }
@@ -299,7 +303,7 @@ const App = () => {
       <SafeAreaView style={styles.loadingContainer}>
         <ActivityIndicator size="large" color="#8B1538" />
         <Text style={styles.loadingText}>
-          Communication #60.7: Initializing cart system...
+          Communication #60.3: Initializing cake detail system...
         </Text>
       </SafeAreaView>
     );
@@ -311,14 +315,14 @@ const App = () => {
       <SafeAreaView style={styles.errorContainer}>
         <Text style={styles.errorTitle}>❌ Initialization Error</Text>
         <Text style={styles.errorMessage}>
-          Communication #60.7: Failed to initialize app. Please restart.
+          Communication #60.3: Failed to initialize app. Please restart.
         </Text>
       </SafeAreaView>
     );
   }
 
   // ============================================================================
-  // EXPO-COMPATIBLE APP WITH COMPLETE PROVIDER HIERARCHY - Communication #60.7
+  // EXPO-COMPATIBLE APP WITH ENHANCED NAVIGATION STACK - Communication #60.3
   // ============================================================================
   
   return (
@@ -337,6 +341,30 @@ const App = () => {
               name="SuperDuperHome" 
               component={SuperDuperHomeScreen} 
             />
+            {/* ✨ NEW: Cake Detail Screen - Communication #60.3 */}
+            <Stack.Screen 
+              name="CakeDetail" 
+              component={CakeDetailScreen}
+              options={{
+                headerShown: false,
+                gestureEnabled: true,
+                gestureDirection: 'horizontal',
+                cardStyleInterpolator: ({ current, layouts }) => {
+                  return {
+                    cardStyle: {
+                      transform: [
+                        {
+                          translateX: current.progress.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: [layouts.screen.width, 0],
+                          }),
+                        },
+                      ],
+                    },
+                  };
+                },
+              }}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </CartProvider>
@@ -345,7 +373,7 @@ const App = () => {
 };
 
 // ================================
-// STYLES - Communication #60.7
+// STYLES - Communication #60.3 (PRESERVED FROM ORIGINAL)
 // ================================
 const styles = StyleSheet.create({
   container: {

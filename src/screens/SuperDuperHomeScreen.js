@@ -370,12 +370,40 @@ const SuperDuperHomeScreen = ({ navigation }) => {
     console.log(`📱 Communication #60.7 - Category selected: ${categoryName} (${category.count} cakes)`);
   };
   
-  const handleCakePress = (cake) => {
-    console.log(`🍰 Communication #60.7 - Cake pressed: ${cake.name}`);
-    // Navigate to cake details or show modal
+const handleCakePress = (cake) => {
+  console.log(`🍰 Communication #60.6 - Navigating to product detail: ${cake.name || cake.title?.en}`);
+  
+  try {
+    // Prepare cake data for detail screen
+    const cakeData = {
+      id: cake.id || `cake_${Date.now()}`,
+      name: cake.title?.en || cake.name || 'Delicious Cake',
+      nameAr: cake.title?.ar || cake.nameAr || 'كيكة لذيذة',
+      image: cake.image_url || cake.image,
+      price: cake.price || 250,
+      currency: cake.currency || 'QAR',
+      rating: cake.rating || 4.8,
+      purchases: cake.purchases || Math.floor(Math.random() * 200) + 50,
+      description: `Delicious ${cake.title?.en || cake.name || 'cake'} perfect for any celebration.`,
+      descriptionAr: `كيكة لذيذة مثالية لأي احتفال.`,
+      category: selectedCategory?.key || 'custom',
+      ingredients: cake.ingredients || ['flour', 'sugar', 'eggs', 'butter'],
+      isNew: cake.is_new || false,
+      isInStock: cake.is_in_stock !== false,
+      // Additional data
+      originalCakeData: cake,
+      categoryData: selectedCategory,
+    };
+    
+    // Navigate to detail screen
+    navigation.navigate('CakeDetail', { cakeData });
+    
+  } catch (error) {
+    console.error('❌ Communication #60.6 - Navigation error:', error);
+    // Fallback to original alert behavior
     Alert.alert(
-      cake.name,
-      `${cake.description || 'Delicious cake'}\nPrice: ${cake.price || 'QAR 199'}`,
+      cake.name || 'Cake',
+      `${cake.description || 'Delicious cake'}\nPrice: ${cake.price ? `QAR ${cake.price}` : 'QAR 199'}`,
       [
         { text: isRTL ? 'إغلاق' : 'Close', style: 'cancel' },
         { 
@@ -384,7 +412,8 @@ const SuperDuperHomeScreen = ({ navigation }) => {
         },
       ]
     );
-  };
+  }
+};
   
   // ============================================================================
   // RENDER METHODS
