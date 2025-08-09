@@ -1,4 +1,4 @@
-﻿{
+{
     "category":  {
                      "name":  {
                                   "en":  "Cultural",
@@ -10,7 +10,7 @@
                  },
     "cakes":  [
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6820484160f1.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6820484160f1_thumb.jpg",
                       "title":  {
                                     "en":  "Heritage Cultural Celebration",
                                     "ar":  "احتفال التراث الثقافي"
@@ -37,7 +37,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_17619ac7e337.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_17619ac7e337_thumb.jpg",
                       "title":  {
                                     "en":  "Traditional Cultural Feast",
                                     "ar":  "وليمة ثقافية تقليدية"
@@ -64,7 +64,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_06660698099f.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_06660698099f_thumb.jpg",
                       "title":  {
                                     "en":  "Festival Cultural Delight",
                                     "ar":  "متعة المهرجان الثقافي"
@@ -91,7 +91,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_bb4b9f0bcd49.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_bb4b9f0bcd49_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Harmony Cultural Cake",
                                     "ar":  "كعكة الانسجام الثقافي"
@@ -118,7 +118,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_34ee9799c59f.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_34ee9799c59f_thumb.jpg",
                       "title":  {
                                     "en":  "Ancient Wisdom Cultural Special",
                                     "ar":  "خاص الحكمة القديمة الثقافي"
@@ -145,7 +145,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_dbdce024f4d7.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_dbdce024f4d7_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Fusion Cultural Masterpiece",
                                     "ar":  "تحفة الانصهار الثقافي"
@@ -172,7 +172,7 @@
                       "is_in_stock":  false
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1dc0c2bc5742.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1dc0c2bc5742_thumb.jpg",
                       "title":  {
                                     "en":  "Sacred Cultural Ceremony",
                                     "ar":  "حفل مقدس ثقافي"
@@ -199,7 +199,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6e4d7a351273.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6e4d7a351273_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Pride Cultural Creation",
                                     "ar":  "إبداع الفخر الثقافي"
@@ -226,7 +226,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_99bf337b7f68.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_99bf337b7f68_thumb.jpg",
                       "title":  {
                                     "en":  "Ethnic Cultural Treasure",
                                     "ar":  "كنز عرقي ثقافي"
@@ -253,7 +253,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5cd2b064b14f.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5cd2b064b14f_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Unity Cultural Celebration",
                                     "ar":  "احتفال الوحدة الثقافية"
@@ -280,7 +280,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b9c7cba9e226.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b9c7cba9e226_thumb.jpg",
                       "title":  {
                                     "en":  "Ancestral Cultural Honor",
                                     "ar":  "تكريم الأجداد الثقافي"
@@ -307,7 +307,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5f9e9765f9f3.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5f9e9765f9f3_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Legacy Cultural Cake",
                                     "ar":  "كعكة الإرث الثقافي"
@@ -334,7 +334,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d7411d588abf.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d7411d588abf_thumb.jpg",
                       "title":  {
                                     "en":  "Folklore Cultural Tradition",
                                     "ar":  "تقليد الفولكلور الثقافي"
@@ -361,7 +361,7 @@
                       "is_in_stock":  false
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0f42bddedc2b.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0f42bddedc2b_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Heritage Cultural Special",
                                     "ar":  "خاص التراث الثقافي"
@@ -388,7 +388,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_25be82e5a20e.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_25be82e5a20e_thumb.jpg",
                       "title":  {
                                     "en":  "Tribal Cultural Wisdom",
                                     "ar":  "حكمة القبيلة الثقافية"
@@ -415,7 +415,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9a8a26911089.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9a8a26911089_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Artisan Cultural Masterpiece",
                                     "ar":  "تحفة الحرفي الثقافي"
@@ -442,7 +442,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf723f31930f.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf723f31930f_thumb.jpg",
                       "title":  {
                                     "en":  "Ancient Ritual Cultural Creation",
                                     "ar":  "إبداع الطقوس القديمة الثقافي"
@@ -469,7 +469,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fbaa2da142e8.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fbaa2da142e8_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Symphony Cultural Delight",
                                     "ar":  "متعة السيمفونية الثقافية"
@@ -496,7 +496,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_492118e421d7.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_492118e421d7_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Mosaic Cultural Cake",
                                     "ar":  "كعكة الفسيفساء الثقافية"
@@ -523,7 +523,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7d7da2d82104.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7d7da2d82104_thumb.jpg",
                       "title":  {
                                     "en":  "Timeless Cultural Tradition",
                                     "ar":  "تقليد ثقافي خالد"
@@ -550,7 +550,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ab2b8531fdce.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ab2b8531fdce_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Celebration Cultural Special",
                                     "ar":  "خاص الاحتفال الثقافي"
@@ -577,7 +577,7 @@
                       "is_in_stock":  false
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ec1ba794a9bd.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ec1ba794a9bd_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Spirit Cultural Masterpiece",
                                     "ar":  "تحفة الروح الثقافية"
@@ -604,7 +604,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_08ff16756cfd.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_08ff16756cfd_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Journey Cultural Creation",
                                     "ar":  "إبداع الرحلة الثقافية"
@@ -631,7 +631,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d3da7da08d47.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d3da7da08d47_thumb.jpg",
                       "title":  {
                                     "en":  "Cultural Essence Cultural Cake",
                                     "ar":  "كعكة جوهر الثقافة"
@@ -659,4 +659,3 @@
                   }
               ]
 }
-

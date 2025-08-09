@@ -1,4 +1,4 @@
-﻿{
+{
   "category": {
     "name": {
       "en": "Corporate",
@@ -10,7 +10,7 @@
   },
   "cakes": [
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_397209692f7e.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_397209692f7e_thumb.jpg",
       "title": {
         "en": "Executive Corporate Excellence",
         "ar": "التميز التنفيذي للشركات"
@@ -27,7 +27,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_24d7331ed06c.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_24d7331ed06c_thumb.jpg",
       "title": {
         "en": "Business Success Corporate Cake",
         "ar": "كعكة نجاح الأعمال للشركات"
@@ -44,7 +44,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c14977854ae2.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c14977854ae2_thumb.jpg",
       "title": {
         "en": "Corporate Achievement Corporate Special",
         "ar": "خاص إنجاز الشركة"
@@ -61,7 +61,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_15c0a82b1802.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_15c0a82b1802_thumb.jpg",
       "title": {
         "en": "Professional Corporate Milestone",
         "ar": "معلم مهني للشركات"
@@ -78,7 +78,7 @@
       "is_in_stock": false
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_03d34054f0e6.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_03d34054f0e6_thumb.jpg",
       "title": {
         "en": "Corporate Innovation Corporate Delight",
         "ar": "متعة الابتكار للشركات"
@@ -95,7 +95,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d6ae539c9830.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d6ae539c9830_thumb.jpg",
       "title": {
         "en": "Leadership Corporate Celebration",
         "ar": "احتفال القيادة للشركات"
@@ -112,7 +112,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_4fedea5b2c5a.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_4fedea5b2c5a_thumb.jpg",
       "title": {
         "en": "Corporate Victory Corporate Masterpiece",
         "ar": "تحفة انتصار الشركة"
@@ -129,7 +129,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2de55b5df5fa.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2de55b5df5fa_thumb.jpg",
       "title": {
         "en": "Business Growth Corporate Creation",
         "ar": "إبداع نمو الأعمال للشركات"
@@ -146,7 +146,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e307fc29560a.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e307fc29560a_thumb.jpg",
       "title": {
         "en": "Corporate Honor Corporate Tribute",
         "ar": "تكريم شرف الشركة"
@@ -163,7 +163,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8f7ba1f890bb.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8f7ba1f890bb_thumb.jpg",
       "title": {
         "en": "Strategic Corporate Planning",
         "ar": "التخطيط الاستراتيجي للشركات"
@@ -180,7 +180,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_53cb8869e26c.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_53cb8869e26c_thumb.jpg",
       "title": {
         "en": "Corporate Team Corporate Unity",
         "ar": "وحدة فريق الشركة"
@@ -197,7 +197,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_045531804c1a.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_045531804c1a_thumb.jpg",
       "title": {
         "en": "Corporate Success Corporate Story",
         "ar": "قصة نجاح الشركة"
@@ -214,7 +214,7 @@
       "is_in_stock": false
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_a1b702d50eb2.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_a1b702d50eb2_thumb.jpg",
       "title": {
         "en": "Corporate Excellence Corporate Special",
         "ar": "خاص التميز للشركات"
@@ -231,7 +231,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fc3f06f1adb2.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fc3f06f1adb2_thumb.jpg",
       "title": {
         "en": "Corporate Vision Corporate Cake",
         "ar": "كعكة رؤية الشركة"
@@ -248,7 +248,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_4257b625006f.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_4257b625006f_thumb.jpg",
       "title": {
         "en": "Corporate Milestone Corporate Creation",
         "ar": "إبداع معلم الشركة"
@@ -265,7 +265,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fbe95dc89fd5.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fbe95dc89fd5_thumb.jpg",
       "title": {
         "en": "Corporate Legacy Corporate Masterpiece",
         "ar": "تحفة إرث الشركة"

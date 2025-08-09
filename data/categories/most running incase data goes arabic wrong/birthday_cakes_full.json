@@ -1,0 +1,965 @@
+﻿{
+  "category": {
+    "name": {
+      "en": "Birthday",
+      "ar": "عيد الميلاد"
+    },
+    "image": "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/birthday.png",
+    "count": 55,
+    "percentage": 35
+  },
+  "cakes": [
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b6e97f140f80.jpg",
+      "title": {
+        "en": "Midnight Velvet Birthday Dream",
+        "ar": "حلم عيد ميلاد المخمل الليلي"
+      },
+      "price": 245,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Premium vanilla extract", "Fresh cream", "Organic eggs", "Belgian chocolate"],
+        "ar": ["خلاصة الفانيليا الممتازة", "كريمة طازجة", "بيض عضوي", "شوكولاتة بلجيكية"]
+      },
+      "rating": 4.5,
+      "purchases": 342,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c5ce3b6148bb.jpg",
+      "title": {
+        "en": "Golden Sunset Birthday Layers",
+        "ar": "طبقات غروب الشمس الذهبية لعيد الميلاد"
+      },
+      "price": 189,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Madagascar vanilla beans", "Butter cream", "Free-range eggs", "Swiss chocolate"],
+        "ar": ["حبوب الفانيليا المدغشقرية", "كريمة الزبدة", "بيض من دجاج حر", "شوكولاتة سويسرية"]
+      },
+      "rating": 4.2,
+      "purchases": 187,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7b43acff2f58.jpg",
+      "title": {
+        "en": "Berry Bliss Birthday Symphony",
+        "ar": "سيمفونية بلس التوت لعيد الميلاد"
+      },
+      "price": 312,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh strawberries", "Whipped cream", "Farm eggs", "Dark chocolate"],
+        "ar": ["فراولة طازجة", "كريمة مخفوقة", "بيض المزرعة", "شوكولاتة داكنة"]
+      },
+      "rating": 4.8,
+      "purchases": 456,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_911fea4b11a1.jpg",
+      "title": {
+        "en": "Cloud Nine Birthday Vanilla",
+        "ar": "فانيليا السحابة التاسعة لعيد الميلاد"
+      },
+      "price": 156,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Lemon zest", "Cream cheese", "Organic flour", "White chocolate"],
+        "ar": ["قشر الليمون", "جبن كريمي", "دقيق عضوي", "شوكولاتة بيضاء"]
+      },
+      "rating": 4.1,
+      "purchases": 298,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b78c8ba95135.jpg",
+      "title": {
+        "en": "Caramel Cascade Birthday Delight",
+        "ar": "متعة شلال الكراميل لعيد الميلاد"
+      },
+      "price": 387,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh blueberries", "Heavy cream", "Premium butter", "Milk chocolate"],
+        "ar": ["توت أزرق طازج", "كريمة ثقيلة", "زبدة ممتازة", "شوكولاتة بالحليب"]
+      },
+      "rating": 4.6,
+      "purchases": 521,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_27add2d566ed.jpg",
+      "title": {
+        "en": "Rainbow Birthday Celebration",
+        "ar": "احتفال قوس قزح لعيد الميلاد"
+      },
+      "price": 425,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Caramel sauce", "Mascarpone", "Almond flour", "Cocoa powder"],
+        "ar": ["صوص الكراميل", "ماسكاربوني", "دقيق اللوز", "مسحوق الكاكاو"]
+      },
+      "rating": 4.9,
+      "purchases": 623,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cb4e8f14ae70.jpg",
+      "title": {
+        "en": "Chocolate Birthday Decadence Tower",
+        "ar": "برج انحطاط الشوكولاتة لعيد الميلاد"
+      },
+      "price": 278,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Red velvet base", "Cream cheese frosting", "Natural coloring", "Vanilla essence"],
+        "ar": ["قاعدة المخمل الأحمر", "كريمة الجبن المثلجة", "تلوين طبيعي", "خلاصة الفانيليا"]
+      },
+      "rating": 4.3,
+      "purchases": 389,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9a919c3c866a.jpg",
+      "title": {
+        "en": "Strawberry Fields Birthday Forever",
+        "ar": "حقول الفراولة للأبد لعيد الميلاد"
+      },
+      "price": 198,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh raspberries", "Greek yogurt", "Coconut flour", "Honey"],
+        "ar": ["توت العليق الطازج", "زبادي يوناني", "دقيق جوز الهند", "عسل"]
+      },
+      "rating": 4.4,
+      "purchases": 267,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d558cd1912e2.jpg",
+      "title": {
+        "en": "Lemon Sunshine Birthday Burst",
+        "ar": "انفجار أشعة الشمس الليمونية لعيد الميلاد"
+      },
+      "price": 234,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Espresso", "Tiramisu cream", "Ladyfingers", "Coffee beans"],
+        "ar": ["إسبريسو", "كريمة التيراميسو", "أصابع الست", "حبوب القهوة"]
+      },
+      "rating": 4.7,
+      "purchases": 412,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_831728a7e77e.jpg",
+      "title": {
+        "en": "Fairy Tale Birthday Magic",
+        "ar": "سحر حكاية خرافية لعيد الميلاد"
+      },
+      "price": 356,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh mint", "Chocolate chips", "Organic sugar", "Natural extracts"],
+        "ar": ["نعناع طازج", "رقائق الشوكولاتة", "سكر عضوي", "خلاصات طبيعية"]
+      },
+      "rating": 4.2,
+      "purchases": 178,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d936cee96c2f.jpg",
+      "title": {
+        "en": "Cosmic Birthday Adventure",
+        "ar": "مغامرة كونية لعيد الميلاد"
+      },
+      "price": 289,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Premium vanilla extract", "Fresh cream", "Organic eggs", "Belgian chocolate"],
+        "ar": ["خلاصة الفانيليا الممتازة", "كريمة طازجة", "بيض عضوي", "شوكولاتة بلجيكية"]
+      },
+      "rating": 4.5,
+      "purchases": 334,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b0bd9c4bbc1e.jpg",
+      "title": {
+        "en": "Tropical Birthday Paradise",
+        "ar": "جنة استوائية لعيد الميلاد"
+      },
+      "price": 167,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Madagascar vanilla beans", "Butter cream", "Free-range eggs", "Swiss chocolate"],
+        "ar": ["حبوب الفانيليا المدغشقرية", "كريمة الزبدة", "بيض من دجاج حر", "شوكولاتة سويسرية"]
+      },
+      "rating": 4.1,
+      "purchases": 245,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2a78cf263a68.jpg",
+      "title": {
+        "en": "Unicorn Dreams Birthday Special",
+        "ar": "خاص أحلام وحيد القرن لعيد الميلاد"
+      },
+      "price": 445,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh strawberries", "Whipped cream", "Farm eggs", "Dark chocolate"],
+        "ar": ["فراولة طازجة", "كريمة مخفوقة", "بيض المزرعة", "شوكولاتة داكنة"]
+      },
+      "rating": 4.8,
+      "purchases": 567,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_14ab07678e39.jpg",
+      "title": {
+        "en": "Confetti Birthday Explosion",
+        "ar": "انفجار القصاصات الملونة لعيد الميلاد"
+      },
+      "price": 213,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Lemon zest", "Cream cheese", "Organic flour", "White chocolate"],
+        "ar": ["قشر الليمون", "جبن كريمي", "دقيق عضوي", "شوكولاتة بيضاء"]
+      },
+      "rating": 4.3,
+      "purchases": 298,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e3ec5258be25.jpg",
+      "title": {
+        "en": "Sweet Birthday Memories",
+        "ar": "ذكريات عيد ميلاد حلوة"
+      },
+      "price": 321,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh blueberries", "Heavy cream", "Premium butter", "Milk chocolate"],
+        "ar": ["توت أزرق طازج", "كريمة ثقيلة", "زبدة ممتازة", "شوكولاتة بالحليب"]
+      },
+      "rating": 4.6,
+      "purchases": 423,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5eba187fa6d3.jpg",
+      "title": {
+        "en": "Midnight Velvet Birthday Dream",
+        "ar": "حلم عيد ميلاد المخمل الليلي"
+      },
+      "price": 178,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Caramel sauce", "Mascarpone", "Almond flour", "Cocoa powder"],
+        "ar": ["صوص الكراميل", "ماسكاربوني", "دقيق اللوز", "مسحوق الكاكاو"]
+      },
+      "rating": 4.4,
+      "purchases": 189,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9dd4c9f35c3d.jpg",
+      "title": {
+        "en": "Golden Sunset Birthday Layers",
+        "ar": "طبقات غروب الشمس الذهبية لعيد الميلاد"
+      },
+      "price": 267,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Red velvet base", "Cream cheese frosting", "Natural coloring", "Vanilla essence"],
+        "ar": ["قاعدة المخمل الأحمر", "كريمة الجبن المثلجة", "تلوين طبيعي", "خلاصة الفانيليا"]
+      },
+      "rating": 4.2,
+      "purchases": 312,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8743ec7bf951.jpg",
+      "title": {
+        "en": "Berry Bliss Birthday Symphony",
+        "ar": "سيمفونية بلس التوت لعيد الميلاد"
+      },
+      "price": 398,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh raspberries", "Greek yogurt", "Coconut flour", "Honey"],
+        "ar": ["توت العليق الطازج", "زبادي يوناني", "دقيق جوز الهند", "عسل"]
+      },
+      "rating": 4.7,
+      "purchases": 445,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b98c6d3bb84c.jpg",
+      "title": {
+        "en": "Cloud Nine Birthday Vanilla",
+        "ar": "فانيليا السحابة التاسعة لعيد الميلاد"
+      },
+      "price": 145,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Espresso", "Tiramisu cream", "Ladyfingers", "Coffee beans"],
+        "ar": ["إسبريسو", "كريمة التيراميسو", "أصابع الست", "حبوب القهوة"]
+      },
+      "rating": 4.1,
+      "purchases": 223,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0772b25ee0ba.jpg",
+      "title": {
+        "en": "Caramel Cascade Birthday Delight",
+        "ar": "متعة شلال الكراميل لعيد الميلاد"
+      },
+      "price": 289,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh mint", "Chocolate chips", "Organic sugar", "Natural extracts"],
+        "ar": ["نعناع طازج", "رقائق الشوكولاتة", "سكر عضوي", "خلاصات طبيعية"]
+      },
+      "rating": 4.5,
+      "purchases": 356,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_a816e23d617a.jpg",
+      "title": {
+        "en": "Rainbow Birthday Celebration",
+        "ar": "احتفال قوس قزح لعيد الميلاد"
+      },
+      "price": 234,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Premium vanilla extract", "Fresh cream", "Organic eggs", "Belgian chocolate"],
+        "ar": ["خلاصة الفانيليا الممتازة", "كريمة طازجة", "بيض عضوي", "شوكولاتة بلجيكية"]
+      },
+      "rating": 4.3,
+      "purchases": 278,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf75ada7b2ba.jpg",
+      "title": {
+        "en": "Chocolate Birthday Decadence Tower",
+        "ar": "برج انحطاط الشوكولاتة لعيد الميلاد"
+      },
+      "price": 412,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Madagascar vanilla beans", "Butter cream", "Free-range eggs", "Swiss chocolate"],
+        "ar": ["حبوب الفانيليا المدغشقرية", "كريمة الزبدة", "بيض من دجاج حر", "شوكولاتة سويسرية"]
+      },
+      "rating": 4.8,
+      "purchases": 523,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_88d947a16bd2.jpg",
+      "title": {
+        "en": "Strawberry Fields Birthday Forever",
+        "ar": "حقول الفراولة للأبد لعيد الميلاد"
+      },
+      "price": 167,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh strawberries", "Whipped cream", "Farm eggs", "Dark chocolate"],
+        "ar": ["فراولة طازجة", "كريمة مخفوقة", "بيض المزرعة", "شوكولاتة داكنة"]
+      },
+      "rating": 4.2,
+      "purchases": 198,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_af290a74bb28.jpg",
+      "title": {
+        "en": "Lemon Sunshine Birthday Burst",
+        "ar": "انفجار أشعة الشمس الليمونية لعيد الميلاد"
+      },
+      "price": 345,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Lemon zest", "Cream cheese", "Organic flour", "White chocolate"],
+        "ar": ["قشر الليمون", "جبن كريمي", "دقيق عضوي", "شوكولاتة بيضاء"]
+      },
+      "rating": 4.6,
+      "purchases": 389,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8383ccdde7bc.jpg",
+      "title": {
+        "en": "Fairy Tale Birthday Magic",
+        "ar": "سحر حكاية خرافية لعيد الميلاد"
+      },
+      "price": 198,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh blueberries", "Heavy cream", "Premium butter", "Milk chocolate"],
+        "ar": ["توت أزرق طازج", "كريمة ثقيلة", "زبدة ممتازة", "شوكولاتة بالحليب"]
+      },
+      "rating": 4.4,
+      "purchases": 267,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_040a03312dfc.jpg",
+      "title": {
+        "en": "Cosmic Birthday Adventure",
+        "ar": "مغامرة كونية لعيد الميلاد"
+      },
+      "price": 278,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Caramel sauce", "Mascarpone", "Almond flour", "Cocoa powder"],
+        "ar": ["صوص الكراميل", "ماسكاربوني", "دقيق اللوز", "مسحوق الكاكاو"]
+      },
+      "rating": 4.1,
+      "purchases": 234,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2c187100af0f.jpg",
+      "title": {
+        "en": "Tropical Birthday Paradise",
+        "ar": "جنة استوائية لعيد الميلاد"
+      },
+      "price": 356,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Red velvet base", "Cream cheese frosting", "Natural coloring", "Vanilla essence"],
+        "ar": ["قاعدة المخمل الأحمر", "كريمة الجبن المثلجة", "تلوين طبيعي", "خلاصة الفانيليا"]
+      },
+      "rating": 4.7,
+      "purchases": 412,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_73673a142aae.jpg",
+      "title": {
+        "en": "Unicorn Dreams Birthday Special",
+        "ar": "خاص أحلام وحيد القرن لعيد الميلاد"
+      },
+      "price": 223,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh raspberries", "Greek yogurt", "Coconut flour", "Honey"],
+        "ar": ["توت العليق الطازج", "زبادي يوناني", "دقيق جوز الهند", "عسل"]
+      },
+      "rating": 4.3,
+      "purchases": 298,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_152ac002d258.jpg",
+      "title": {
+        "en": "Confetti Birthday Explosion",
+        "ar": "انفجار القصاصات الملونة لعيد الميلاد"
+      },
+      "price": 445,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Espresso", "Tiramisu cream", "Ladyfingers", "Coffee beans"],
+        "ar": ["إسبريسو", "كريمة التيراميسو", "أصابع الست", "حبوب القهوة"]
+      },
+      "rating": 4.9,
+      "purchases": 578,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_96db316ac27c.jpg",
+      "title": {
+        "en": "Sweet Birthday Memories",
+        "ar": "ذكريات عيد ميلاد حلوة"
+      },
+      "price": 189,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh mint", "Chocolate chips", "Organic sugar", "Natural extracts"],
+        "ar": ["نعناع طازج", "رقائق الشوكولاتة", "سكر عضوي", "خلاصات طبيعية"]
+      },
+      "rating": 4.2,
+      "purchases": 245,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_df28ab0d6331.jpg",
+      "title": {
+        "en": "Midnight Velvet Birthday Dream",
+        "ar": "حلم عيد ميلاد المخمل الليلي"
+      },
+      "price": 312,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Premium vanilla extract", "Fresh cream", "Organic eggs", "Belgian chocolate"],
+        "ar": ["خلاصة الفانيليا الممتازة", "كريمة طازجة", "بيض عضوي", "شوكولاتة بلجيكية"]
+      },
+      "rating": 4.5,
+      "purchases": 367,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_851c3c84b761.jpg",
+      "title": {
+        "en": "Golden Sunset Birthday Layers",
+        "ar": "طبقات غروب الشمس الذهبية لعيد الميلاد"
+      },
+      "price": 267,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Madagascar vanilla beans", "Butter cream", "Free-range eggs", "Swiss chocolate"],
+        "ar": ["حبوب الفانيليا المدغشقرية", "كريمة الزبدة", "بيض من دجاج حر", "شوكولاتة سويسرية"]
+      },
+      "rating": 4.4,
+      "purchases": 289,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_04e1fd5489fd.jpg",
+      "title": {
+        "en": "Berry Bliss Birthday Symphony",
+        "ar": "سيمفونية بلس التوت لعيد الميلاد"
+      },
+      "price": 398,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh strawberries", "Whipped cream", "Farm eggs", "Dark chocolate"],
+        "ar": ["فراولة طازجة", "كريمة مخفوقة", "بيض المزرعة", "شوكولاتة داكنة"]
+      },
+      "rating": 4.8,
+      "purchases": 456,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_320ad99fbbe9.jpg",
+      "title": {
+        "en": "Cloud Nine Birthday Vanilla",
+        "ar": "فانيليا السحابة التاسعة لعيد الميلاد"
+      },
+      "price": 145,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Lemon zest", "Cream cheese", "Organic flour", "White chocolate"],
+        "ar": ["قشر الليمون", "جبن كريمي", "دقيق عضوي", "شوكولاتة بيضاء"]
+      },
+      "rating": 4.1,
+      "purchases": 198,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e2861ab42c6d.jpg",
+      "title": {
+        "en": "Caramel Cascade Birthday Delight",
+        "ar": "متعة شلال الكراميل لعيد الميلاد"
+      },
+      "price": 234,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh blueberries", "Heavy cream", "Premium butter", "Milk chocolate"],
+        "ar": ["توت أزرق طازج", "كريمة ثقيلة", "زبدة ممتازة", "شوكولاتة بالحليب"]
+      },
+      "rating": 4.6,
+      "purchases": 334,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7fdff6624c10.jpg",
+      "title": {
+        "en": "Rainbow Birthday Celebration",
+        "ar": "احتفال قوس قزح لعيد الميلاد"
+      },
+      "price": 356,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Caramel sauce", "Mascarpone", "Almond flour", "Cocoa powder"],
+        "ar": ["صوص الكراميل", "ماسكاربوني", "دقيق اللوز", "مسحوق الكاكاو"]
+      },
+      "rating": 4.3,
+      "purchases": 412,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ea4a6d564644.jpg",
+      "title": {
+        "en": "Chocolate Birthday Decadence Tower",
+        "ar": "برج انحطاط الشوكولاتة لعيد الميلاد"
+      },
+      "price": 278,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Red velvet base", "Cream cheese frosting", "Natural coloring", "Vanilla essence"],
+        "ar": ["قاعدة المخمل الأحمر", "كريمة الجبن المثلجة", "تلوين طبيعي", "خلاصة الفانيليا"]
+      },
+      "rating": 4.7,
+      "purchases": 389,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8cd5cb96b67f.jpg",
+      "title": {
+        "en": "Strawberry Fields Birthday Forever",
+        "ar": "حقول الفراولة للأبد لعيد الميلاد"
+      },
+      "price": 189,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh raspberries", "Greek yogurt", "Coconut flour", "Honey"],
+        "ar": ["توت العليق الطازج", "زبادي يوناني", "دقيق جوز الهند", "عسل"]
+      },
+      "rating": 4.2,
+      "purchases": 256,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_68d5e2c9c702.jpg",
+      "title": {
+        "en": "Lemon Sunshine Birthday Burst",
+        "ar": "انفجار أشعة الشمس الليمونية لعيد الميلاد"
+      },
+      "price": 312,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Espresso", "Tiramisu cream", "Ladyfingers", "Coffee beans"],
+        "ar": ["إسبريسو", "كريمة التيراميسو", "أصابع الست", "حبوب القهوة"]
+      },
+      "rating": 4.5,
+      "purchases": 378,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b5dfd678c0e6.jpg",
+      "title": {
+        "en": "Fairy Tale Birthday Magic",
+        "ar": "سحر حكاية خرافية لعيد الميلاد"
+      },
+      "price": 425,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh mint", "Chocolate chips", "Organic sugar", "Natural extracts"],
+        "ar": ["نعناع طازج", "رقائق الشوكولاتة", "سكر عضوي", "خلاصات طبيعية"]
+      },
+      "rating": 4.8,
+      "purchases": 489,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_02533e67d58c.jpg",
+      "title": {
+        "en": "Cosmic Birthday Adventure",
+        "ar": "مغامرة كونية لعيد الميلاد"
+      },
+      "price": 167,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Premium vanilla extract", "Fresh cream", "Organic eggs", "Belgian chocolate"],
+        "ar": ["خلاصة الفانيليا الممتازة", "كريمة طازجة", "بيض عضوي", "شوكولاتة بلجيكية"]
+      },
+      "rating": 4.1,
+      "purchases": 223,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6de3f6ab9d94.jpg",
+      "title": {
+        "en": "Tropical Birthday Paradise",
+        "ar": "جنة استوائية لعيد الميلاد"
+      },
+      "price": 298,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Madagascar vanilla beans", "Butter cream", "Free-range eggs", "Swiss chocolate"],
+        "ar": ["حبوب الفانيليا المدغشقرية", "كريمة الزبدة", "بيض من دجاج حر", "شوكولاتة سويسرية"]
+      },
+      "rating": 4.4,
+      "purchases": 345,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_16e55a04c7d6.jpg",
+      "title": {
+        "en": "Unicorn Dreams Birthday Special",
+        "ar": "خاص أحلام وحيد القرن لعيد الميلاد"
+      },
+      "price": 378,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh strawberries", "Whipped cream", "Farm eggs", "Dark chocolate"],
+        "ar": ["فراولة طازجة", "كريمة مخفوقة", "بيض المزرعة", "شوكولاتة داكنة"]
+      },
+      "rating": 4.6,
+      "purchases": 423,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_caf1d069733f.jpg",
+      "title": {
+        "en": "Confetti Birthday Explosion",
+        "ar": "انفجار القصاصات الملونة لعيد الميلاد"
+      },
+      "price": 245,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Lemon zest", "Cream cheese", "Organic flour", "White chocolate"],
+        "ar": ["قشر الليمون", "جبن كريمي", "دقيق عضوي", "شوكولاتة بيضاء"]
+      },
+      "rating": 4.3,
+      "purchases": 298,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c56de877fddb.jpg",
+      "title": {
+        "en": "Sweet Birthday Memories",
+        "ar": "ذكريات عيد ميلاد حلوة"
+      },
+      "price": 356,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh blueberries", "Heavy cream", "Premium butter", "Milk chocolate"],
+        "ar": ["توت أزرق طازج", "كريمة ثقيلة", "زبدة ممتازة", "شوكولاتة بالحليب"]
+      },
+      "rating": 4.7,
+      "purchases": 445,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0db6c2d471cd.jpg",
+      "title": {
+        "en": "Midnight Velvet Birthday Dream",
+        "ar": "حلم عيد ميلاد المخمل الليلي"
+      },
+      "price": 198,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Caramel sauce", "Mascarpone", "Almond flour", "Cocoa powder"],
+        "ar": ["صوص الكراميل", "ماسكاربوني", "دقيق اللوز", "مسحوق الكاكاو"]
+      },
+      "rating": 4.2,
+      "purchases": 267,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_95a33a1eb0e8.jpg",
+      "title": {
+        "en": "Golden Sunset Birthday Layers",
+        "ar": "طبقات غروب الشمس الذهبية لعيد الميلاد"
+      },
+      "price": 289,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Red velvet base", "Cream cheese frosting", "Natural coloring", "Vanilla essence"],
+        "ar": ["قاعدة المخمل الأحمر", "كريمة الجبن المثلجة", "تلوين طبيعي", "خلاصة الفانيليا"]
+      },
+      "rating": 4.5,
+      "purchases": 356,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d164e4e05f1b.jpg",
+      "title": {
+        "en": "Berry Bliss Birthday Symphony",
+        "ar": "سيمفونية بلس التوت لعيد الميلاد"
+      },
+      "price": 412,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh raspberries", "Greek yogurt", "Coconut flour", "Honey"],
+        "ar": ["توت العليق الطازج", "زبادي يوناني", "دقيق جوز الهند", "عسل"]
+      },
+      "rating": 4.8,
+      "purchases": 512,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0a75eb44d79d.jpg",
+      "title": {
+        "en": "Cloud Nine Birthday Vanilla",
+        "ar": "فانيليا السحابة التاسعة لعيد الميلاد"
+      },
+      "price": 167,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Espresso", "Tiramisu cream", "Ladyfingers", "Coffee beans"],
+        "ar": ["إسبريسو", "كريمة التيراميسو", "أصابع الست", "حبوب القهوة"]
+      },
+      "rating": 4.1,
+      "purchases": 234,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1a5b4dcd0e5b.jpg",
+      "title": {
+        "en": "Caramel Cascade Birthday Delight",
+        "ar": "متعة شلال الكراميل لعيد الميلاد"
+      },
+      "price": 334,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh mint", "Chocolate chips", "Organic sugar", "Natural extracts"],
+        "ar": ["نعناع طازج", "رقائق الشوكولاتة", "سكر عضوي", "خلاصات طبيعية"]
+      },
+      "rating": 4.6,
+      "purchases": 389,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_bc4cb9a3094f.jpg",
+      "title": {
+        "en": "Rainbow Birthday Celebration",
+        "ar": "احتفال قوس قزح لعيد الميلاد"
+      },
+      "price": 278,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Premium vanilla extract", "Fresh cream", "Organic eggs", "Belgian chocolate"],
+        "ar": ["خلاصة الفانيليا الممتازة", "كريمة طازجة", "بيض عضوي", "شوكولاتة بلجيكية"]
+      },
+      "rating": 4.4,
+      "purchases": 312,
+      "is_new": false,
+      "is_in_stock": false
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_208e49816731.jpg",
+      "title": {
+        "en": "Chocolate Birthday Decadence Tower",
+        "ar": "برج انحطاط الشوكولاتة لعيد الميلاد"
+      },
+      "price": 445,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Madagascar vanilla beans", "Butter cream", "Free-range eggs", "Swiss chocolate"],
+        "ar": ["حبوب الفانيليا المدغشقرية", "كريمة الزبدة", "بيض من دجاج حر", "شوكولاتة سويسرية"]
+      },
+      "rating": 4.9,
+      "purchases": 567,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_de2536111a7e.jpg",
+      "title": {
+        "en": "Strawberry Fields Birthday Forever",
+        "ar": "حقول الفراولة للأبد لعيد الميلاد"
+      },
+      "price": 189,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh strawberries", "Whipped cream", "Farm eggs", "Dark chocolate"],
+        "ar": ["فراولة طازجة", "كريمة مخفوقة", "بيض المزرعة", "شوكولاتة داكنة"]
+      },
+      "rating": 4.2,
+      "purchases": 245,
+      "is_new": true,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_3dbfecd643e7.jpg",
+      "title": {
+        "en": "Lemon Sunshine Birthday Burst",
+        "ar": "انفجار أشعة الشمس الليمونية لعيد الميلاد"
+      },
+      "price": 356,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Lemon zest", "Cream cheese", "Organic flour", "White chocolate"],
+        "ar": ["قشر الليمون", "جبن كريمي", "دقيق عضوي", "شوكولاتة بيضاء"]
+      },
+      "rating": 4.7,
+      "purchases": 423,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6e3166a624dc.jpg",
+      "title": {
+        "en": "Fairy Tale Birthday Magic",
+        "ar": "سحر حكاية خرافية لعيد الميلاد"
+      },
+      "price": 223,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Fresh blueberries", "Heavy cream", "Premium butter", "Milk chocolate"],
+        "ar": ["توت أزرق طازج", "كريمة ثقيلة", "زبدة ممتازة", "شوكولاتة بالحليب"]
+      },
+      "rating": 4.3,
+      "purchases": 278,
+      "is_new": false,
+      "is_in_stock": true
+    },
+    {
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1ae9aa4ba330.jpg",
+      "title": {
+        "en": "Cosmic Birthday Adventure",
+        "ar": "مغامرة كونية لعيد الميلاد"
+      },
+      "price": 398,
+      "currency": "QAR",
+      "ingredients": {
+        "en": ["Caramel sauce", "Mascarpone", "Almond flour", "Cocoa powder"],
+        "ar": ["صوص الكراميل", "ماسكاربوني", "دقيق اللوز", "مسحوق الكاكاو"]
+      },
+      "rating": 4.8,
+      "purchases": 489,
+      "is_new": true,
+      "is_in_stock": true
+    }
+  ]
+}

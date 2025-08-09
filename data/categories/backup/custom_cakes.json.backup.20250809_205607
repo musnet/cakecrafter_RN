@@ -1,0 +1,101 @@
+{
+    "category":  {
+                     "name":  {
+                                  "en":  "Custom",
+                                  "ar": "مخصص"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/custom.png",
+                     "count":  8,
+                     "percentage":  5
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_618f7b747914.jpg",
+                      "title":  "@{en=Bespoke Custom Creation; ar=إبداع مخصص حسب الطلب}",
+                      "price":  489,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.9,
+                      "purchases":  234,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2a587c1062a3.jpg",
+                      "title":  "@{en=Artisan Custom Masterpiece; ar=تحفة حرفي مخصص}",
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.8,
+                      "purchases":  189,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_630bc283a2b5.jpg",
+                      "title":  "@{en=Personalized Custom Delight; ar=متعة شخصية مخصصة}",
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.7,
+                      "purchases":  167,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8224468a7ecd.jpg",
+                      "title":  "@{en=Unique Custom Vision; ar=رؤية فريدة مخصصة}",
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.6,
+                      "purchases":  145,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1ea65df99ec2.jpg",
+                      "title":  "@{en=Custom Dream Custom Reality; ar=حقيقة الحلم المخصص}",
+                      "price":  467,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.9,
+                      "purchases":  278,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f6a2cb653402.jpg",
+                      "title":  "@{en=Tailored Custom Perfection; ar=الكمال المصمم حسب الطلب}",
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.5,
+                      "purchases":  198,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d5a7fe32a69c.jpg",
+                      "title":  "@{en=Signature Custom Special; ar=خاص التوقيع المخصص}",
+                      "price":  423,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.8,
+                      "purchases":  223,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_89c9b100b05.jpg",
+                      "title":  "@{en=Custom Art Custom Cake; ar=كعكة فن مخصص}",
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.7,
+                      "purchases":  156,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  }
+              ]
+}

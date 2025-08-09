@@ -1,14 +1,12 @@
 // src/components/gallery/EnhancedCakeGallery.js
-// Communication #64 - CLEANED: Removed layout control button & debug logs
+// Communication #64.3 - UI/UX ENHANCED: Improved price visibility & add-to-cart button
 // 🚀 FIXED: Now uses local JSON data from SuperDuperHomeScreen instead of API
 // ⚡ OPTIMIZED: Loads 12 images per batch, infinite scroll pagination
 // 🎨 LUXURY: Qatar-branded masonry layout with beautiful animations
-// 🌐 i18n: Full Arabic/English RTL/LTR support with DYNAMIC TITLES
+// 🌐 i18n: Full Arabic/English RTL/LTR support
 // ✨ LAZY: LazyImage component prevents memory overload
 // 🔧 DATA FLOW: Uses cakes prop directly, API as fallback
 // 🛒 NEW: Enhanced price display & add-to-cart functionality
-// 🎯 NUCLEAR: Real JSON titles with language switching
-// 🧹 CLEAN: No layout switching buttons or debug controls
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
@@ -44,7 +42,7 @@ const PERFORMANCE_CONFIG = {
 };
 
 // ================================
-// ENHANCED CAKE GALLERY COMPONENT - Communication #64
+// ENHANCED CAKE GALLERY COMPONENT - Communication #64.3
 // ================================
 const EnhancedCakeGallery = ({ 
   galleryImages = [], 
@@ -68,7 +66,7 @@ const EnhancedCakeGallery = ({
   const [page, setPage] = useState(1);
   const [hasMoreData, setHasMoreData] = useState(true);
   const [columnHeights, setColumnHeights] = useState(Array(COLUMN_COUNT).fill(0));
-
+  const [layoutMode, setLayoutMode] = useState('masonry');
   
   // ✨ PERFORMANCE STATE - Communication #62.4
   const [loadedImageCount, setLoadedImageCount] = useState(0);
@@ -115,7 +113,7 @@ const EnhancedCakeGallery = ({
   // Category change detection with performance optimization
   useEffect(() => {
     if (selectedCategory && selectedCategory.key !== currentCategoryKey) {
-      console.log(`🎯 Communication #63 - Category changed: ${currentCategoryKey} → ${selectedCategory.key}`);
+      console.log(`🎯 Communication #62.4 - Category changed: ${currentCategoryKey} → ${selectedCategory.key}`);
       handleCategoryChangeOptimized(selectedCategory);
     }
   }, [selectedCategory]);
@@ -123,7 +121,7 @@ const EnhancedCakeGallery = ({
   // ✨ NEW: Watch for cakes prop changes - Communication #62.4
   useEffect(() => {
     if (cakes.length > 0 && selectedCategory) {
-      console.log(`🍰 Communication #63 - PROPS: Using cakes from props (${cakes.length} cakes)`);
+      console.log(`🍰 Communication #62.4 - PROPS: Using cakes from props (${cakes.length} cakes)`);
       handleLocalCakesData(cakes, selectedCategory);
     }
   }, [cakes, selectedCategory]);
@@ -133,15 +131,15 @@ const EnhancedCakeGallery = ({
     if (categoryCakes.length > 0) {
       createOptimizedMasonryData();
     }
-  }, [categoryCakes]);
+  }, [categoryCakes, layoutMode]);
   
   // ============================================================================
-  // ✨ NUCLEAR FIXED: LOCAL JSON DATA HANDLING - Communication #63
+  // ✨ NUCLEAR FIXED: LOCAL JSON DATA HANDLING - Communication #62.4
   // ============================================================================
   
   const handleLocalCakesData = (localCakes, category) => {
     try {
-      console.log(`🔄 Communication #63 - NUCLEAR: Processing ${localCakes.length} local cakes for ${category.name}`);
+      console.log(`🔄 Communication #62.4 - NUCLEAR: Processing ${localCakes.length} local cakes for ${category.name}`);
       
       setDataSource('props');
       setCategoryLoading(true);
@@ -167,7 +165,7 @@ const EnhancedCakeGallery = ({
       setCategoryCakes(initialBatch);
       setTotalImageCount(formattedCakes.length);
       
-      console.log(`✅ Communication #63 - NUCLEAR: Loaded ${initialBatch.length}/${formattedCakes.length} local cakes (batch 1)`);
+      console.log(`✅ Communication #62.4 - NUCLEAR: Loaded ${initialBatch.length}/${formattedCakes.length} local cakes (batch 1)`);
       
       // Store remaining cakes for pagination
       window.remainingLocalCakes = formattedCakes.slice(PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE);
@@ -178,7 +176,7 @@ const EnhancedCakeGallery = ({
       }
       
     } catch (error) {
-      console.error(`❌ Communication #63 - Error processing local cakes:`, error);
+      console.error(`❌ Communication #62.4 - Error processing local cakes:`, error);
       setCategoryCakes([]);
       setTotalImageCount(0);
     } finally {
@@ -187,16 +185,14 @@ const EnhancedCakeGallery = ({
     }
   };
   
-  // 🎯 NUCLEAR FIXED: Dynamic multilingual title extraction - Communication #63
   const formatLocalCakesOptimized = (localCakes, category) => {
     return localCakes.map((cake, index) => ({
       id: `local_${category.key}_${index}_${Date.now()}`,
       type: 'cake',
       image: cake.image || cake.image_url,
       height: getRandomHeight(),
-      // 🎯 NUCLEAR FIX: Dynamic multilingual titles from JSON
-      name: cake.title?.[currentLanguage] || cake.title?.en || cake.name || 'Delicious Cake',
-      nameAr: cake.title?.ar || cake.nameAr || 'كيكة لذيذة',
+      name: cake.name || cake.nameAr || 'Delicious Cake',
+      nameAr: cake.nameAr || cake.name || 'كيكة لذيذة',
       price: cake.price || 'QAR 199',
       rating: cake.rating || 4.8,
       category: category.key,
@@ -218,17 +214,17 @@ const EnhancedCakeGallery = ({
   
   const handleCategoryChangeOptimized = async (category) => {
     try {
-      console.log(`🔄 Communication #63 - OPTIMIZED: Loading cakes for category: ${category.name}`);
+      console.log(`🔄 Communication #62.4 - OPTIMIZED: Loading cakes for category: ${category.name}`);
       
       // ✨ NUCLEAR FIX: Check if we have local cakes from props
       if (cakes && cakes.length > 0) {
-        console.log(`🎯 Communication #63 - Using LOCAL JSON data (${cakes.length} cakes) instead of API`);
+        console.log(`🎯 Communication #62.4 - Using LOCAL JSON data (${cakes.length} cakes) instead of API`);
         handleLocalCakesData(cakes, category);
         return; // Exit early, use local data
       }
       
       // ✨ FALLBACK: Use API only if no local cakes available
-      console.log(`🌐 Communication #63 - FALLBACK: No local cakes, trying API for ${category.name}`);
+      console.log(`🌐 Communication #62.4 - FALLBACK: No local cakes, trying API for ${category.name}`);
       
       setDataSource('api');
       setCategoryLoading(true);
@@ -257,20 +253,20 @@ const EnhancedCakeGallery = ({
         setCategoryCakes(formattedCakes);
         setTotalImageCount(categoryData.count || formattedCakes.length);
         
-        console.log(`✅ Communication #63 - API: Loaded ${formattedCakes.length} cakes (batch 1/${Math.ceil((categoryData.count || 0) / PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE)})`);
+        console.log(`✅ Communication #62.4 - API: Loaded ${formattedCakes.length} cakes (batch 1/${Math.ceil((categoryData.count || 0) / PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE)})`);
         
         // Notify parent
         if (onCategoryDataLoaded) {
           onCategoryDataLoaded(formattedCakes, category);
         }
       } else {
-        console.log(`⚠️ Communication #63 - No cakes found for category: ${category.name}`);
+        console.log(`⚠️ Communication #62.4 - No cakes found for category: ${category.name}`);
         setCategoryCakes([]);
         setTotalImageCount(0);
       }
       
     } catch (error) {
-      console.error(`❌ Communication #63 - Error loading category ${category?.name}:`, error);
+      console.error(`❌ Communication #62.4 - Error loading category ${category?.name}:`, error);
       setCategoryCakes([]);
       setTotalImageCount(0);
     } finally {
@@ -279,15 +275,13 @@ const EnhancedCakeGallery = ({
     }
   };
   
-  // 🎯 NUCLEAR FIXED: API cake formatting with dynamic titles - Communication #63
   const formatCakesFromAPIOptimized = (apiCakes, category) => {
     return apiCakes.map((cake, index) => ({
       id: `api_${category.key}_${cake.id || index}_${Date.now()}`,
       type: 'cake',
       image: cake.image || cake.image_url,
       height: getRandomHeight(),
-      // 🎯 NUCLEAR FIX: Dynamic multilingual titles from API
-      name: cake.title?.[currentLanguage] || cake.title?.en || cake.name || 'Delicious Cake',
+      name: cake.name || cake.title || 'Delicious Cake',
       price: cake.price ? `QAR ${cake.price}` : 'QAR 199',
       rating: cake.rating || 4.8,
       category: category.key,
@@ -304,7 +298,7 @@ const EnhancedCakeGallery = ({
   };
   
   const createOptimizedMasonryData = () => {
-    console.log(`🎨 Communication #64 - CLEANED: Creating masonry from ${categoryCakes.length} category cakes (source: ${dataSource})`);
+    console.log(`🎨 Communication #62.4 - OPTIMIZED: Creating masonry from ${categoryCakes.length} category cakes (source: ${dataSource})`);
     
     // ✨ PERFORMANCE: Don't shuffle immediately, load in order for better UX
     const sortedCakes = [...categoryCakes].sort((a, b) => {
@@ -328,7 +322,7 @@ const EnhancedCakeGallery = ({
     if (loading || !hasMoreData || !selectedCategory) return;
     
     setLoading(true);
-    console.log(`📄 Communication #63 - OPTIMIZED: Loading more data (batch ${page + 1}, source: ${dataSource})`);
+    console.log(`📄 Communication #62.4 - OPTIMIZED: Loading more data (batch ${page + 1}, source: ${dataSource})`);
     
     try {
       if (dataSource === 'props' && window.remainingLocalCakes) {
@@ -340,11 +334,11 @@ const EnhancedCakeGallery = ({
           setCategoryCakes(prev => [...prev, ...nextBatch]);
           setPage(prev => prev + 1);
           
-          console.log(`✅ Communication #63 - LOCAL: Loaded ${nextBatch.length} more local cakes`);
+          console.log(`✅ Communication #62.4 - LOCAL: Loaded ${nextBatch.length} more local cakes`);
           
           if (window.remainingLocalCakes.length === 0) {
             setHasMoreData(false);
-            console.log(`🔚 Communication #63 - All local cakes loaded`);
+            console.log(`🔚 Communication #62.4 - All local cakes loaded`);
           }
         } else {
           setHasMoreData(false);
@@ -353,7 +347,7 @@ const EnhancedCakeGallery = ({
       } else if (dataSource === 'api') {
         // ✨ PRESERVED: API pagination
         const nextPage = page + 1;
-        console.log(`📄 Communication #63 - Loading page ${nextPage} for category: ${selectedCategory.name}`);
+        console.log(`📄 Communication #62.4 - Loading page ${nextPage} for category: ${selectedCategory.name}`);
         
         const moreCategoryData = await ApiService.getCakesByCategory(currentCategoryKey, {
           limit: PERFORMANCE_CONFIG.PAGINATION_SIZE, // Only 8 more images per load
@@ -368,15 +362,15 @@ const EnhancedCakeGallery = ({
           setCategoryCakes(prev => [...prev, ...newCakes]);
           setPage(nextPage);
           
-          console.log(`✅ Communication #63 - API: Loaded ${newCakes.length} more cakes (page ${nextPage})`);
+          console.log(`✅ Communication #62.4 - API: Loaded ${newCakes.length} more cakes (page ${nextPage})`);
         } else {
           setHasMoreData(false);
-          console.log(`🔚 Communication #63 - No more API cakes for ${selectedCategory.name}`);
+          console.log(`🔚 Communication #62.4 - No more API cakes for ${selectedCategory.name}`);
         }
       }
       
     } catch (error) {
-      console.error('❌ Communication #63 - Error loading more data:', error);
+      console.error('❌ Communication #62.4 - Error loading more data:', error);
     } finally {
       setLoading(false);
     }
@@ -393,7 +387,7 @@ const EnhancedCakeGallery = ({
       setLoadingProgress(progress);
       
       if (newCount === totalImageCount) {
-        console.log(`🎉 Communication #63 - All images loaded! (${newCount}/${totalImageCount}) from ${dataSource}`);
+        console.log(`🎉 Communication #62.4 - All images loaded! (${newCount}/${totalImageCount}) from ${dataSource}`);
       }
       
       return newCount;
@@ -426,11 +420,11 @@ const EnhancedCakeGallery = ({
     
     // Call parent handler if provided
     if (onAddToCart) {
-      console.log(`🛒 Communication #63 - Add to cart: ${item.name} (${item.price})`);
+      console.log(`🛒 Communication #64.3 - Add to cart: ${item.name} (${item.price})`);
       onAddToCart(item);
     } else {
       // Fallback: use onCakePress with action type
-      console.log(`🛒 Communication #63 - Add to cart fallback: ${item.name}`);
+      console.log(`🛒 Communication #64.3 - Add to cart fallback: ${item.name}`);
       if (onCakePress) {
         onCakePress(item, { action: 'addToCart' });
       }
@@ -514,7 +508,7 @@ const EnhancedCakeGallery = ({
     setLoadingProgress(0);
     
     if (selectedCategory) {
-      console.log(`🔄 Communication #63 - OPTIMIZED: Refreshing category: ${selectedCategory.name}`);
+      console.log(`🔄 Communication #62.4 - OPTIMIZED: Refreshing category: ${selectedCategory.name}`);
       await handleCategoryChangeOptimized(selectedCategory);
     } else {
       createMasonryData();
@@ -525,7 +519,7 @@ const EnhancedCakeGallery = ({
   }, [selectedCategory]);
   
   // ============================================================================
-  // ✨ OPTIMIZED RENDER METHODS - Communication #63
+  // ✨ OPTIMIZED RENDER METHODS - Communication #62.4 & #64.3
   // ============================================================================
   
   const renderGalleryHeader = () => (
@@ -573,10 +567,32 @@ const EnhancedCakeGallery = ({
           )}
         </View>
       </View>
+      
+      <View style={styles.layoutControls}>
+        <TouchableOpacity
+          style={[
+            styles.layoutButton,
+            layoutMode === 'masonry' && styles.layoutButtonActive
+          ]}
+          onPress={() => setLayoutMode('masonry')}
+        >
+          <Text style={styles.layoutButtonText}>⚏</Text>
+        </TouchableOpacity>
+        
+        <TouchableOpacity
+          style={[
+            styles.layoutButton,
+            layoutMode === 'grid' && styles.layoutButtonActive
+          ]}
+          onPress={() => setLayoutMode('grid')}
+        >
+          <Text style={styles.layoutButtonText}>⚏</Text>
+        </TouchableOpacity>
+      </View>
     </Animated.View>
   );
   
-  // 🎨 ENHANCED: Gallery item with improved price display and add-to-cart - Communication #63
+  // 🎨 ENHANCED: Gallery item with improved price display and add-to-cart - Communication #64.3
   const renderOptimizedGalleryItem = ({ item, index }) => {
     const column = index % COLUMN_COUNT;
     const itemStyle = {
@@ -598,7 +614,7 @@ const EnhancedCakeGallery = ({
           onPress={() => onCakePress && onCakePress(item)}
           fallbackUri={`https://via.placeholder.com/300x${item.height}/f0f0f0/999?text=Cake`}
         >
-          {/* Enhanced overlay content - Communication #63 */}
+          {/* Enhanced overlay content - Communication #64.3 */}
           <View style={styles.itemOverlay}>
             <LinearGradient
               colors={['transparent', 'rgba(0,0,0,0.7)']}
@@ -626,7 +642,6 @@ const EnhancedCakeGallery = ({
                 {/* Main content area */}
                 <View style={styles.itemMainContent}>
                   <Text style={styles.itemName} numberOfLines={2}>
-                    {/* 🎯 NUCLEAR FIXED: Dynamic multilingual title display */}
                     {currentLanguage === 'ar' ? item.nameAr || item.name : item.name}
                   </Text>
                   {item.rating && (
@@ -690,7 +705,7 @@ const EnhancedCakeGallery = ({
   );
   
   // ============================================================================
-  // ✨ OPTIMIZED MAIN RENDER - Communication #63
+  // ✨ OPTIMIZED MAIN RENDER - Communication #62.4
   // ============================================================================
   
   return (
@@ -800,6 +815,29 @@ const styles = {
     fontSize: Typography.fontSize.xs,
     color: QatarColors.textSecondary,
     marginTop: 4,
+  },
+  
+  layoutControls: {
+    flexDirection: 'row',
+    backgroundColor: QatarColors.surface,
+    borderRadius: 20,
+    padding: 4,
+  },
+  
+  layoutButton: {
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: Spacing.xs,
+    borderRadius: 16,
+    marginHorizontal: 2,
+  },
+  
+  layoutButtonActive: {
+    backgroundColor: QatarColors.secondary,
+  },
+  
+  layoutButtonText: {
+    fontSize: Typography.fontSize.sm,
+    color: QatarColors.textPrimary,
   },
   
   galleryContainer: {

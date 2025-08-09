@@ -1,4 +1,4 @@
-﻿{
+{
   "category": {
     "name": {
       "en": "Wedding",
@@ -10,7 +10,7 @@
   },
   "cakes": [
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c574c84cabcb.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c574c84cabcb_thumb.jpg",
       "title": {
         "en": "Enchanted Wedding Forest",
         "ar": "غابة الزفاف المسحورة"
@@ -27,7 +27,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9bcb81381ed8.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9bcb81381ed8_thumb.jpg",
       "title": {
         "en": "Ruby Red Velvet Wedding Royalty",
         "ar": "ملكية المخمل الأحمر الياقوتي للزفاف"
@@ -44,7 +44,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e20ddc496efc.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e20ddc496efc_thumb.jpg",
       "title": {
         "en": "Pearl White Wedding Elegance",
         "ar": "أناقة اللؤلؤ الأبيض للزفاف"
@@ -61,7 +61,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8b8946cbdaaa.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8b8946cbdaaa_thumb.jpg",
       "title": {
         "en": "Rose Garden Wedding Romance",
         "ar": "رومانسية حديقة الورد للزفاف"
@@ -78,7 +78,7 @@
       "is_in_stock": false
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_27a5461c2c14.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_27a5461c2c14_thumb.jpg",
       "title": {
         "en": "Golden Wedding Anniversary",
         "ar": "ذكرى الزفاف الذهبية"
@@ -95,7 +95,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf4fbddb9f47.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf4fbddb9f47_thumb.jpg",
       "title": {
         "en": "Ivory Dreams Wedding Tower",
         "ar": "برج أحلام العاج للزفاف"
@@ -112,7 +112,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0c5ee4295c1a.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0c5ee4295c1a_thumb.jpg",
       "title": {
         "en": "Champagne Wedding Celebration",
         "ar": "احتفال الشمبانيا للزفاف"
@@ -129,7 +129,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6764467efd5d.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6764467efd5d_thumb.jpg",
       "title": {
         "en": "Eternal Love Wedding Cake",
         "ar": "كعكة الحب الأبدي للزفاف"
@@ -146,7 +146,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_dfa7fc493eba.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_dfa7fc493eba_thumb.jpg",
       "title": {
         "en": "Royal Wedding Magnificence",
         "ar": "عظمة الزفاف الملكي"
@@ -163,7 +163,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_347911a23135.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_347911a23135_thumb.jpg",
       "title": {
         "en": "Vintage Wedding Charm",
         "ar": "سحر الزفاف العتيق"
@@ -180,7 +180,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b6bf94144b66.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b6bf94144b66_thumb.jpg",
       "title": {
         "en": "Modern Wedding Sophistication",
         "ar": "تطور الزفاف الحديث"
@@ -197,7 +197,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c87ebf076141.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c87ebf076141_thumb.jpg",
       "title": {
         "en": "Classic Wedding Traditions",
         "ar": "تقاليد الزفاف الكلاسيكية"
@@ -214,7 +214,7 @@
       "is_in_stock": false
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_29d142b30c13.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_29d142b30c13_thumb.jpg",
       "title": {
         "en": "Enchanted Wedding Forest",
         "ar": "غابة الزفاف المسحورة"
@@ -231,7 +231,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_32e03425fcfe.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_32e03425fcfe_thumb.jpg",
       "title": {
         "en": "Ruby Red Velvet Wedding Royalty",
         "ar": "ملكية المخمل الأحمر الياقوتي للزفاف"
@@ -248,7 +248,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d59583cebcb2.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d59583cebcb2_thumb.jpg",
       "title": {
         "en": "Pearl White Wedding Elegance",
         "ar": "أناقة اللؤلؤ الأبيض للزفاف"
@@ -265,7 +265,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2f9b64d8fe07.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2f9b64d8fe07_thumb.jpg",
       "title": {
         "en": "Rose Garden Wedding Romance",
         "ar": "رومانسية حديقة الورد للزفاف"
@@ -282,7 +282,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c09bc71f10e5.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c09bc71f10e5_thumb.jpg",
       "title": {
         "en": "Golden Wedding Anniversary",
         "ar": "ذكرى الزفاف الذهبية"
@@ -299,7 +299,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8cb84b066b38.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8cb84b066b38_thumb.jpg",
       "title": {
         "en": "Ivory Dreams Wedding Tower",
         "ar": "برج أحلام العاج للزفاف"
@@ -316,7 +316,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7a1cad8684b2.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7a1cad8684b2_thumb.jpg",
       "title": {
         "en": "Champagne Wedding Celebration",
         "ar": "احتفال الشمبانيا للزفاف"
@@ -333,7 +333,7 @@
       "is_in_stock": false
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7d556d488b87.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7d556d488b87_thumb.jpg",
       "title": {
         "en": "Eternal Love Wedding Cake",
         "ar": "كعكة الحب الأبدي للزفاف"
@@ -350,7 +350,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_3267eade3ef1.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_3267eade3ef1_thumb.jpg",
       "title": {
         "en": "Royal Wedding Magnificence",
         "ar": "عظمة الزفاف الملكي"
@@ -367,7 +367,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5edd284a03c8.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5edd284a03c8_thumb.jpg",
       "title": {
         "en": "Vintage Wedding Charm",
         "ar": "سحر الزفاف العتيق"
@@ -384,7 +384,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d69294ed9727.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d69294ed9727_thumb.jpg",
       "title": {
         "en": "Modern Wedding Sophistication",
         "ar": "تطور الزفاف الحديث"
@@ -401,7 +401,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c69eabbfb843.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c69eabbfb843_thumb.jpg",
       "title": {
         "en": "Classic Wedding Traditions",
         "ar": "تقاليد الزفاف الكلاسيكية"
@@ -418,7 +418,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1b865cc3fbc1.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1b865cc3fbc1_thumb.jpg",
       "title": {
         "en": "Enchanted Wedding Forest",
         "ar": "غابة الزفاف المسحورة"
@@ -435,7 +435,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_99e0adb5c87a.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_99e0adb5c87a_thumb.jpg",
       "title": {
         "en": "Ruby Red Velvet Wedding Royalty",
         "ar": "ملكية المخمل الأحمر الياقوتي للزفاف"
@@ -452,7 +452,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_15e611d30ea4.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_15e611d30ea4_thumb.jpg",
       "title": {
         "en": "Pearl White Wedding Elegance",
         "ar": "أناقة اللؤلؤ الأبيض للزفاف"
@@ -469,7 +469,7 @@
       "is_in_stock": false
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f469c3701dd2.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f469c3701dd2_thumb.jpg",
       "title": {
         "en": "Rose Garden Wedding Romance",
         "ar": "رومانسية حديقة الورد للزفاف"
@@ -486,7 +486,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d71726e7151c.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d71726e7151c_thumb.jpg",
       "title": {
         "en": "Golden Wedding Anniversary",
         "ar": "ذكرى الزفاف الذهبية"
@@ -503,7 +503,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_709199e28db0.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_709199e28db0_thumb.jpg",
       "title": {
         "en": "Ivory Dreams Wedding Tower",
         "ar": "برج أحلام العاج للزفاف"
@@ -520,7 +520,7 @@
       "is_in_stock": true
     },
     {
-      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_525f32138517.jpg",
+      "image_url": "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_525f32138517_thumb.jpg",
       "title": {
         "en": "Champagne Wedding Celebration",
         "ar": "احتفال الشمبانيا للزفاف"

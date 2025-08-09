@@ -1,0 +1,354 @@
+{
+    "category":  {
+                     "name":  {
+                                  "en":  "Wedding",
+                                  "ar": "زفاف"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/wedding.png",
+                     "count":  31,
+                     "percentage":  20
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c574c84cabcb.jpg",
+                      "title":  "@{en=Enchanted Wedding Forest; ar=غابة الزفاف المسحورة}",
+                      "price":  389,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.7,
+                      "purchases":  456,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9bcb81381ed8.jpg",
+                      "title":  "@{en=Ruby Red Velvet Wedding Royalty; ar=ملكية المخمل الأحمر الياقوتي للزفاف}",
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.9,
+                      "purchases":  612,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e20ddc496efc.jpg",
+                      "title":  "@{en=Pearl White Wedding Elegance; ar=أناقة اللؤلؤ الأبيض للزفاف}",
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.6,
+                      "purchases":  423,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8b8946cbdaaa.jpg",
+                      "title":  "@{en=Rose Garden Wedding Romance; ar=رومانسية حديقة الورد للزفاف}",
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.4,
+                      "purchases":  334,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_27a5461c2c14.jpg",
+                      "title":  "@{en=Golden Wedding Anniversary; ar=ذكرى الزفاف الذهبية}",
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.8,
+                      "purchases":  523,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf4fbddb9f47.jpg",
+                      "title":  "@{en=Ivory Dreams Wedding Tower; ar=برج أحلام العاج للزفاف}",
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.2,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0c5ee4295c1a.jpg",
+                      "title":  "@{en=Champagne Wedding Celebration; ar=احتفال الشمبانيا للزفاف}",
+                      "price":  367,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.7,
+                      "purchases":  445,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6764467efd5d.jpg",
+                      "title":  "@{en=Eternal Love Wedding Cake; ar=كعكة الحب الأبدي للزفاف}",
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.3,
+                      "purchases":  298,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_dfa7fc493eba.jpg",
+                      "title":  "@{en=Royal Wedding Magnificence; ar=عظمة الزفاف الملكي}",
+                      "price":  489,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.9,
+                      "purchases":  567,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_347911a23135.jpg",
+                      "title":  "@{en=Vintage Wedding Charm; ar=سحر الزفاف العتيق}",
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.1,
+                      "purchases":  234,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b6bf94144b66.jpg",
+                      "title":  "@{en=Modern Wedding Sophistication; ar=تطور الزفاف الحديث}",
+                      "price":  345,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.5,
+                      "purchases":  378,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c87ebf076141.jpg",
+                      "title":  "@{en=Classic Wedding Traditions; ar=تقاليد الزفاف الكلاسيكية}",
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.4,
+                      "purchases":  312,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_29d142b30c13.jpg",
+                      "title":  "@{en=Enchanted Wedding Forest; ar=غابة الزفاف المسحورة}",
+                      "price":  423,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.8,
+                      "purchases":  489,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_32e03425fcfe.jpg",
+                      "title":  "@{en=Ruby Red Velvet Wedding Royalty; ar=ملكية المخمل الأحمر الياقوتي للزفاف}",
+                      "price":  178,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.2,
+                      "purchases":  245,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d59583cebcb2.jpg",
+                      "title":  "@{en=Pearl White Wedding Elegance; ar=أناقة اللؤلؤ الأبيض للزفاف}",
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.6,
+                      "purchases":  412,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2f9b64d8fe07.jpg",
+                      "title":  "@{en=Rose Garden Wedding Romance; ar=رومانسية حديقة الورد للزفاف}",
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.3,
+                      "purchases":  334,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c09bc71f10e5.jpg",
+                      "title":  "@{en=Golden Wedding Anniversary; ar=ذكرى الزفاف الذهبية}",
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.9,
+                      "purchases":  578,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8cb84b066b38.jpg",
+                      "title":  "@{en=Ivory Dreams Wedding Tower; ar=برج أحلام العاج للزفاف}",
+                      "price":  213,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.1,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7a1cad8684b2.jpg",
+                      "title":  "@{en=Champagne Wedding Celebration; ar=احتفال الشمبانيا للزفاف}",
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.7,
+                      "purchases":  456,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7d556d488b87.jpg",
+                      "title":  "@{en=Eternal Love Wedding Cake; ar=كعكة الحب الأبدي للزفاف}",
+                      "price":  298,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.4,
+                      "purchases":  345,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_3267eade3ef1.jpg",
+                      "title":  "@{en=Royal Wedding Magnificence; ar=عظمة الزفاف الملكي}",
+                      "price":  456,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.8,
+                      "purchases":  523,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5edd284a03c8.jpg",
+                      "title":  "@{en=Vintage Wedding Charm; ar=سحر الزفاف العتيق}",
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.2,
+                      "purchases":  278,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d69294ed9727.jpg",
+                      "title":  "@{en=Modern Wedding Sophistication; ar=تطور الزفاف الحديث}",
+                      "price":  334,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.5,
+                      "purchases":  389,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c69eabbfb843.jpg",
+                      "title":  "@{en=Classic Wedding Traditions; ar=تقاليد الزفاف الكلاسيكية}",
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.3,
+                      "purchases":  312,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1b865cc3fbc1.jpg",
+                      "title":  "@{en=Enchanted Wedding Forest; ar=غابة الزفاف المسحورة}",
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.7,
+                      "purchases":  445,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_99e0adb5c87a.jpg",
+                      "title":  "@{en=Ruby Red Velvet Wedding Royalty; ar=ملكية المخمل الأحمر الياقوتي للزفاف}",
+                      "price":  245,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.4,
+                      "purchases":  298,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_15e611d30ea4.jpg",
+                      "title":  "@{en=Pearl White Wedding Elegance; ar=أناقة اللؤلؤ الأبيض للزفاف}",
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.6,
+                      "purchases":  423,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f469c3701dd2.jpg",
+                      "title":  "@{en=Rose Garden Wedding Romance; ar=رومانسية حديقة الورد للزفاف}",
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.3,
+                      "purchases":  334,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d71726e7151c.jpg",
+                      "title":  "@{en=Golden Wedding Anniversary; ar=ذكرى الزفاف الذهبية}",
+                      "price":  456,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.8,
+                      "purchases":  512,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_709199e28db0.jpg",
+                      "title":  "@{en=Ivory Dreams Wedding Tower; ar=برج أحلام العاج للزفاف}",
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.1,
+                      "purchases":  256,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_525f32138517.jpg",
+                      "title":  "@{en=Champagne Wedding Celebration; ar=احتفال الشمبانيا للزفاف}",
+                      "price":  345,
+                      "currency":  "QAR",
+                      "ingredients":  "@{en=System.Object[]; ar=System.Object[]}",
+                      "rating":  4.5,
+                      "purchases":  378,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  }
+              ]
+}

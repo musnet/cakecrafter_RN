@@ -1,4 +1,4 @@
-﻿{
+{
     "category":  {
                      "name":  {
                                   "en":  "Custom",
@@ -10,7 +10,7 @@
                  },
     "cakes":  [
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_618f7b747914.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_618f7b747914_thumb.jpg",
                       "title":  {
                                     "en":  "Bespoke Custom Creation",
                                     "ar":  "إبداع مخصص حسب الطلب"
@@ -37,7 +37,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2a587c1062a3.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2a587c1062a3_thumb.jpg",
                       "title":  {
                                     "en":  "Artisan Custom Masterpiece",
                                     "ar":  "تحفة حرفي مخصص"
@@ -64,7 +64,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_630bc283a2b5.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_630bc283a2b5_thumb.jpg",
                       "title":  {
                                     "en":  "Personalized Custom Delight",
                                     "ar":  "متعة شخصية مخصصة"
@@ -91,7 +91,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8224468a7ecd.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8224468a7ecd_thumb.jpg",
                       "title":  {
                                     "en":  "Unique Custom Vision",
                                     "ar":  "رؤية فريدة مخصصة"
@@ -118,7 +118,7 @@
                       "is_in_stock":  false
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1ea65df99ec2.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1ea65df99ec2_thumb.jpg",
                       "title":  {
                                     "en":  "Custom Dream Custom Reality",
                                     "ar":  "حقيقة الحلم المخصص"
@@ -145,7 +145,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f6a2cb653402.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f6a2cb653402_thumb.jpg",
                       "title":  {
                                     "en":  "Tailored Custom Perfection",
                                     "ar":  "الكمال المصمم حسب الطلب"
@@ -172,7 +172,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d5a7fe32a69c.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d5a7fe32a69c_thumb.jpg",
                       "title":  {
                                     "en":  "Signature Custom Special",
                                     "ar":  "خاص التوقيع المخصص"
@@ -199,7 +199,7 @@
                       "is_in_stock":  true
                   },
                   {
-                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_89c9b100b05.jpg",
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_89c9b100b05_thumb.jpg",
                       "title":  {
                                     "en":  "Custom Art Custom Cake",
                                     "ar":  "كعكة فن مخصص"
@@ -227,4 +227,3 @@
                   }
               ]
 }
-
