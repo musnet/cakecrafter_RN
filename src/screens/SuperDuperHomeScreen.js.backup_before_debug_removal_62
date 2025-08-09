@@ -361,31 +361,42 @@ const SuperDuperHomeScreen = ({ navigation }) => {
     console.log('🌐 Communication #62.13 - Language changed to:', languageCode);
   };
   
-  // ✅ Communication #62.17 - DIRECT: No popup category selection
+  // ✅ Communication #62.13 - CLEAN: Simple category selection (preserved)
   const handleCategoryPress = (category) => {
     try {
       if (!category || !category.id || !category.key) {
-        console.error('❌ Communication #62.17 - Invalid category object:', category);
+        console.error('❌ Communication #62.13 - Invalid category object:', category);
         return;
       }
       
       const validatedCategory = categoriesMap.get(category.id) || categoriesMap.get(category.key);
       if (!validatedCategory) {
-        console.error('❌ Communication #62.17 - Category not found in map:', category.id, category.key);
+        console.error('❌ Communication #62.13 - Category not found in map:', category.id, category.key);
         return;
       }
       
-      console.log(`🎯 Communication #62.17 - Direct category selection: ${validatedCategory.name} (ID: ${validatedCategory.id})`);
+      console.log(`🎯 Communication #62.13 - Category selected: ${validatedCategory.name} (ID: ${validatedCategory.id})`);
       
-      // ✅ DIRECT: No popup - just switch category immediately
       setSelectedCategory(validatedCategory);
       loadCategoryCakes(validatedCategory);
       
       const categoryName = currentLanguage === 'ar' ? validatedCategory.nameAr : validatedCategory.name;
-      console.log('🎯 Communication #62.17 - Switched to category:', categoryName);
+      const categoryDesc = currentLanguage === 'ar' ? validatedCategory.descriptionAr : validatedCategory.description;
+      
+      console.log('🎯 Communication #62.13 - Selected category:', categoryName);
+      
+      // ✅ SIMPLE: Normal category selection alert only
+      Alert.alert(
+        categoryName,
+        `${categoryDesc}\n\n${validatedCategory.count} ${t('common.cakes', 'cakes available')}\n${validatedCategory.percentage}% of all cakes`,
+        [
+          { text: t('common.shuffle', 'Shuffle'), onPress: () => loadCategoryCakes(validatedCategory) },
+          { text: t('common.ok', 'OK') }
+        ]
+      );
       
     } catch (error) {
-      console.error('❌ Communication #62.17 - Error in category press:', error);
+      console.error('❌ Communication #62.13 - Error in category press:', error);
     }
   };
 

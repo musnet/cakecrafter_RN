@@ -1,11 +1,10 @@
 // src/components/gallery/EnhancedCakeGallery.js
-// Communication #62.4 - NUCLEAR FIXED: Local JSON data integration
-// 🚀 FIXED: Now uses local JSON data from SuperDuperHomeScreen instead of API
+// Communication #61.3 - PERFORMANCE OPTIMIZED: Lazy loading, pagination, memory efficient
+// 🚀 FIXED: No more 150+ images loading simultaneously
 // ⚡ OPTIMIZED: Loads 12 images per batch, infinite scroll pagination
 // 🎨 LUXURY: Qatar-branded masonry layout with beautiful animations
 // 🌐 i18n: Full Arabic/English RTL/LTR support
 // ✨ LAZY: LazyImage component prevents memory overload
-// 🔧 DATA FLOW: Uses cakes prop directly, API as fallback
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
@@ -22,7 +21,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useTranslation } from 'react-i18next';
 
 // Import components
-import LazyImage from '../common/LazyImage'; // ✨ HIGH-performance image loading
+import LazyImage from '../common/LazyImage'; // ✨ NEW: High-performance image loading
 import { QatarColors, Spacing, Typography } from '../../styles/theme';
 import { ApiService } from '../../services/ApiService';
 
@@ -31,7 +30,7 @@ const COLUMN_COUNT = 2; // Masonry columns
 const ITEM_MARGIN = Spacing.sm;
 const COLUMN_WIDTH = (width - Spacing.md * 2 - ITEM_MARGIN * (COLUMN_COUNT - 1)) / COLUMN_COUNT;
 
-// ✨ PERFORMANCE SETTINGS - Communication #62.4
+// ✨ PERFORMANCE SETTINGS - Communication #61.3
 const PERFORMANCE_CONFIG = {
   INITIAL_BATCH_SIZE: 12,      // Load only 12 images initially (was 150+)
   PAGINATION_SIZE: 8,          // Load 8 more images per scroll
@@ -41,7 +40,7 @@ const PERFORMANCE_CONFIG = {
 };
 
 // ================================
-// NUCLEAR FIXED CAKE GALLERY COMPONENT
+// PERFORMANCE-ENHANCED CAKE GALLERY COMPONENT
 // ================================
 const EnhancedCakeGallery = ({ 
   galleryImages = [], 
@@ -54,7 +53,7 @@ const EnhancedCakeGallery = ({
 }) => {
   
   // ============================================================================
-  // HOOKS & STATE (ENHANCED FOR PERFORMANCE) - Communication #62.4
+  // HOOKS & STATE (ENHANCED FOR PERFORMANCE) - Communication #61.3
   // ============================================================================
   
   const { t } = useTranslation();
@@ -66,7 +65,7 @@ const EnhancedCakeGallery = ({
   const [columnHeights, setColumnHeights] = useState(Array(COLUMN_COUNT).fill(0));
   const [layoutMode, setLayoutMode] = useState('masonry');
   
-  // ✨ PERFORMANCE STATE - Communication #62.4
+  // ✨ PERFORMANCE STATE - Communication #61.3
   const [loadedImageCount, setLoadedImageCount] = useState(0);
   const [totalImageCount, setTotalImageCount] = useState(0);
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -76,9 +75,6 @@ const EnhancedCakeGallery = ({
   const [categoryCakes, setCategoryCakes] = useState([]);
   const [categoryLoading, setCategoryLoading] = useState(false);
   const [currentCategoryKey, setCurrentCategoryKey] = useState(null);
-  
-  // ✨ NEW: Data source tracking - Communication #62.4
-  const [dataSource, setDataSource] = useState('unknown'); // 'props', 'api', 'unknown'
   
   // Animation refs
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -90,7 +86,7 @@ const EnhancedCakeGallery = ({
   const loadTimeoutRef = useRef(null);
   
   // ============================================================================
-  // LIFECYCLE & EFFECTS (PERFORMANCE OPTIMIZED) - Communication #62.4
+  // LIFECYCLE & EFFECTS (PERFORMANCE OPTIMIZED) - Communication #61.3
   // ============================================================================
   
   useEffect(() => {
@@ -108,18 +104,10 @@ const EnhancedCakeGallery = ({
   // Category change detection with performance optimization
   useEffect(() => {
     if (selectedCategory && selectedCategory.key !== currentCategoryKey) {
-      console.log(`🎯 Communication #62.4 - Category changed: ${currentCategoryKey} → ${selectedCategory.key}`);
+      console.log(`🎯 Communication #61.3 - Category changed: ${currentCategoryKey} → ${selectedCategory.key}`);
       handleCategoryChangeOptimized(selectedCategory);
     }
   }, [selectedCategory]);
-  
-  // ✨ NEW: Watch for cakes prop changes - Communication #62.4
-  useEffect(() => {
-    if (cakes.length > 0 && selectedCategory) {
-      console.log(`🍰 Communication #62.4 - PROPS: Using cakes from props (${cakes.length} cakes)`);
-      handleLocalCakesData(cakes, selectedCategory);
-    }
-  }, [cakes, selectedCategory]);
   
   // Optimized category cakes integration
   useEffect(() => {
@@ -129,99 +117,13 @@ const EnhancedCakeGallery = ({
   }, [categoryCakes, layoutMode]);
   
   // ============================================================================
-  // ✨ NUCLEAR FIXED: LOCAL JSON DATA HANDLING - Communication #62.4
-  // ============================================================================
-  
-  const handleLocalCakesData = (localCakes, category) => {
-    try {
-      console.log(`🔄 Communication #62.4 - NUCLEAR: Processing ${localCakes.length} local cakes for ${category.name}`);
-      
-      setDataSource('props');
-      setCategoryLoading(true);
-      setCurrentCategoryKey(category.key);
-      setIsInitialLoad(true);
-      setLoadedImageCount(0);
-      setLoadingProgress(0);
-      
-      // ✨ PERFORMANCE: Clear previous data immediately
-      setGalleryData([]);
-      setCategoryCakes([]);
-      
-      // Reset pagination
-      setPage(1);
-      setHasMoreData(localCakes.length > PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE);
-      
-      // Format local cakes for gallery display
-      const formattedCakes = formatLocalCakesOptimized(localCakes, category);
-      
-      // Apply initial batch limit for performance
-      const initialBatch = formattedCakes.slice(0, PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE);
-      
-      setCategoryCakes(initialBatch);
-      setTotalImageCount(formattedCakes.length);
-      
-      console.log(`✅ Communication #62.4 - NUCLEAR: Loaded ${initialBatch.length}/${formattedCakes.length} local cakes (batch 1)`);
-      
-      // Store remaining cakes for pagination
-      window.remainingLocalCakes = formattedCakes.slice(PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE);
-      
-      // Notify parent
-      if (onCategoryDataLoaded) {
-        onCategoryDataLoaded(initialBatch, category);
-      }
-      
-    } catch (error) {
-      console.error(`❌ Communication #62.4 - Error processing local cakes:`, error);
-      setCategoryCakes([]);
-      setTotalImageCount(0);
-    } finally {
-      setCategoryLoading(false);
-      setIsInitialLoad(false);
-    }
-  };
-  
-  const formatLocalCakesOptimized = (localCakes, category) => {
-    return localCakes.map((cake, index) => ({
-      id: `local_${category.key}_${index}_${Date.now()}`,
-      type: 'cake',
-      image: cake.image || cake.image_url,
-      height: getRandomHeight(),
-      name: cake.name || cake.nameAr || 'Delicious Cake',
-      nameAr: cake.nameAr || cake.name || 'كيكة لذيذة',
-      price: cake.price || 'QAR 199',
-      rating: cake.rating || 4.8,
-      category: category.key,
-      categoryName: category.name,
-      description: cake.description || `Beautiful ${category.name.toLowerCase()} cake`,
-      isNew: cake.isNew || false,
-      purchases: cake.purchases || 0,
-      // ✨ PERFORMANCE: Add loading priority
-      priority: index < 6 ? 'high' : 'normal', // First 6 images get high priority
-      batchIndex: Math.floor(index / PERFORMANCE_CONFIG.PAGINATION_SIZE),
-      // ✨ NUCLEAR: Mark as local data
-      dataSource: 'local',
-    }));
-  };
-  
-  // ============================================================================
-  // ✨ PERFORMANCE OPTIMIZED CATEGORY HANDLING - Communication #62.4
+  // ✨ PERFORMANCE OPTIMIZED CATEGORY HANDLING - Communication #61.3
   // ============================================================================
   
   const handleCategoryChangeOptimized = async (category) => {
     try {
-      console.log(`🔄 Communication #62.4 - OPTIMIZED: Loading cakes for category: ${category.name}`);
+      console.log(`🔄 Communication #61.3 - OPTIMIZED: Loading cakes for category: ${category.name}`);
       
-      // ✨ NUCLEAR FIX: Check if we have local cakes from props
-      if (cakes && cakes.length > 0) {
-        console.log(`🎯 Communication #62.4 - Using LOCAL JSON data (${cakes.length} cakes) instead of API`);
-        handleLocalCakesData(cakes, category);
-        return; // Exit early, use local data
-      }
-      
-      // ✨ FALLBACK: Use API only if no local cakes available
-      console.log(`🌐 Communication #62.4 - FALLBACK: No local cakes, trying API for ${category.name}`);
-      
-      setDataSource('api');
       setCategoryLoading(true);
       setCurrentCategoryKey(category.key);
       setIsInitialLoad(true);
@@ -248,20 +150,20 @@ const EnhancedCakeGallery = ({
         setCategoryCakes(formattedCakes);
         setTotalImageCount(categoryData.count || formattedCakes.length);
         
-        console.log(`✅ Communication #62.4 - API: Loaded ${formattedCakes.length} cakes (batch 1/${Math.ceil((categoryData.count || 0) / PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE)})`);
+        console.log(`✅ Communication #61.3 - OPTIMIZED: Loaded ${formattedCakes.length} cakes (batch 1/${Math.ceil((categoryData.count || 0) / PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE)})`);
         
         // Notify parent
         if (onCategoryDataLoaded) {
           onCategoryDataLoaded(formattedCakes, category);
         }
       } else {
-        console.log(`⚠️ Communication #62.4 - No cakes found for category: ${category.name}`);
+        console.log(`⚠️ Communication #61.3 - No cakes found for category: ${category.name}`);
         setCategoryCakes([]);
         setTotalImageCount(0);
       }
       
     } catch (error) {
-      console.error(`❌ Communication #62.4 - Error loading category ${category?.name}:`, error);
+      console.error(`❌ Communication #61.3 - Error loading category ${category?.name}:`, error);
       setCategoryCakes([]);
       setTotalImageCount(0);
     } finally {
@@ -272,7 +174,7 @@ const EnhancedCakeGallery = ({
   
   const formatCakesFromAPIOptimized = (apiCakes, category) => {
     return apiCakes.map((cake, index) => ({
-      id: `api_${category.key}_${cake.id || index}_${Date.now()}`,
+      id: `category_${category.key}_${cake.id || index}_${Date.now()}`,
       type: 'cake',
       image: cake.image || cake.image_url,
       height: getRandomHeight(),
@@ -287,13 +189,11 @@ const EnhancedCakeGallery = ({
       // ✨ PERFORMANCE: Add loading priority
       priority: index < 6 ? 'high' : 'normal', // First 6 images get high priority
       batchIndex: Math.floor(index / PERFORMANCE_CONFIG.PAGINATION_SIZE),
-      // ✨ NUCLEAR: Mark as API data
-      dataSource: 'api',
     }));
   };
   
   const createOptimizedMasonryData = () => {
-    console.log(`🎨 Communication #62.4 - OPTIMIZED: Creating masonry from ${categoryCakes.length} category cakes (source: ${dataSource})`);
+    console.log(`🎨 Communication #61.3 - OPTIMIZED: Creating masonry from ${categoryCakes.length} category cakes`);
     
     // ✨ PERFORMANCE: Don't shuffle immediately, load in order for better UX
     const sortedCakes = [...categoryCakes].sort((a, b) => {
@@ -310,69 +210,47 @@ const EnhancedCakeGallery = ({
   };
   
   // ============================================================================
-  // ✨ OPTIMIZED INFINITE SCROLLING - Communication #62.4
+  // ✨ OPTIMIZED INFINITE SCROLLING - Communication #61.3
   // ============================================================================
   
   const loadMoreDataOptimized = useCallback(async () => {
     if (loading || !hasMoreData || !selectedCategory) return;
     
     setLoading(true);
-    console.log(`📄 Communication #62.4 - OPTIMIZED: Loading more data (batch ${page + 1}, source: ${dataSource})`);
+    console.log(`📄 Communication #61.3 - OPTIMIZED: Loading more data (batch ${page + 1})`);
     
     try {
-      if (dataSource === 'props' && window.remainingLocalCakes) {
-        // ✨ NUCLEAR: Load more from local data
-        const nextBatch = window.remainingLocalCakes.slice(0, PERFORMANCE_CONFIG.PAGINATION_SIZE);
-        window.remainingLocalCakes = window.remainingLocalCakes.slice(PERFORMANCE_CONFIG.PAGINATION_SIZE);
+      const nextPage = page + 1;
+      console.log(`📄 Communication #61.3 - Loading page ${nextPage} for category: ${selectedCategory.name}`);
+      
+      const moreCategoryData = await ApiService.getCakesByCategory(currentCategoryKey, {
+        limit: PERFORMANCE_CONFIG.PAGINATION_SIZE, // Only 8 more images per load
+        page: nextPage,
+        clearPrevious: false
+      });
+      
+      if (moreCategoryData.results && moreCategoryData.results.length > 0) {
+        const newCakes = formatCakesFromAPIOptimized(moreCategoryData.results, selectedCategory);
         
-        if (nextBatch.length > 0) {
-          setCategoryCakes(prev => [...prev, ...nextBatch]);
-          setPage(prev => prev + 1);
-          
-          console.log(`✅ Communication #62.4 - LOCAL: Loaded ${nextBatch.length} more local cakes`);
-          
-          if (window.remainingLocalCakes.length === 0) {
-            setHasMoreData(false);
-            console.log(`🔚 Communication #62.4 - All local cakes loaded`);
-          }
-        } else {
-          setHasMoreData(false);
-        }
+        // ✨ PERFORMANCE: Add new cakes with staggered loading
+        setCategoryCakes(prev => [...prev, ...newCakes]);
+        setPage(nextPage);
         
-      } else if (dataSource === 'api') {
-        // ✨ PRESERVED: API pagination
-        const nextPage = page + 1;
-        console.log(`📄 Communication #62.4 - Loading page ${nextPage} for category: ${selectedCategory.name}`);
-        
-        const moreCategoryData = await ApiService.getCakesByCategory(currentCategoryKey, {
-          limit: PERFORMANCE_CONFIG.PAGINATION_SIZE, // Only 8 more images per load
-          page: nextPage,
-          clearPrevious: false
-        });
-        
-        if (moreCategoryData.results && moreCategoryData.results.length > 0) {
-          const newCakes = formatCakesFromAPIOptimized(moreCategoryData.results, selectedCategory);
-          
-          // ✨ PERFORMANCE: Add new cakes with staggered loading
-          setCategoryCakes(prev => [...prev, ...newCakes]);
-          setPage(nextPage);
-          
-          console.log(`✅ Communication #62.4 - API: Loaded ${newCakes.length} more cakes (page ${nextPage})`);
-        } else {
-          setHasMoreData(false);
-          console.log(`🔚 Communication #62.4 - No more API cakes for ${selectedCategory.name}`);
-        }
+        console.log(`✅ Communication #61.3 - OPTIMIZED: Loaded ${newCakes.length} more cakes (page ${nextPage})`);
+      } else {
+        setHasMoreData(false);
+        console.log(`🔚 Communication #61.3 - No more cakes for ${selectedCategory.name}`);
       }
       
     } catch (error) {
-      console.error('❌ Communication #62.4 - Error loading more data:', error);
+      console.error('❌ Communication #61.3 - Error loading more data:', error);
     } finally {
       setLoading(false);
     }
-  }, [loading, hasMoreData, page, selectedCategory, currentCategoryKey, dataSource]);
+  }, [loading, hasMoreData, page, selectedCategory, currentCategoryKey]);
   
   // ============================================================================
-  // ✨ LAZY IMAGE LOADING INTEGRATION - Communication #62.4
+  // ✨ LAZY IMAGE LOADING INTEGRATION - Communication #61.3
   // ============================================================================
   
   const handleImageLoaded = useCallback(() => {
@@ -382,15 +260,15 @@ const EnhancedCakeGallery = ({
       setLoadingProgress(progress);
       
       if (newCount === totalImageCount) {
-        console.log(`🎉 Communication #62.4 - All images loaded! (${newCount}/${totalImageCount}) from ${dataSource}`);
+        console.log(`🎉 Communication #61.3 - All images loaded! (${newCount}/${totalImageCount})`);
       }
       
       return newCount;
     });
-  }, [totalImageCount, dataSource]);
+  }, [totalImageCount]);
   
   // ============================================================================
-  // PRESERVED METHODS - Communication #62.4
+  // PRESERVED METHODS - Communication #61.3
   // ============================================================================
   
   const initializeGallery = () => {
@@ -466,7 +344,7 @@ const EnhancedCakeGallery = ({
     setLoadingProgress(0);
     
     if (selectedCategory) {
-      console.log(`🔄 Communication #62.4 - OPTIMIZED: Refreshing category: ${selectedCategory.name}`);
+      console.log(`🔄 Communication #61.3 - OPTIMIZED: Refreshing category: ${selectedCategory.name}`);
       await handleCategoryChangeOptimized(selectedCategory);
     } else {
       createMasonryData();
@@ -477,7 +355,7 @@ const EnhancedCakeGallery = ({
   }, [selectedCategory]);
   
   // ============================================================================
-  // ✨ OPTIMIZED RENDER METHODS - Communication #62.4
+  // ✨ OPTIMIZED RENDER METHODS - Communication #61.3
   // ============================================================================
   
   const renderGalleryHeader = () => (
@@ -502,7 +380,7 @@ const EnhancedCakeGallery = ({
         <View style={styles.subtitleContainer}>
           <Text style={styles.sectionSubtitle}>
             {selectedCategory 
-              ? `${categoryCakes.length} ${t('common.cakes', 'cakes')} • ${selectedCategory.name} • ${dataSource}`
+              ? `${categoryCakes.length} ${t('common.cakes', 'cakes')} • ${selectedCategory.name}`
               : (currentLanguage === 'ar' ? 'معرض الكيك الفني' : 'Artisan Creations')
             }
           </Text>
@@ -519,7 +397,7 @@ const EnhancedCakeGallery = ({
                 />
               </View>
               <Text style={styles.progressText}>
-                {Math.round(loadingProgress)}% loaded ({loadedImageCount}/{totalImageCount}) from {dataSource}
+                {Math.round(loadingProgress)}% loaded ({loadedImageCount}/{totalImageCount})
               </Text>
             </View>
           )}
@@ -587,10 +465,6 @@ const EnhancedCakeGallery = ({
                 {item.rating && (
                   <Text style={styles.itemRating}>⭐ {item.rating}</Text>
                 )}
-                {/* ✨ DEBUG: Show data source */}
-                <Text style={styles.dataSourceBadge}>
-                  {item.dataSource || dataSource}
-                </Text>
               </View>
             </LinearGradient>
           </View>
@@ -607,8 +481,8 @@ const EnhancedCakeGallery = ({
         <ActivityIndicator size="large" color={QatarColors.secondary} />
         <Text style={styles.loadingText}>
           {categoryLoading 
-            ? `Loading ${selectedCategory?.name} cakes from ${dataSource}...`
-            : `Loading more cakes (${PERFORMANCE_CONFIG.PAGINATION_SIZE} images) from ${dataSource}...`
+            ? `Loading ${selectedCategory?.name} cakes...`
+            : `Loading more cakes (${PERFORMANCE_CONFIG.PAGINATION_SIZE} images)...`
           }
         </Text>
       </View>
@@ -628,7 +502,7 @@ const EnhancedCakeGallery = ({
       </Text>
       <Text style={styles.emptySubtitle}>
         {selectedCategory 
-          ? `Tried: ${dataSource} data source`
+          ? 'Try selecting a different category'
           : 'Gallery items will appear here'
         }
       </Text>
@@ -636,7 +510,7 @@ const EnhancedCakeGallery = ({
   );
   
   // ============================================================================
-  // ✨ OPTIMIZED MAIN RENDER - Communication #62.4
+  // ✨ OPTIMIZED MAIN RENDER - Communication #61.3
   // ============================================================================
   
   return (
@@ -668,7 +542,7 @@ const EnhancedCakeGallery = ({
         }
         ListEmptyComponent={renderEmptyState}
         ListFooterComponent={renderLoadingFooter}
-        // ✨ PERFORMANCE OPTIMIZATIONS - Communication #62.4
+        // ✨ PERFORMANCE OPTIMIZATIONS - Communication #61.3
         maxToRenderPerBatch={PERFORMANCE_CONFIG.PAGINATION_SIZE}
         windowSize={10}
         initialNumToRender={PERFORMANCE_CONFIG.INITIAL_BATCH_SIZE}
@@ -686,7 +560,7 @@ const EnhancedCakeGallery = ({
 };
 
 // ============================================================================
-// ✨ PERFORMANCE OPTIMIZED STYLES - Communication #62.4
+// ✨ PERFORMANCE OPTIMIZED STYLES - Communication #61.3
 // ============================================================================
 
 const styles = {
@@ -817,14 +691,6 @@ const styles = {
     fontSize: Typography.fontSize.xs,
     color: QatarColors.textOnPrimary,
     marginTop: 2,
-  },
-  
-  // ✨ NEW: Data source debug badge
-  dataSourceBadge: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.secondary,
-    marginTop: 2,
-    opacity: 0.7,
   },
   
   loadingFooter: {

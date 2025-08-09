@@ -1,18 +1,127 @@
-// src/services/ApiService.js - Communication #60.13: Enhanced with Database Health Check
-// 🚀 ENHANCED: Added health check method while preserving ALL existing functionality
-// 🛡️ SAFE: No changes to existing methods that power categories functionality
+// src/services/ApiService.js - Communication #60.16: Complete with Category Filtering
+// 🚀 ENHANCED: Added category filtering methods while preserving ALL existing functionality
+// 🛡️ SAFE: No changes to existing methods that power current functionality
+// ✨ NEW: getCakesByCategory(), clearCategoryCache() for category filtering
 
 const API_BASE_URL = 'https://cakecrafterapi.ebita.ai/api';
 const IMAGES_BASE_URL = 'https://cakecrafterapi.ebita.ai/media/generated_images/';
 
+// ============================================================================
+// ✨ NEW: CATEGORY CACHE MANAGEMENT - Communication #60.16
+// ============================================================================
+const categoryCache = new Map();
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
 export class ApiService {
   // ============================================================================
-  // ✨ NEW: DATABASE HEALTH CHECK METHOD - Communication #60.13
+  // ✨ NEW: CATEGORY FILTERING METHODS - Communication #60.16
+  // ============================================================================
+  
+  /**
+   * Get cakes by category with caching and filtering support
+   * Clears previous category data when switching categories
+   */
+
+
+
+    static async getCakesByCategory(categoryKey, options = {}) {
+    try {
+      const { limit = 20, page = 1, clearPrevious = true, forceRefresh = false } = options;
+      
+      console.log(`🎯 Communication #60.18 - Fetching cakes for category: ${categoryKey}`);
+      
+      if (clearPrevious) {
+        this.clearCategoryCache();
+        console.log(`🧹 Communication #60.18 - Cleared previous category cache`);
+      }
+      
+      const cacheKey = `${categoryKey}_${page}_${limit}`;
+      const cachedData = categoryCache.get(cacheKey);
+      
+      if (!forceRefresh && cachedData && (Date.now() - cachedData.timestamp) < CACHE_DURATION) {
+        console.log(`💾 Communication #60.18 - Returning cached data for: ${categoryKey}`);
+        return cachedData.data;
+      }
+      
+      const url = `${API_BASE_URL}/cakes/?category=${encodeURIComponent(categoryKey)}&limit=${limit}&offset=${(page - 1) * limit}`;
+      
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Category API request failed: ${response.status} ${response.statusText}`);
+      }
+      
+      const data = await response.json();
+      
+      categoryCache.set(cacheKey, { data: data, timestamp: Date.now(), category: categoryKey });
+      
+      console.log(`✅ Communication #60.18 - Loaded ${data.results?.length || 0} cakes for category: ${categoryKey}`);
+      return data;
+      
+    } catch (error) {
+      console.error(`❌ Communication #60.18 - Failed to fetch cakes for category ${categoryKey}:`, error);
+      
+      return {
+        results: this.getMockCakesByCategory(categoryKey),
+        count: this.getMockCakesByCategory(categoryKey).length,
+        next: null,
+        previous: null
+      };
+    }
+  }
+  
+
+  
+  /**
+   * Clear category cache (used when switching categories)
+   */
+  static clearCategoryCache() {
+    const cacheSize = categoryCache.size;
+    categoryCache.clear();
+    console.log(`🧹 Communication #60.16 - Cleared category cache (${cacheSize} entries)`);
+  }
+  
+  /**
+   * Get mock cakes filtered by category for fallback
+   */
+  static getMockCakesByCategory(categoryKey) {
+    const allMockCakes = this.getMockCakes();
+    
+    // Filter by category or return all if no match
+    const filteredCakes = allMockCakes.filter(cake => 
+      cake.category.toLowerCase() === categoryKey.toLowerCase()
+    );
+    
+    // If no cakes for category, return a few generic ones
+    if (filteredCakes.length === 0) {
+      return allMockCakes.slice(0, 3).map(cake => ({
+        ...cake,
+        category: categoryKey,
+        name: `${categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1)} ${cake.name}`
+      }));
+    }
+    
+    return filteredCakes;
+  }
+  
+  /**
+   * Refresh category data (force fetch from API)
+   */
+  static async refreshCategoryData(categoryKey, options = {}) {
+    console.log(`🔄 Communication #60.16 - Force refreshing category: ${categoryKey}`);
+    return this.getCakesByCategory(categoryKey, { ...options, forceRefresh: true });
+  }
+
+  // ============================================================================
+  // EXISTING METHODS (PRESERVED EXACTLY AS-IS) - Communication #60.16
   // ============================================================================
   
   /**
    * Check database and backend health
-   * Returns connection status and component health information
+   * ✅ PRESERVED: Original method unchanged
    */
   static async checkDatabaseHealth() {
     try {
@@ -60,10 +169,6 @@ export class ApiService {
       };
     }
   }
-
-  // ============================================================================
-  // EXISTING METHODS (PRESERVED EXACTLY AS-IS) - Communication #60.13
-  // ============================================================================
   
   /**
    * Get cakes from production API with pagination support
@@ -209,7 +314,7 @@ export class ApiService {
 }
 
 // ============================================================================
-// EXPORTED CONSTANTS (PRESERVED) - Communication #60.13
+// EXPORTED CONSTANTS (PRESERVED) - Communication #60.16
 // ============================================================================
 
 export { API_BASE_URL, IMAGES_BASE_URL };
