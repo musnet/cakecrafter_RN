@@ -1,13 +1,11 @@
-﻿// src/screens/SuperDuperHomeScreen.js - Communication #62.13: DEBUG POPUP REMOVED
-// 🚨 FIXED: Removed NUCLEAR IMAGE DEBUG popup functionality
+// src/screens/SuperDuperHomeScreen.js - Communication #60.11: TEMPORARY VERSION (No Cart)
+// ⚠️ TEMPORARY: This version has NO cart functionality to fix useCart import errors
 // 🎨 LUXURY: Premium dark theme with Qatar branding and stunning visuals
 // 🌐 i18n: Full Arabic/English support with LanguageSwitcher integration
 // 🍰 JSON DATA: Real cake data from 6 category JSON files - NO HARDCODED DATA
-// ✅ CLEAN: Simple category selection only - NO DEBUG POPUPS
+// ✨ CLEAN: Simple category selection with JSON data display
 // 📱 CATEGORIES: Load from data/categories/*.json files
-// 🔧 FIXED: Normal category tap behavior restored
 
-import EnhancedCakeGallery from '../components/gallery/EnhancedCakeGallery';
 import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
@@ -34,7 +32,14 @@ import { useTranslation } from 'react-i18next';
 import { QatarColors, Spacing, Typography, ComponentStyles, Layout } from '../styles/theme';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 
-// ✨ Communication #62.13 - JSON import paths
+// ✨ NO CART IMPORTS - For temporary use only
+// import { useCart } from '../context/CartContext'; // ❌ REMOVED TEMPORARILY
+// import CartIcon from '../components/cart/CartIcon'; // ❌ REMOVED TEMPORARILY
+
+// Import gallery component
+import EnhancedCakeGallery from '../components/gallery/EnhancedCakeGallery';
+
+// JSON data imports
 import birthdayCakesData from '../../data/categories/birthday_cakes.json';
 import weddingCakesData from '../../data/categories/wedding_cakes.json';
 import sportsCakesData from '../../data/categories/sports_cakes.json';
@@ -47,7 +52,7 @@ const CARD_WIDTH = width * 0.8;
 const CATEGORY_SIZE = Layout.categorySize;
 
 // ================================
-// ✨ Communication #62.13 - Category data mapping (preserved)
+// CATEGORY DATA MAPPING
 // ================================
 const CATEGORY_DATA_MAP = {
   'birthday': birthdayCakesData,
@@ -58,231 +63,201 @@ const CATEGORY_DATA_MAP = {
   'custom': customCakesData,
 };
 
-// ✨ Communication #62.13 - Category validation (preserved)
+// Category validation function
 const validateCategoryData = (categoryKey, categoryData) => {
   const category = categoryData.category;
-  if (!category || !category.name || !category.image) {
-    console.error(`❌ Communication #62.13 - Invalid category data for: ${categoryKey}`);
-    return null;
+  if (!category || !category.name || !Array.isArray(categoryData.cakes)) {
+    console.error(`❌ Invalid category data for ${categoryKey}:`, categoryData);
+    return false;
   }
-  
-  // Normalize image URL (remove _thump/_thumb)
-  let normalizedImageUrl = category.image;
-  if (normalizedImageUrl.includes('_thump') || normalizedImageUrl.includes('_thumb')) {
-    const baseName = categoryKey;
-    normalizedImageUrl = `https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/${baseName}.png`;
-    console.log(`🔧 Communication #62.13 - Normalized URL for ${categoryKey}: ${normalizedImageUrl}`);
-  }
-  
-  return {
-    ...category,
-    image: normalizedImageUrl
-  };
+  return true;
 };
 
-// ✨ Communication #62.13 - Category colors (preserved)
+// Category colors for UI
 const CATEGORY_COLORS = {
   'birthday': '#F59E0B',    // Birthday - Amber
-  'wedding': '#EC4899',     // Wedding - Pink  
-  'sports': '#FF6B35',      // Sports - Orange
-  'cultural': '#10B981',    // Cultural - Emerald
+  'wedding': '#EC4899',     // Wedding - Pink
+  'sports': '#10B981',      // Sports - Green
+  'cultural': '#8B5CF6',    // Cultural - Purple
   'corporate': '#3B82F6',   // Corporate - Blue
-  'custom': '#8B5CF6',      // Custom - Purple
+  'custom': '#F97316',      // Custom - Orange
 };
 
+// Categories configuration
+
+
+const CAKE_CATEGORIES = [
+  {
+    key: 'birthday',
+    name: 'Birthday Cakes',
+    nameAr: 'كيكات أعياد الميلاد',
+    icon: '🎂',
+    color: CATEGORY_COLORS.birthday,
+    // ✅ CORRECT S3 URL
+    image: 'https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/birthday.png',
+  },
+  {
+    key: 'wedding',
+    name: 'Wedding Cakes',
+    nameAr: 'كيكات الزفاف',
+    icon: '💒',
+    color: CATEGORY_COLORS.wedding,
+    // ✅ CORRECT S3 URL
+    image: 'https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/wedding.png',
+  },
+  {
+    key: 'sports',
+    name: 'Sports Cakes',
+    nameAr: 'كيكات رياضية',
+    icon: '⚽',
+    color: CATEGORY_COLORS.sports,
+    // ✅ CORRECT S3 URL
+    image: 'https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/sports.png',
+  },
+  {
+    key: 'cultural',
+    name: 'Cultural Cakes',
+    nameAr: 'كيكات ثقافية',
+    icon: '🏛️',
+    color: CATEGORY_COLORS.cultural,
+    // ✅ CORRECT S3 URL
+    image: 'https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/cultural.png',
+  },
+  {
+    key: 'corporate',
+    name: 'Corporate Cakes',
+    nameAr: 'كيكات الشركات',
+    icon: '🏢',
+    color: CATEGORY_COLORS.corporate,
+    // ✅ CORRECT S3 URL
+    image: 'https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/corporate.png',
+  },
+  {
+    key: 'custom',
+    name: 'Custom Cakes',
+    nameAr: 'كيكات مخصصة',
+    icon: '🎨',
+    color: CATEGORY_COLORS.custom,
+    // ✅ CORRECT S3 URL
+    image: 'https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/custom.png',
+  },
+];
+
 // ================================
-// LUXURY SUPERDUPERHOMESCREEN COMPONENT
+// MAIN COMPONENT - Communication #60.11 (TEMPORARY NO CART)
 // ================================
 const SuperDuperHomeScreen = ({ navigation }) => {
   
   // ============================================================================
-  // HOOKS & STATE MANAGEMENT (ALL PRESERVED)
+  // HOOKS & CONTEXT - Communication #60.11 (NO CART)
   // ============================================================================
   
   const { t, i18n } = useTranslation();
-  const [searchQuery, setSearchQuery] = useState('');
-  const [isRefreshing, setIsRefreshing] = useState(false);
+  const currentLanguage = i18n.language || 'en';
+  const isRTL = currentLanguage === 'ar';
   
-  // ✨ Communication #62.13 - State management (preserved)
-  const [categories, setCategories] = useState([]);
-  const [categoriesMap, setCategoriesMap] = useState(new Map());
+  // ❌ TEMPORARILY REMOVED: Cart context integration
+  // const {
+  //   addToCart,
+  //   totalItems,
+  //   isCartVisible,
+  //   setCartVisible,
+  //   hasItems,
+  //   formattedTotalWithCurrency,
+  // } = useCart();
+  
+  // ============================================================================
+  // STATE MANAGEMENT
+  // ============================================================================
+  
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cakes, setCakes] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  
+  const [categories, setCategories] = useState(CAKE_CATEGORIES);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const [showLanguageSwitcher, setShowLanguageSwitcher] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'en');
-  const [userName, setUserName] = useState('');
   
-  // Animation Values (all preserved)
-  const scrollY = useRef(new Animated.Value(0)).current;
-  const headerHeight = useRef(new Animated.Value(Layout.headerHeight)).current;
-  const searchScale = useRef(new Animated.Value(1)).current;
-  const categoryScale = useRef(new Animated.Value(0)).current;
-  const featuredScale = useRef(new Animated.Value(0)).current;
+  // Animation refs
+  const categoryScale = useRef(new Animated.Value(0.8)).current;
+  const featuredScale = useRef(new Animated.Value(0.8)).current;
   const galleryOpacity = useRef(new Animated.Value(0)).current;
+  const headerOffset = useRef(new Animated.Value(0)).current;
   
   // ============================================================================
-  // LIFECYCLE & EFFECTS (ALL PRESERVED)
+  // LIFECYCLE
   // ============================================================================
   
   useEffect(() => {
-    initializeScreen();
-    loadJSONData();
+    loadInitialData();
     startAnimations();
   }, []);
-
-  useEffect(() => {
-    setCurrentLanguage(i18n.language);
-    updateGreeting();
-  }, [i18n.language]);
-
+  
   useEffect(() => {
     if (selectedCategory) {
-      loadCategoryCakes(selectedCategory);
+      loadCategoryData(selectedCategory);
     }
   }, [selectedCategory]);
-
+  
   // ============================================================================
-  // INITIALIZATION (ALL PRESERVED)
+  // DATA LOADING
   // ============================================================================
   
-  const initializeScreen = () => {
-    updateGreeting();
-    console.log('🏠 Communication #62.13 - SuperDuperHome: Debug popup removed');
-  };
-
-  const updateGreeting = () => {
-    const hour = new Date().getHours();
-    let greeting = t('time.morning', 'Good Morning');
-    if (hour >= 12 && hour < 17) {
-      greeting = t('time.afternoon', 'Good Afternoon');
-    } else if (hour >= 17 && hour < 21) {
-      greeting = t('time.evening', 'Good Evening');
-    } else if (hour >= 21 || hour < 6) {
-      greeting = t('time.night', 'Good Night');
-    }
-    setUserName(greeting);
-  };
-  
-  // ✨ Communication #62.13 - JSON data loading (preserved)
-  const loadJSONData = () => {
+  const loadInitialData = async () => {
     try {
       setIsLoading(true);
-      console.log('🔄 Communication #62.13 - Loading categories...');
+      console.log('🏠 Communication #60.11 - Loading SuperDuperHomeScreen (TEMPORARY - no cart)');
       
-      // Process each JSON file with validation
-      const processedCategories = [];
-      const newCategoriesMap = new Map();
-      
-      Object.keys(CATEGORY_DATA_MAP).forEach((categoryKey, index) => {
-        const categoryData = CATEGORY_DATA_MAP[categoryKey];
-        const validatedCategory = validateCategoryData(categoryKey, categoryData);
-        
-        if (validatedCategory) {
-          const processedCategory = {
-            id: `category_${categoryKey}_${index}`,
-            key: categoryKey,
-            name: validatedCategory.name.en,
-            nameAr: validatedCategory.name.ar,
-            image: validatedCategory.image,
-            color: CATEGORY_COLORS[categoryKey],
-            count: validatedCategory.count || 0,
-            percentage: validatedCategory.percentage || 0,
-            description: `${validatedCategory.name.en} celebration cakes`,
-            descriptionAr: `كيكات ${validatedCategory.name.ar}`,
-            cakes: categoryData.cakes || [],
-            _meta: {
-              originalKey: categoryKey,
-              processedAt: Date.now(),
-              imageNormalized: validatedCategory.image !== categoryData.category.image
-            }
+      // Load categories with cake counts
+      const categoriesWithCounts = CAKE_CATEGORIES.map(category => {
+        const categoryData = CATEGORY_DATA_MAP[category.key];
+        if (validateCategoryData(category.key, categoryData)) {
+          return {
+            ...category,
+            count: categoryData.cakes.length,
+            description: categoryData.category.description || '',
           };
-          
-          processedCategories.push(processedCategory);
-          newCategoriesMap.set(categoryKey, processedCategory);
-          newCategoriesMap.set(processedCategory.id, processedCategory);
-          
-          console.log(`✅ Communication #62.13 - Processed: ${categoryKey} -> ${validatedCategory.name.en}`);
-        } else {
-          console.error(`❌ Communication #62.13 - Failed to process: ${categoryKey}`);
         }
+        return { ...category, count: 0 };
       });
       
-      // Sort by percentage (Birthday first with highest percentage)
-      processedCategories.sort((a, b) => b.percentage - a.percentage);
+      setCategories(categoriesWithCounts);
       
-      setCategories(processedCategories);
-      setCategoriesMap(newCategoriesMap);
-      
-      // Auto-select first category (Birthday)
-      if (processedCategories.length > 0) {
-        const defaultCategory = processedCategories[0];
-        setSelectedCategory(defaultCategory);
-        console.log(`🎯 Communication #62.13 - Auto-selected: ${defaultCategory.name} (${defaultCategory.count} cakes)`);
+      // Auto-select first category
+      if (categoriesWithCounts.length > 0) {
+        setSelectedCategory(categoriesWithCounts[0]);
       }
       
-      console.log(`✅ Communication #62.13 - Loaded ${processedCategories.length} categories`);
+      console.log('✅ Communication #60.11 - Initial data loaded (TEMPORARY - no cart)');
       
     } catch (error) {
-      console.error('❌ Communication #62.13 - Loading error:', error);
+      console.error('❌ Communication #60.11 - Failed to load initial data:', error);
     } finally {
       setIsLoading(false);
     }
   };
-
-  // ✨ Communication #62.13 - Load category cakes (preserved)
-  const loadCategoryCakes = (category) => {
+  
+  const loadCategoryData = (category) => {
     try {
-      console.log(`🍰 Communication #62.13 - Loading cakes for: ${category.name} (ID: ${category.id})`);
+      console.log(`🍰 Communication #60.11 - Loading category: ${category.name} (no cart integration)`);
       
-      if (!category || !category.cakes || !Array.isArray(category.cakes)) {
-        console.error(`❌ Communication #62.13 - Invalid category for cake loading:`, category);
+      const categoryData = CATEGORY_DATA_MAP[category.key];
+      if (validateCategoryData(category.key, categoryData)) {
+        setCakes(categoryData.cakes || []);
+        console.log(`✅ Communication #60.11 - Loaded ${categoryData.cakes.length} cakes from ${category.name}`);
+      } else {
         setCakes([]);
-        return;
+        console.log(`⚠️ Communication #60.11 - No valid cakes found for ${category.name}`);
       }
       
-      let categoryCakes = [...category.cakes];
-      categoryCakes = shuffleArray(categoryCakes);
-      
-      const formattedCakes = categoryCakes.map((cake, index) => ({
-        id: `${category.key}_${index}_${Date.now()}`,
-        name: cake.title?.en || 'Unknown Cake',
-        nameAr: cake.title?.ar || cake.title?.en || 'كيكة',
-        image: cake.image_url,
-        price: `${cake.price || 199} ${cake.currency || 'QAR'}`,
-        rating: cake.rating || 4.8,
-        purchases: cake.purchases || 0,
-        isNew: cake.is_new || false,
-        isInStock: cake.is_in_stock !== false,
-        ingredients: cake.ingredients || [],
-        category: category.key,
-        categoryId: category.id,
-        description: `Delicious ${(cake.title?.en || 'cake').toLowerCase()}`,
-        descriptionAr: cake.title?.ar || cake.title?.en || 'كيكة لذيذة',
-      }));
-      
-      setCakes(formattedCakes);
-      console.log(`✅ Communication #62.13 - Loaded ${formattedCakes.length} randomized cakes for ${category.name}`);
-      
     } catch (error) {
-      console.error(`❌ Communication #62.13 - Error loading cakes for ${category?.name}:`, error);
+      console.error(`❌ Communication #60.11 - Error loading category ${category.name}:`, error);
       setCakes([]);
     }
   };
-
-  // Utility function (preserved)
-  const shuffleArray = (array) => {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-  };
   
   const startAnimations = () => {
-    // Staggered luxury entrance animations (preserved)
+    // Staggered luxury entrance animations
     Animated.sequence([
       Animated.timing(categoryScale, {
         toValue: 1,
@@ -305,587 +280,260 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   };
   
   // ============================================================================
-  // EVENT HANDLERS (PRESERVED + DEBUG REMOVED)
+  // ❌ TEMPORARILY DISABLED: CART EVENT HANDLERS
+  // ============================================================================
+  
+  const handleAddToCart = (item) => {
+    console.log(`🚫 Communication #60.11 - Cart disabled: Would add ${item.name}`);
+    
+    // Show temporary message
+    Alert.alert(
+      '🛒 Cart Feature',
+      `Cart functionality is temporarily disabled.\n\nWould add: ${item.name}\nPrice: ${item.price}`,
+      [
+        { text: 'OK', style: 'default' }
+      ]
+    );
+  };
+  
+  // ============================================================================
+  // OTHER EVENT HANDLERS
   // ============================================================================
   
   const handleRefresh = async () => {
     setIsRefreshing(true);
-    
-    if (selectedCategory) {
-      loadCategoryCakes(selectedCategory);
-    }
-    
+    await loadInitialData();
     setIsRefreshing(false);
   };
   
   const handleSearch = (query) => {
     setSearchQuery(query);
-    console.log('🔍 Communication #62.13 - Searching for:', query);
-    
-    if (query.trim().length >= 2) {
-      const allCakes = [];
-      categories.forEach(category => {
-        const formattedCakes = category.cakes.map((cake, index) => ({
-          id: `${category.key}_${index}_search`,
-          name: cake.title?.en || 'Unknown Cake',
-          nameAr: cake.title?.ar || cake.title?.en || 'كيكة',
-          image: cake.image_url,
-          price: `${cake.price || 199} ${cake.currency || 'QAR'}`,
-          rating: cake.rating || 4.8,
-          purchases: cake.purchases || 0,
-          isNew: cake.is_new || false,
-          isInStock: cake.is_in_stock !== false,
-          category: category.key,
-          categoryId: category.id,
-        }));
-        allCakes.push(...formattedCakes);
-      });
-      
-      const searchTerm = query.toLowerCase();
-      const results = allCakes.filter(cake => 
-        cake.name.toLowerCase().includes(searchTerm) ||
-        cake.nameAr.toLowerCase().includes(searchTerm) ||
-        cake.category.toLowerCase().includes(searchTerm)
-      );
-      
-      setCakes(results);
-      console.log(`🔍 Communication #62.13 - Found ${results.length} search results`);
-      
-    } else if (selectedCategory) {
-      loadCategoryCakes(selectedCategory);
-    }
+    console.log('🔍 Communication #60.11 - Searching for:', query);
+    // TODO: Implement real search functionality
   };
   
   const handleLanguageChange = (languageCode) => {
-    setCurrentLanguage(languageCode);
-    console.log('🌐 Communication #62.13 - Language changed to:', languageCode);
+    console.log('🌐 Communication #60.11 - Language changed to:', languageCode);
   };
   
-  // ✅ Communication #62.17 - DIRECT: No popup category selection
   const handleCategoryPress = (category) => {
-    try {
-      if (!category || !category.id || !category.key) {
-        console.error('❌ Communication #62.17 - Invalid category object:', category);
-        return;
-      }
-      
-      const validatedCategory = categoriesMap.get(category.id) || categoriesMap.get(category.key);
-      if (!validatedCategory) {
-        console.error('❌ Communication #62.17 - Category not found in map:', category.id, category.key);
-        return;
-      }
-      
-      console.log(`🎯 Communication #62.17 - Direct category selection: ${validatedCategory.name} (ID: ${validatedCategory.id})`);
-      
-      // ✅ DIRECT: No popup - just switch category immediately
-      setSelectedCategory(validatedCategory);
-      loadCategoryCakes(validatedCategory);
-      
-      const categoryName = currentLanguage === 'ar' ? validatedCategory.nameAr : validatedCategory.name;
-      console.log('🎯 Communication #62.17 - Switched to category:', categoryName);
-      
-    } catch (error) {
-      console.error('❌ Communication #62.17 - Error in category press:', error);
-    }
+    setSelectedCategory(category);
+    const categoryName = isRTL ? category.nameAr : category.name;
+    console.log(`📱 Communication #60.11 - Category selected: ${categoryName} (${category.count} cakes)`);
   };
-
-  // ❌ REMOVED: handleCategoryImagePress function (debug popup)
-  // ❌ REMOVED: testOriginalImage function (debug helper)
   
   const handleCakePress = (cake) => {
-    const cakeName = currentLanguage === 'ar' ? cake.nameAr : cake.name;
-    
+    console.log(`🍰 Communication #60.11 - Cake pressed: ${cake.name}`);
+    // Navigate to cake details or show modal
     Alert.alert(
-      cakeName || t('superDuperHome.cakes.defaultName', 'Delicious Cake'),
-      `${cake.price || 'QAR 199'}\n⭐ ${cake.rating || '4.8'} • 🛒 ${cake.purchases || 0} orders`,
+      cake.name,
+      `${cake.description || 'Delicious cake'}\nPrice: ${cake.price || 'QAR 199'}\n\n⚠️ Cart features temporarily disabled`,
       [
-        { text: t('common.cancel', 'Cancel'), style: 'cancel' },
+        { text: isRTL ? 'إغلاق' : 'Close', style: 'cancel' },
         { 
-          text: t('common.addToCart', 'Add to Cart'), 
-          onPress: () => console.log('🛒 Communication #62.13 - Added to cart:', cake.name) 
-        }
+          text: isRTL ? 'محاكاة الإضافة' : 'Simulate Add',
+          onPress: () => handleAddToCart(cake)
+        },
       ]
     );
   };
   
-  const handleAIGeneratePress = () => {
-    Alert.alert(
-      t('superDuperHome.quickActions.aiGenerate', 'AI Generate'),
-      t('common.comingSoon', 'Coming soon! AI cake generation feature.'),
-      [{ text: t('common.ok', 'OK') }]
-    );
-  };
-
-  const handleQuickAction = (action) => {
-    Alert.alert(
-      t(`superDuperHome.quickActions.${action}`, action),
-      t('common.comingSoon', 'Feature coming soon!'),
-      [{ text: t('common.ok', 'OK') }]
-    );
-  };
-  
   // ============================================================================
-  // RENDER COMPONENTS (ALL PRESERVED EXCEPT CATEGORY IMAGES)
+  // RENDER METHODS
   // ============================================================================
   
   const renderHeader = () => (
-    <LinearGradient
-      colors={[QatarColors.primary, QatarColors.primaryDark, QatarColors.background]}
-      style={styles.header}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-    >
-      <SafeAreaView>
-        <View style={styles.headerContent}>
-          
-          {/* Top Bar */}
-          <View style={styles.topBar}>
-            <View style={styles.welcomeSection}>
-              <Text style={styles.welcomeText}>
-                {currentLanguage === 'ar' ? 'مرحباً' : userName}
-              </Text>
-              <Text style={styles.titleText}>
-                {t('app.name', 'CakeCrafter.AI')}
-              </Text>
-            </View>
-            
-            <TouchableOpacity 
-              style={styles.profileButton}
-              onPress={() => setShowLanguageSwitcher(true)}
-            >
-              <View style={styles.profileAvatar}>
-                <Text style={styles.profileInitial}>
-                  {currentLanguage === 'ar' ? '🇶🇦' : '🇺🇸'}
-                </Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-          
-          {/* Search Bar */}
-          <Animated.View 
-            style={[
-              styles.searchContainer,
-              { transform: [{ scale: searchScale }] }
-            ]}
+    <View style={styles.header}>
+      {/* Header content */}
+      <View style={styles.headerTop}>
+        <View style={styles.headerLeft}>
+          <Text style={styles.welcomeText}>
+            {isRTL ? 'أهلاً وسهلاً' : 'Welcome'}
+          </Text>
+          <Text style={styles.titleText}>
+            {isRTL ? 'صانع الكيك.آي' : 'CakeCrafter.AI'}
+          </Text>
+        </View>
+        
+        <View style={styles.headerRight}>
+          {/* Language button */}
+          <TouchableOpacity
+            style={styles.languageButton}
+            onPress={() => setShowLanguageSwitcher(true)}
           >
-            <BlurView intensity={20} style={styles.searchBlur}>
-              <View style={styles.searchInputContainer}>
-                <Text style={styles.searchIcon}>🔍</Text>
-                <TextInput
-                  style={styles.searchInput}
-                  placeholder={t('superDuperHome.searchPlaceholder', 'Search amazing cakes...')}
-                  placeholderTextColor={QatarColors.textMuted}
-                  value={searchQuery}
-                  onChangeText={handleSearch}
-                />
-                <TouchableOpacity style={styles.filterButton}>
-                  <Text style={styles.filterIcon}>⚙️</Text>
-                </TouchableOpacity>
-              </View>
-            </BlurView>
-          </Animated.View>
+            <Text style={styles.languageButtonText}>
+              {isRTL ? '🇶🇦 عربي' : '🇬🇧 English'}
+            </Text>
+          </TouchableOpacity>
           
-          {/* Quick Actions */}
-          <View style={styles.quickActions}>
-            <TouchableOpacity 
-              style={styles.quickActionButton}
-              onPress={handleAIGeneratePress}
-            >
-              <LinearGradient
-                colors={[QatarColors.secondary, QatarColors.secondaryDark]}
-                style={styles.quickActionGradient}
-              >
-                <Text style={styles.quickActionIcon}>🤖</Text>
-                <Text style={styles.quickActionText}>
-                  {t('superDuperHome.quickActions.aiGenerate', 'AI Generate')}
-                </Text>
-              </LinearGradient>
-            </TouchableOpacity>
-            
-            <TouchableOpacity 
-              style={styles.quickActionButton}
-              onPress={() => handleQuickAction('scanQr')}
-            >
-              <View style={[styles.quickActionGradient, { backgroundColor: QatarColors.glassEffect }]}>
-                <Text style={styles.quickActionIcon}>📱</Text>
-                <Text style={styles.quickActionText}>
-                  {t('superDuperHome.quickActions.scanQr', 'Scan QR')}
-                </Text>
-              </View>
-            </TouchableOpacity>
-            
-            <TouchableOpacity 
-              style={styles.quickActionButton}
-              onPress={() => handleQuickAction('custom')}
-            >
-              <View style={[styles.quickActionGradient, { backgroundColor: QatarColors.glassEffect }]}>
-                <Text style={styles.quickActionIcon}>🎨</Text>
-                <Text style={styles.quickActionText}>
-                  {t('superDuperHome.quickActions.custom', 'Custom')}
-                </Text>
-              </View>
-            </TouchableOpacity>
+          {/* ⚠️ TEMPORARY: Cart disabled notice */}
+          <View style={styles.tempCartNotice}>
+            <Text style={styles.tempCartText}>
+              🛒 Cart: Disabled
+            </Text>
           </View>
-          
         </View>
-      </SafeAreaView>
-    </LinearGradient>
-  );
-  
-  // ✅ Communication #62.13 - FIXED: Categories without debug popup
-  const renderCategories = () => (
-    <Animated.View 
-      style={[
-        styles.categoriesSection,
-        { transform: [{ scale: categoryScale }] }
-      ]}
-    >
-      <View style={styles.sectionHeader}>
-        <View style={styles.sectionTitleContainer}>
-          <Text style={styles.sectionTitle}>
-            {t('superDuperHome.categories.title', 'Categories')}
-          </Text>
-          <Text style={styles.sectionSubtitle}>
-            {selectedCategory 
-              ? `${currentLanguage === 'ar' ? selectedCategory.nameAr : selectedCategory.name} - ${selectedCategory.count} cakes`
-              : (currentLanguage === 'ar' ? 'اختر فئة' : 'Select a category')
-            }
-          </Text>
-        </View>
-        <TouchableOpacity 
-          style={styles.seeAllButton}
-          onPress={() => handleRefresh()}
-        >
-          <Text style={styles.seeAllText}>
-            {t('superDuperHome.categories.shuffle', 'Shuffle')}
-          </Text>
-          <Text style={styles.seeAllArrow}>🔄</Text>
-        </TouchableOpacity>
       </View>
       
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        data={categories}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.categoriesList}
-        renderItem={({ item, index }) => {
-          const isSelected = selectedCategory?.id === item.id;
-          
-          return (
+      {/* Search bar */}
+      <View style={styles.searchContainer}>
+        <TextInput
+          style={styles.searchInput}
+          placeholder={isRTL ? 'البحث عن الكيكات...' : 'Search cakes...'}
+          placeholderTextColor={QatarColors.textSecondary}
+          value={searchQuery}
+          onChangeText={handleSearch}
+          textAlign={isRTL ? 'right' : 'left'}
+        />
+        <Text style={styles.searchIcon}>🔍</Text>
+      </View>
+    </View>
+  );
+  
+  const renderCategories = () => (
+    <View style={styles.categoriesSection}>
+      <Text style={styles.sectionTitle}>
+        {isRTL ? 'فئات الكيك' : 'Cake Categories'}
+      </Text>
+      
+      <Animated.View style={{ transform: [{ scale: categoryScale }] }}>
+        <FlatList
+          data={categories}
+          keyExtractor={(item) => item.key}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.categoriesList}
+          renderItem={({ item }) => (
             <TouchableOpacity
               style={[
-                styles.categoryCard, 
-                { 
-                  marginLeft: index === 0 ? Spacing.md : 0,
-                  opacity: isSelected ? 1 : 0.8,
-                  transform: [{ scale: isSelected ? 1.05 : 1 }]
-                }
+                styles.categoryCard,
+                selectedCategory?.key === item.key && styles.categoryCardSelected,
               ]}
               onPress={() => handleCategoryPress(item)}
-              activeOpacity={0.7}
             >
-              {/* ✅ FIXED: Category Image Container (NO DEBUG TOUCHABLE) */}
-              <View style={[
-                styles.categoryImageContainer, 
-                { 
-                  backgroundColor: item.color + '15',
-                  borderWidth: isSelected ? 2 : 1,
-                  borderColor: isSelected ? item.color : 'rgba(255, 255, 255, 0.1)'
-                }
-              ]}>
-                {/* ✅ SIMPLE: Just the image, no debug TouchableOpacity */}
+              <View style={[styles.categoryImageContainer, { backgroundColor: item.color }]}>
                 <Image
                   source={{ uri: item.image }}
                   style={styles.categoryImage}
                   resizeMode="cover"
-                  onError={(error) => {
-                    console.log(`🖼️ Communication #62.13 - Image load error for ${item.name}:`, error.nativeEvent.error);
-                  }}
-                  onLoad={() => {
-                    console.log(`✅ Communication #62.13 - Image loaded successfully for ${item.name}`);
-                  }}
                 />
-                
-                {/* Badge with real count from JSON */}
                 <LinearGradient
-                  colors={[item.color + 'CC', item.color]}
-                  style={styles.categoryBadge}
-                >
-                  <Text style={styles.categoryCount}>{item.count}</Text>
-                </LinearGradient>
-                
-                {/* Selection indicator */}
-                {isSelected && (
-                  <View style={styles.selectedIndicator}>
-                    <Text style={styles.selectedIcon}>✓</Text>
-                  </View>
-                )}
-                
-                {/* Overlay */}
-                <LinearGradient
-                  colors={['transparent', 'rgba(0,0,0,0.3)']}
+                  colors={['transparent', 'rgba(0,0,0,0.6)']}
                   style={styles.categoryOverlay}
                 />
+                <View style={[styles.categoryBadge, { backgroundColor: item.color }]}>
+                  <Text style={styles.categoryCount}>{item.count}</Text>
+                </View>
               </View>
               
-              {/* Category Info from JSON */}
               <View style={styles.categoryInfo}>
-                <Text style={[
-                  styles.categoryName,
-                  { color: isSelected ? item.color : QatarColors.textPrimary }
-                ]} numberOfLines={1}>
-                  {currentLanguage === 'ar' ? item.nameAr : item.name}
-                </Text>
-                <Text style={styles.categoryPercentage}>
-                  {item.percentage}%
+                <Text style={styles.categoryName}>
+                  {isRTL ? item.nameAr : item.name}
                 </Text>
               </View>
             </TouchableOpacity>
-          );
-        }}
-      />
-    </Animated.View>
+          )}
+        />
+      </Animated.View>
+    </View>
   );
   
-  // ✨ Enhanced Gallery Method (preserved)
-  const renderEnhancedGallery = () => (
-    <View style={{ marginTop: 20, flex: 1, minHeight: 400 }}>
-      <View style={styles.sectionHeader}>
-        <View style={styles.sectionTitleContainer}>
-          <Text style={styles.sectionTitle}>
-            {selectedCategory 
-              ? (currentLanguage === 'ar' 
-                  ? `معرض ${selectedCategory.nameAr}` 
-                  : `${selectedCategory.name} Gallery`)
-              : 'Cake Gallery'
-            }
-          </Text>
-          <Text style={styles.sectionSubtitle}>
-            {selectedCategory 
-              ? `${selectedCategory.count} cakes • Scroll down for more`
-              : 'Interactive gallery'
-            }
-          </Text>
-        </View>
-      </View>
-      
+  const renderGallery = () => (
+    <Animated.View 
+      style={[
+        styles.gallerySection,
+        { opacity: galleryOpacity }
+      ]}
+    >
       <EnhancedCakeGallery
         cakes={cakes}
         selectedCategory={selectedCategory}
         onCakePress={handleCakePress}
+        onAddToCart={handleAddToCart} // ⚠️ TEMPORARY: Points to disabled handler
         currentLanguage={currentLanguage}
-        style={{ flex: 1 }}
-      />
-    </View>
-  );
-
-  // ✨ Category cakes from JSON (preserved)
-  const renderCategoryCakes = () => (
-    <Animated.View 
-      style={[
-        styles.featuredSection,
-        { transform: [{ scale: featuredScale }] }
-      ]}
-    >
-      <View style={styles.sectionHeader}>
-        <View style={styles.sectionTitleContainer}>
-          <Text style={styles.sectionTitle}>
-            {selectedCategory 
-              ? (currentLanguage === 'ar' 
-                  ? `كيكات ${selectedCategory.nameAr}` 
-                  : `${selectedCategory.name} Cakes`)
-              : t('superDuperHome.featured.title', 'Featured Cakes')
-            }
-          </Text>
-          <Text style={styles.sectionSubtitle}>
-            {`${cakes.length} ${t('common.cakes', 'cakes')} • ${t('common.randomized', 'Randomized fresh')}`}
-          </Text>
-        </View>
-        <TouchableOpacity onPress={() => selectedCategory && loadCategoryCakes(selectedCategory)}>
-          <Text style={styles.seeAllText}>
-            {t('superDuperHome.featured.shuffle', 'Shuffle')}
-          </Text>
-        </TouchableOpacity>
-      </View>
-      
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        data={cakes.slice(0, 12)}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.featuredList}
-        renderItem={({ item, index }) => (
-          <TouchableOpacity
-            style={styles.featuredCard}
-            onPress={() => handleCakePress(item)}
-            activeOpacity={0.9}
-          >
-            <ImageBackground
-              source={{ uri: item.image }}
-              style={styles.featuredImage}
-              imageStyle={styles.featuredImageStyle}
-            >
-              <LinearGradient
-                colors={['transparent', 'rgba(0,0,0,0.8)']}
-                style={styles.featuredOverlay}
-              >
-                <View style={styles.featuredContent}>
-                  <View style={styles.featuredTopInfo}>
-                    <View style={styles.ratingContainer}>
-                      <Text style={styles.ratingText}>⭐ {item.rating || '4.8'}</Text>
-                    </View>
-                    
-                    {item.isNew && (
-                      <View style={styles.newBadge}>
-                        <Text style={styles.newBadgeText}>
-                          {currentLanguage === 'ar' ? 'جديد' : 'NEW'}
-                        </Text>
-                      </View>
-                    )}
-                  </View>
-                  
-                  <View style={styles.featuredInfo}>
-                    <Text style={styles.featuredName} numberOfLines={2}>
-                      {currentLanguage === 'ar' ? item.nameAr : item.name}
-                    </Text>
-                    <Text style={styles.featuredPrice}>
-                      {item.price}
-                    </Text>
-                    <Text style={styles.featuredPurchases}>
-                      🛒 {item.purchases || 0} {t('common.orders', 'orders')}
-                    </Text>
-                  </View>
-                </View>
-              </LinearGradient>
-            </ImageBackground>
-          </TouchableOpacity>
-        )}
+        style={styles.gallery}
       />
     </Animated.View>
   );
   
-  // ✨ Simple gallery (preserved)
-  const renderSimpleGallery = () => (
-    <View style={styles.simpleGallerySection}>
-      <View style={styles.sectionHeader}>
-        <View style={styles.sectionTitleContainer}>
-          <Text style={styles.sectionTitle}>
-            {t('common.gallery', 'Cake Gallery')}
-          </Text>
-          <Text style={styles.sectionSubtitle}>
-            {currentLanguage === 'ar' ? 'معرض الكيك' : 'Beautiful cake designs'}
-          </Text>
-        </View>
-      </View>
-      
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        data={cakes.slice(0, 8)}
-        keyExtractor={(item) => `gallery_${item.id}`}
-        contentContainerStyle={styles.galleryList}
-        renderItem={({ item, index }) => (
-          <TouchableOpacity
-            style={styles.galleryCard}
-            onPress={() => handleCakePress(item)}
-            activeOpacity={0.9}
-          >
-            <Image
-              source={{ uri: item.image }}
-              style={styles.galleryImage}
-              resizeMode="cover"
-            />
-            <View style={styles.galleryOverlay}>
-              <Text style={styles.galleryText} numberOfLines={1}>
-                {currentLanguage === 'ar' ? item.nameAr : item.name}
-              </Text>
-            </View>
-          </TouchableOpacity>
-        )}
-      />
-    </View>
-  );
-  
   // ============================================================================
-  // MAIN RENDER (ALL PRESERVED)
+  // MAIN RENDER - Communication #60.11 (TEMPORARY)
   // ============================================================================
   
   return (
-    <View style={styles.container}>
-      {renderHeader()}
-      
-      <ScrollView
-        style={styles.scrollView}
-        showsVerticalScrollIndicator={false}
-        refreshControl={
-          <RefreshControl
-            refreshing={isRefreshing}
-            onRefresh={handleRefresh}
-            tintColor={QatarColors.primary}
-            progressBackgroundColor={QatarColors.surface}
-          />
-        }
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-          { useNativeDriver: false }
-        )}
-      >
-        {renderCategories()}
-        {renderEnhancedGallery()}
-        {renderSimpleGallery()}
-        
-        {/* Footer */}
-        <View style={styles.footer}>
-          <Text style={styles.footerText}>
-            {t('common.poweredBy', 'Powered by CakeCrafter.AI Qatar')}
-          </Text>
-          {selectedCategory && (
-            <Text style={styles.footerSubText}>
-              {selectedCategory.name} • {selectedCategory.count} {t('common.cakes', 'cakes')} • {selectedCategory.percentage}%
-            </Text>
-          )}
-        </View>
-        
-        <View style={styles.bottomSpacer} />
-      </ScrollView>
-      
-      {/* Floating Action Button */}
-      <TouchableOpacity 
-        style={styles.fab}
-        onPress={handleAIGeneratePress}
-        activeOpacity={0.8}
+    <SafeAreaView style={styles.container}>
+      <ImageBackground
+        source={{ uri: 'https://cakecrafterapi.ebita.ai/media/generated_images/background_luxury.jpg' }}
+        style={styles.backgroundImage}
+        resizeMode="cover"
       >
         <LinearGradient
-          colors={[QatarColors.secondary, QatarColors.secondaryDark]}
-          style={styles.fabGradient}
+          colors={[QatarColors.background, 'rgba(15, 15, 35, 0.9)']}
+          style={styles.overlay}
         >
-          <Text style={styles.fabIcon}>🤖</Text>
+          <ScrollView
+            style={styles.scrollView}
+            refreshControl={
+              <RefreshControl
+                refreshing={isRefreshing}
+                onRefresh={handleRefresh}
+                tintColor={QatarColors.secondary}
+                progressBackgroundColor={QatarColors.surface}
+              />
+            }
+            onScroll={Animated.event(
+              [{ nativeEvent: { contentOffset: { y: headerOffset } } }],
+              { useNativeDriver: false }
+            )}
+            scrollEventThrottle={16}
+          >
+            {/* Header */}
+            {renderHeader()}
+            
+            {/* Categories */}
+            {renderCategories()}
+            
+            {/* Gallery */}
+            {renderGallery()}
+            
+            {/* Loading indicator */}
+            {isLoading && (
+              <View style={styles.loadingContainer}>
+                <ActivityIndicator size="large" color={QatarColors.secondary} />
+                <Text style={styles.loadingText}>
+                  {isRTL ? 'جاري التحميل...' : 'Loading...'}
+                </Text>
+              </View>
+            )}
+            
+            {/* ⚠️ TEMPORARY NOTICE */}
+            <View style={styles.tempNotice}>
+              <Text style={styles.tempNoticeTitle}>
+                ⚠️ TEMPORARY VERSION
+              </Text>
+              <Text style={styles.tempNoticeText}>
+                Cart functionality is disabled until all cart components are ready.{'\n'}
+                Plus buttons will show simulation dialogs only.
+              </Text>
+            </View>
+          </ScrollView>
+          
+          {/* ❌ TEMPORARILY REMOVED: Cart Icon & Drawer */}
+          
+          {/* Language Switcher Modal */}
+          <LanguageSwitcher
+            visible={showLanguageSwitcher}
+            onClose={() => setShowLanguageSwitcher(false)}
+            onLanguageChange={handleLanguageChange}
+          />
         </LinearGradient>
-      </TouchableOpacity>
-      
-      {/* Language Switcher Modal */}
-      <LanguageSwitcher
-        visible={showLanguageSwitcher}
-        onClose={() => setShowLanguageSwitcher(false)}
-        onLanguageChange={handleLanguageChange}
-      />
-      
-      {/* Loading Overlay */}
-      {isLoading && (
-        <View style={styles.loadingOverlay}>
-          <ActivityIndicator size="large" color={QatarColors.secondary} />
-          <Text style={styles.loadingText}>
-            {t('superDuperHome.loadingApp', 'Loading categories...')}
-          </Text>
-        </View>
-      )}
-    </View>
+      </ImageBackground>
+    </SafeAreaView>
   );
 };
 
 // ============================================================================
-// LUXURY STYLES (ALL PRESERVED, DEBUG STYLES REMOVED)
+// STYLES - Communication #60.11
 // ============================================================================
 
 const styles = StyleSheet.create({
@@ -894,237 +542,133 @@ const styles = StyleSheet.create({
     backgroundColor: QatarColors.background,
   },
   
-  // Header Styles
-  header: {
-    paddingTop: 0,
+  backgroundImage: {
+    flex: 1,
   },
   
-  headerContent: {
-    paddingHorizontal: Spacing.md,
+  overlay: {
+    flex: 1,
+  },
+  
+  scrollView: {
+    flex: 1,
+  },
+  
+  // Header Styles
+  header: {
+    paddingHorizontal: Spacing.lg,
+    paddingTop: Spacing.xl,
     paddingBottom: Spacing.lg,
   },
   
-  topBar: {
+  headerTop: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    marginTop: Spacing.md,
+    alignItems: 'flex-start',
     marginBottom: Spacing.lg,
   },
   
-  welcomeSection: {
+  headerLeft: {
     flex: 1,
   },
   
   welcomeText: {
     fontSize: Typography.fontSize.md,
-    color: QatarColors.secondary,
-    marginBottom: Spacing.xs,
-    fontWeight: Typography.fontWeight.medium,
+    color: QatarColors.textSecondary,
+    marginBottom: 4,
   },
   
   titleText: {
     fontSize: Typography.fontSize.xxl,
     fontWeight: Typography.fontWeight.bold,
-    color: QatarColors.textOnPrimary,
+    color: QatarColors.textPrimary,
   },
   
-  profileButton: {
-    padding: Spacing.sm,
+  headerRight: {
+    alignItems: 'flex-end',
   },
   
-  profileAvatar: {
-    width: Layout.avatarSize,
-    height: Layout.avatarSize,
-    borderRadius: Layout.avatarSize / 2,
+  languageButton: {
     backgroundColor: QatarColors.glassEffect,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 2,
-    borderColor: QatarColors.secondary,
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.sm,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+    marginBottom: Spacing.sm,
   },
   
-  profileInitial: {
-    fontSize: Typography.fontSize.lg,
+  languageButtonText: {
+    color: QatarColors.textPrimary,
+    fontSize: Typography.fontSize.sm,
+    fontWeight: Typography.fontWeight.medium,
+  },
+  
+  // ⚠️ TEMPORARY: Cart disabled notice
+  tempCartNotice: {
+    backgroundColor: '#FFF3CD',
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: 4,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#FFEAA7',
+  },
+  
+  tempCartText: {
+    color: '#856404',
+    fontSize: Typography.fontSize.xs,
+    fontWeight: Typography.fontWeight.medium,
   },
   
   // Search Styles
   searchContainer: {
-    marginBottom: Spacing.lg,
-  },
-  
-  searchBlur: {
-    borderRadius: ComponentStyles.borderRadius.lg,
-    overflow: 'hidden',
-  },
-  
-  searchInputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: QatarColors.glassEffect,
-    paddingHorizontal: Spacing.md,
-    height: 50,
-  },
-  
-  searchIcon: {
-    fontSize: Typography.fontSize.lg,
-    marginRight: Spacing.sm,
-    color: QatarColors.textOnPrimary,
+    borderRadius: 24,
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.md,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
   
   searchInput: {
     flex: 1,
     fontSize: Typography.fontSize.md,
-    color: QatarColors.textOnPrimary,
-  },
-  
-  filterButton: {
-    padding: Spacing.sm,
-  },
-  
-  filterIcon: {
-    fontSize: Typography.fontSize.md,
-    color: QatarColors.textOnPrimary,
-  },
-  
-  // Quick Actions Styles
-  quickActions: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  
-  quickActionButton: {
-    flex: 1,
-    marginHorizontal: Spacing.xs,
-  },
-  
-  quickActionGradient: {
-    borderRadius: ComponentStyles.borderRadius.md,
-    padding: Spacing.md,
-    alignItems: 'center',
-    minHeight: 70,
-    justifyContent: 'center',
-    ...ComponentStyles.shadows.medium,
-  },
-  
-  quickActionIcon: {
-    fontSize: Typography.fontSize.lg,
-    marginBottom: Spacing.xs,
-  },
-  
-  quickActionText: {
-    fontSize: Typography.fontSize.sm,
-    fontWeight: Typography.fontWeight.medium,
     color: QatarColors.textPrimary,
-    textAlign: 'center',
   },
   
-  // Scroll View
-  scrollView: {
-    flex: 1,
+  searchIcon: {
+    fontSize: Typography.fontSize.lg,
+    marginLeft: Spacing.sm,
   },
   
   // Section Styles
   categoriesSection: {
-    marginTop: Spacing.lg,
-  },
-  
-  featuredSection: {
-    marginTop: Spacing.xl,
-  },
-  
-  simpleGallerySection: {
-    marginTop: Spacing.xl,
-  },
-  
-  galleryList: {
-    paddingLeft: Spacing.md,
-  },
-  
-  galleryCard: {
-    width: 120,
-    height: 120,
-    marginRight: Spacing.md,
-    borderRadius: ComponentStyles.borderRadius.lg,
-    overflow: 'hidden',
-    ...ComponentStyles.shadows.medium,
-  },
-  
-  galleryImage: {
-    width: '100%',
-    height: '100%',
-  },
-  
-  galleryOverlay: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: 'rgba(0,0,0,0.7)',
-    padding: Spacing.xs,
-  },
-  
-  galleryText: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textOnPrimary,
-    fontWeight: Typography.fontWeight.medium,
-    textAlign: 'center',
-  },
-  
-  sectionHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingHorizontal: Spacing.md,
-    marginBottom: Spacing.md,
-  },
-  
-  sectionTitleContainer: {
-    flex: 1,
+    marginBottom: Spacing.xl,
   },
   
   sectionTitle: {
     fontSize: Typography.fontSize.xl,
     fontWeight: Typography.fontWeight.bold,
     color: QatarColors.textPrimary,
-  },
-  
-  sectionSubtitle: {
-    fontSize: Typography.fontSize.sm,
-    color: QatarColors.secondary,
-    marginTop: Spacing.xs,
-    fontWeight: Typography.fontWeight.medium,
-  },
-  
-  seeAllButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingVertical: Spacing.xs,
-    paddingHorizontal: Spacing.sm,
-  },
-  
-  seeAllText: {
-    fontSize: Typography.fontSize.sm,
-    color: QatarColors.secondary,
-    fontWeight: Typography.fontWeight.medium,
-  },
-  
-  seeAllArrow: {
-    fontSize: Typography.fontSize.sm,
-    color: QatarColors.secondary,
-    marginLeft: Spacing.xs,
-    fontWeight: Typography.fontWeight.bold,
+    marginHorizontal: Spacing.lg,
+    marginBottom: Spacing.lg,
   },
   
   // Categories Styles
   categoriesList: {
-    paddingRight: Spacing.md,
+    paddingHorizontal: Spacing.lg,
   },
   
   categoryCard: {
     marginRight: Spacing.md,
     alignItems: 'center',
     width: CATEGORY_SIZE + 20,
+  },
+  
+  categoryCardSelected: {
+    transform: [{ scale: 1.05 }],
   },
   
   categoryImageContainer: {
@@ -1134,9 +678,10 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     position: 'relative',
     ...ComponentStyles.shadows.medium,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
   
-  // ✅ CLEAN: Simple category image (no debug touchable styles)
   categoryImage: {
     width: '100%',
     height: '100%',
@@ -1168,25 +713,6 @@ const styles = StyleSheet.create({
     color: QatarColors.textOnPrimary,
   },
   
-  selectedIndicator: {
-    position: 'absolute',
-    top: 8,
-    left: 8,
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-    backgroundColor: QatarColors.secondary,
-    alignItems: 'center',
-    justifyContent: 'center',
-    ...ComponentStyles.shadows.small,
-  },
-  
-  selectedIcon: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textOnPrimary,
-    fontWeight: Typography.fontWeight.bold,
-  },
-  
   categoryInfo: {
     marginTop: Spacing.sm,
     alignItems: 'center',
@@ -1196,167 +722,57 @@ const styles = StyleSheet.create({
   categoryName: {
     fontSize: Typography.fontSize.sm,
     fontWeight: Typography.fontWeight.medium,
+    color: QatarColors.textPrimary,
     textAlign: 'center',
   },
   
-  categoryPercentage: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textSecondary,
-    marginTop: 2,
-  },
-  
-  // Featured Cakes Styles (all preserved)
-  featuredList: {
-    paddingLeft: Spacing.md,
-  },
-  
-  featuredCard: {
-    width: CARD_WIDTH * 0.75,
-    height: Layout.cardHeight,
-    marginRight: Spacing.md,
-    borderRadius: ComponentStyles.borderRadius.xl,
-    overflow: 'hidden',
-    ...ComponentStyles.shadows.large,
-  },
-  
-  featuredImage: {
-    width: '100%',
-    height: '100%',
-  },
-  
-  featuredImageStyle: {
-    borderRadius: ComponentStyles.borderRadius.xl,
-  },
-  
-  featuredOverlay: {
+  // Gallery Styles
+  gallerySection: {
     flex: 1,
-    justifyContent: 'space-between',
-    padding: Spacing.md,
+    marginBottom: Spacing.xl,
   },
   
-  featuredContent: {
+  gallery: {
     flex: 1,
-    justifyContent: 'space-between',
-  },
-  
-  featuredTopInfo: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-  },
-  
-  ratingContainer: {
-    backgroundColor: QatarColors.overlay,
-    borderRadius: ComponentStyles.borderRadius.sm,
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 4,
-  },
-  
-  ratingText: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textOnPrimary,
-    fontWeight: Typography.fontWeight.medium,
-  },
-  
-  newBadge: {
-    backgroundColor: QatarColors.secondary,
-    borderRadius: ComponentStyles.borderRadius.sm,
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 4,
-  },
-  
-  newBadgeText: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textOnPrimary,
-    fontWeight: Typography.fontWeight.bold,
-  },
-  
-  featuredInfo: {
-    alignSelf: 'stretch',
-  },
-  
-  featuredName: {
-    fontSize: Typography.fontSize.lg,
-    fontWeight: Typography.fontWeight.bold,
-    color: QatarColors.textOnPrimary,
-    marginBottom: Spacing.xs,
-  },
-  
-  featuredPrice: {
-    fontSize: Typography.fontSize.md,
-    color: QatarColors.secondary,
-    fontWeight: Typography.fontWeight.bold,
-    marginBottom: 4,
-  },
-  
-  featuredPurchases: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textSecondary,
-  },
-  
-  // Floating Action Button
-  fab: {
-    position: 'absolute',
-    bottom: Spacing.xl,
-    right: Spacing.lg,
-    width: Layout.fabSize,
-    height: Layout.fabSize,
-    borderRadius: Layout.fabSize / 2,
-    ...ComponentStyles.shadows.large,
-  },
-  
-  fabGradient: {
-    width: '100%',
-    height: '100%',
-    borderRadius: Layout.fabSize / 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  
-  fabIcon: {
-    fontSize: Typography.fontSize.xl,
-  },
-  
-  // Footer Styles
-  footer: {
-    padding: Spacing.xl,
-    alignItems: 'center',
-  },
-  
-  footerText: {
-    fontSize: Typography.fontSize.sm,
-    color: QatarColors.textSecondary,
-    textAlign: 'center',
-  },
-  
-  footerSubText: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textSecondary,
-    textAlign: 'center',
-    marginTop: Spacing.xs,
   },
   
   // Loading Styles
-  loadingOverlay: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: QatarColors.overlay,
+  loadingContainer: {
     alignItems: 'center',
-    justifyContent: 'center',
+    paddingVertical: Spacing.xl,
   },
   
   loadingText: {
     fontSize: Typography.fontSize.md,
-    color: QatarColors.textOnPrimary,
+    color: QatarColors.textSecondary,
     marginTop: Spacing.md,
-    fontWeight: Typography.fontWeight.medium,
   },
   
-  bottomSpacer: {
-    height: 100,
+  // ⚠️ TEMPORARY NOTICE
+  tempNotice: {
+    backgroundColor: '#FFF3CD',
+    borderColor: '#FFEAA7',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.md,
+    marginHorizontal: Spacing.lg,
+    marginVertical: Spacing.xl,
+  },
+  
+  tempNoticeTitle: {
+    fontSize: Typography.fontSize.md,
+    fontWeight: Typography.fontWeight.bold,
+    color: '#856404',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  
+  tempNoticeText: {
+    fontSize: Typography.fontSize.sm,
+    color: '#856404',
+    textAlign: 'center',
+    lineHeight: 20,
   },
 });
 
