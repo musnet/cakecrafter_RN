@@ -1,0 +1,661 @@
+﻿{
+    "category":  {
+                     "name":  {
+                                  "en":  "Cultural",
+                                  "ar":  "Ø«Ù‚Ø§ÙÙŠ"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/cultural.png",
+                     "count":  24,
+                     "percentage":  15
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6820484160f1.jpg",
+                      "title":  {
+                                    "en":  "Heritage Cultural Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ø§Ù„ØªØ±Ø§Ø« Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  523,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_17619ac7e337.jpg",
+                      "title":  {
+                                    "en":  "Traditional Cultural Feast",
+                                    "ar":  "ÙˆÙ„ÙŠÙ…Ø© Ø«Ù‚Ø§ÙÙŠØ© ØªÙ‚Ù„ÙŠØ¯ÙŠØ©"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  445,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_06660698099f.jpg",
+                      "title":  {
+                                    "en":  "Festival Cultural Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø§Ù„Ù…Ù‡Ø±Ø¬Ø§Ù† Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  298,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  367,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_bb4b9f0bcd49.jpg",
+                      "title":  {
+                                    "en":  "Cultural Harmony Cultural Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø§Ù„Ø§Ù†Ø³Ø¬Ø§Ù… Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  298,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_34ee9799c59f.jpg",
+                      "title":  {
+                                    "en":  "Ancient Wisdom Cultural Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„Ø­ÙƒÙ…Ø© Ø§Ù„Ù‚Ø¯ÙŠÙ…Ø© Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  589,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_dbdce024f4d7.jpg",
+                      "title":  {
+                                    "en":  "Cultural Fusion Cultural Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø§Ù„Ø§Ù†ØµÙ‡Ø§Ø± Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  234,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1dc0c2bc5742.jpg",
+                      "title":  {
+                                    "en":  "Sacred Cultural Ceremony",
+                                    "ar":  "Ø­ÙÙ„ Ù…Ù‚Ø¯Ø³ Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  467,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6e4d7a351273.jpg",
+                      "title":  {
+                                    "en":  "Cultural Pride Cultural Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ø§Ù„ÙØ®Ø± Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  312,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_99bf337b7f68.jpg",
+                      "title":  {
+                                    "en":  "Ethnic Cultural Treasure",
+                                    "ar":  "ÙƒÙ†Ø² Ø¹Ø±Ù‚ÙŠ Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  345,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  389,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5cd2b064b14f.jpg",
+                      "title":  {
+                                    "en":  "Cultural Unity Cultural Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ø§Ù„ÙˆØ­Ø¯Ø© Ø§Ù„Ø«Ù‚Ø§ÙÙŠØ©"
+                                },
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.0,
+                      "purchases":  256,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b9c7cba9e226.jpg",
+                      "title":  {
+                                    "en":  "Ancestral Cultural Honor",
+                                    "ar":  "ØªÙƒØ±ÙŠÙ… Ø§Ù„Ø£Ø¬Ø¯Ø§Ø¯ Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  423,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  512,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5f9e9765f9f3.jpg",
+                      "title":  {
+                                    "en":  "Cultural Legacy Cultural Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø§Ù„Ø¥Ø±Ø« Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  334,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d7411d588abf.jpg",
+                      "title":  {
+                                    "en":  "Folklore Cultural Tradition",
+                                    "ar":  "ØªÙ‚Ù„ÙŠØ¯ Ø§Ù„ÙÙˆÙ„ÙƒÙ„ÙˆØ± Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  412,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0f42bddedc2b.jpg",
+                      "title":  {
+                                    "en":  "Cultural Heritage Cultural Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„ØªØ±Ø§Ø« Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  289,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_25be82e5a20e.jpg",
+                      "title":  {
+                                    "en":  "Tribal Cultural Wisdom",
+                                    "ar":  "Ø­ÙƒÙ…Ø© Ø§Ù„Ù‚Ø¨ÙŠÙ„Ø© Ø§Ù„Ø«Ù‚Ø§ÙÙŠØ©"
+                                },
+                      "price":  467,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  567,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9a8a26911089.jpg",
+                      "title":  {
+                                    "en":  "Cultural Artisan Cultural Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø§Ù„Ø­Ø±ÙÙŠ Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  167,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  3.9,
+                      "purchases":  198,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf723f31930f.jpg",
+                      "title":  {
+                                    "en":  "Ancient Ritual Cultural Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ø§Ù„Ø·Ù‚ÙˆØ³ Ø§Ù„Ù‚Ø¯ÙŠÙ…Ø© Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  489,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fbaa2da142e8.jpg",
+                      "title":  {
+                                    "en":  "Cultural Symphony Cultural Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø§Ù„Ø³ÙŠÙ…ÙÙˆÙ†ÙŠØ© Ø§Ù„Ø«Ù‚Ø§ÙÙŠØ©"
+                                },
+                      "price":  245,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_492118e421d7.jpg",
+                      "title":  {
+                                    "en":  "Cultural Mosaic Cultural Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø§Ù„ÙØ³ÙŠÙØ³Ø§Ø¡ Ø§Ù„Ø«Ù‚Ø§ÙÙŠØ©"
+                                },
+                      "price":  334,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  378,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7d7da2d82104.jpg",
+                      "title":  {
+                                    "en":  "Timeless Cultural Tradition",
+                                    "ar":  "ØªÙ‚Ù„ÙŠØ¯ Ø«Ù‚Ø§ÙÙŠ Ø®Ø§Ù„Ø¯"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  345,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ab2b8531fdce.jpg",
+                      "title":  {
+                                    "en":  "Cultural Celebration Cultural Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„Ø§Ø­ØªÙØ§Ù„ Ø§Ù„Ø«Ù‚Ø§ÙÙŠ"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  534,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ec1ba794a9bd.jpg",
+                      "title":  {
+                                    "en":  "Cultural Spirit Cultural Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø§Ù„Ø±ÙˆØ­ Ø§Ù„Ø«Ù‚Ø§ÙÙŠØ©"
+                                },
+                      "price":  223,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.0,
+                      "purchases":  278,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_08ff16756cfd.jpg",
+                      "title":  {
+                                    "en":  "Cultural Journey Cultural Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ø§Ù„Ø±Ø­Ù„Ø© Ø§Ù„Ø«Ù‚Ø§ÙÙŠØ©"
+                                },
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  423,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d3da7da08d47.jpg",
+                      "title":  {
+                                    "en":  "Cultural Essence Cultural Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø¬ÙˆÙ‡Ø± Ø§Ù„Ø«Ù‚Ø§ÙØ©"
+                                },
+                      "price":  456,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  578,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  }
+              ]
+}

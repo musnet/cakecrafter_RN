@@ -1,0 +1,661 @@
+﻿{
+    "category":  {
+                     "name":  {
+                                  "en":  "Sports",
+                                  "ar":  "Ø±ÙŠØ§Ø¶Ø©"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/sports.png",
+                     "count":  24,
+                     "percentage":  15
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1468257c5eae.jpg",
+                      "title":  {
+                                    "en":  "Championship Victory Sports Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø±ÙŠØ§Ø¶ÙŠØ© Ù„Ø§Ù†ØªØµØ§Ø± Ø§Ù„Ø¨Ø·ÙˆÙ„Ø©"
+                                },
+                      "price":  389,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  456,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8622b097644f.jpg",
+                      "title":  {
+                                    "en":  "Athletic Achievement Sports Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„Ø¥Ù†Ø¬Ø§Ø² Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  334,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_167f9406d1bd.jpg",
+                      "title":  {
+                                    "en":  "Team Spirit Sports Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ø±ÙˆØ­ Ø§Ù„ÙØ±ÙŠÙ‚ Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  345,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  412,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_a7fc2a664745.jpg",
+                      "title":  {
+                                    "en":  "Goal Scorer Sports Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø§Ù„Ù‡Ø¯Ø§Ù Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_563801a819b1.jpg",
+                      "title":  {
+                                    "en":  "Olympic Dreams Sports Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø§Ù„Ø£Ø­Ù„Ø§Ù… Ø§Ù„Ø£ÙˆÙ„Ù…Ø¨ÙŠØ© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠØ©"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  567,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0bce6090b28a.jpg",
+                      "title":  {
+                                    "en":  "Fitness Warrior Sports Special",
+                                    "ar":  "Ø®Ø§Øµ Ù…Ø­Ø§Ø±Ø¨ Ø§Ù„Ù„ÙŠØ§Ù‚Ø© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  189,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7317990d0e00.jpg",
+                      "title":  {
+                                    "en":  "Stadium Roar Sports Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ø²Ø¦ÙŠØ± Ø§Ù„Ù…Ù„Ø¹Ø¨ Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  378,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c8eaced6fede.jpg",
+                      "title":  {
+                                    "en":  "Trophy Winner Sports Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© ÙØ§Ø¦Ø² Ø§Ù„ÙƒØ£Ø³ Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  298,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b18c5dc93f95.jpg",
+                      "title":  {
+                                    "en":  "Sports Legend Sports Tribute",
+                                    "ar":  "ØªÙƒØ±ÙŠÙ… Ø£Ø³Ø·ÙˆØ±Ø© Ø§Ù„Ø±ÙŠØ§Ø¶Ø©"
+                                },
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  345,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_089c9b100b05.jpg",
+                      "title":  {
+                                    "en":  "Game Day Sports Energy",
+                                    "ar":  "Ø·Ø§Ù‚Ø© ÙŠÙˆÙ… Ø§Ù„Ù„Ø¹Ø¨Ø© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  167,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.0,
+                      "purchases":  223,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8737007b954c.jpg",
+                      "title":  {
+                                    "en":  "Marathon Runner Sports Fuel",
+                                    "ar":  "ÙˆÙ‚ÙˆØ¯ Ø¹Ø¯Ø§Ø¡ Ø§Ù„Ù…Ø§Ø±Ø§Ø«ÙˆÙ† Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  423,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  489,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_13dea8d8af27.jpg",
+                      "title":  {
+                                    "en":  "Sports Star Sports Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ù†Ø¬Ù… Ø§Ù„Ø±ÙŠØ§Ø¶Ø©"
+                                },
+                      "price":  256,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  278,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d021ad8aa66f.jpg",
+                      "title":  {
+                                    "en":  "Victory Lap Sports Achievement",
+                                    "ar":  "Ø¥Ù†Ø¬Ø§Ø² Ø¯ÙˆØ±Ø© Ø§Ù„Ù†ØµØ± Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  423,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_537dfaf492ac.jpg",
+                      "title":  {
+                                    "en":  "Podium Glory Sports Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ù…Ø¬Ø¯ Ø§Ù„Ù…Ù†ØµØ© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠØ©"
+                                },
+                      "price":  298,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  312,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1bcce8aa0ff9.jpg",
+                      "title":  {
+                                    "en":  "Athletic Excellence Sports Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„ØªÙ…ÙŠØ² Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  534,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2779f45d6c34.jpg",
+                      "title":  {
+                                    "en":  "Championship Ring Sports Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø®Ø§ØªÙ… Ø§Ù„Ø¨Ø·ÙˆÙ„Ø© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  245,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_95218adad666.jpg",
+                      "title":  {
+                                    "en":  "Team Captain Sports Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ù‚Ø§Ø¦Ø¯ Ø§Ù„ÙØ±ÙŠÙ‚ Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  334,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  367,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_3d4ad141e5e7.jpg",
+                      "title":  {
+                                    "en":  "Sports Arena Sports Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø§Ù„Ø³Ø§Ø­Ø© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠØ©"
+                                },
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  289,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_25f8ee2156a7.jpg",
+                      "title":  {
+                                    "en":  "Gold Medal Sports Tribute",
+                                    "ar":  "ØªÙƒØ±ÙŠÙ… Ø§Ù„Ù…ÙŠØ¯Ø§Ù„ÙŠØ© Ø§Ù„Ø°Ù‡Ø¨ÙŠØ© Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  456,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5e86edc754c0.jpg",
+                      "title":  {
+                                    "en":  "World Record Sports Energy",
+                                    "ar":  "Ø·Ø§Ù‚Ø© Ø§Ù„Ø±Ù‚Ù… Ø§Ù„Ù‚ÙŠØ§Ø³ÙŠ Ø§Ù„Ø¹Ø§Ù„Ù…ÙŠ Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  389,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1a186d20cbb3.jpg",
+                      "title":  {
+                                    "en":  "Sports Hall of Fame Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ù‚Ø§Ø¹Ø© Ù…Ø´Ø§Ù‡ÙŠØ± Ø§Ù„Ø±ÙŠØ§Ø¶Ø©"
+                                },
+                      "price":  489,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  578,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ee30940e58ff.jpg",
+                      "title":  {
+                                    "en":  "Athletic Champion Sports Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„Ø¨Ø·Ù„ Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  223,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5417ad3e290c.jpg",
+                      "title":  {
+                                    "en":  "Victory Dance Sports Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ø±Ù‚ØµØ© Ø§Ù„Ù†ØµØ± Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠ"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  334,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_13d119720895.jpg",
+                      "title":  {
+                                    "en":  "Sports Legacy Sports Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø¥Ø±Ø« Ø§Ù„Ø±ÙŠØ§Ø¶Ø©"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  445,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  }
+              ]
+}

@@ -1,0 +1,1525 @@
+﻿{
+    "category":  {
+                     "name":  {
+                                  "en":  "Birthday",
+                                  "ar":  "Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/birthday.png",
+                     "count":  55,
+                     "percentage":  35
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b6e97f140f80.jpg",
+                      "title":  {
+                                    "en":  "Midnight Velvet Birthday Dream",
+                                    "ar":  "Ø­Ù„Ù… Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ù„ÙŠÙ„ÙŠ"
+                                },
+                      "price":  245,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  342,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c5ce3b6148bb.jpg",
+                      "title":  {
+                                    "en":  "Golden Sunset Birthday Layers",
+                                    "ar":  "Ø·Ø¨Ù‚Ø§Øª ØºØ±ÙˆØ¨ Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ø°Ù‡Ø¨ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  187,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7b43acff2f58.jpg",
+                      "title":  {
+                                    "en":  "Berry Bliss Birthday Symphony",
+                                    "ar":  "Ø³ÙŠÙ…ÙÙˆÙ†ÙŠØ© Ø¨Ù„Ø³ Ø§Ù„ØªÙˆØª Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  456,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_911fea4b11a1.jpg",
+                      "title":  {
+                                    "en":  "Cloud Nine Birthday Vanilla",
+                                    "ar":  "ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ø³Ø­Ø§Ø¨Ø© Ø§Ù„ØªØ§Ø³Ø¹Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  156,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  298,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b78c8ba95135.jpg",
+                      "title":  {
+                                    "en":  "Caramel Cascade Birthday Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø´Ù„Ø§Ù„ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  387,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  521,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_27add2d566ed.jpg",
+                      "title":  {
+                                    "en":  "Rainbow Birthday Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ù‚ÙˆØ³ Ù‚Ø²Ø­ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  425,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  623,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cb4e8f14ae70.jpg",
+                      "title":  {
+                                    "en":  "Chocolate Birthday Decadence Tower",
+                                    "ar":  "Ø¨Ø±Ø¬ Ø§Ù†Ø­Ø·Ø§Ø· Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  389,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9a919c3c866a.jpg",
+                      "title":  {
+                                    "en":  "Strawberry Fields Birthday Forever",
+                                    "ar":  "Ø­Ù‚ÙˆÙ„ Ø§Ù„ÙØ±Ø§ÙˆÙ„Ø© Ù„Ù„Ø£Ø¨Ø¯ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  267,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d558cd1912e2.jpg",
+                      "title":  {
+                                    "en":  "Lemon Sunshine Birthday Burst",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø£Ø´Ø¹Ø© Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  412,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_831728a7e77e.jpg",
+                      "title":  {
+                                    "en":  "Fairy Tale Birthday Magic",
+                                    "ar":  "Ø³Ø­Ø± Ø­ÙƒØ§ÙŠØ© Ø®Ø±Ø§ÙÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  178,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d936cee96c2f.jpg",
+                      "title":  {
+                                    "en":  "Cosmic Birthday Adventure",
+                                    "ar":  "Ù…ØºØ§Ù…Ø±Ø© ÙƒÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  334,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b0bd9c4bbc1e.jpg",
+                      "title":  {
+                                    "en":  "Tropical Birthday Paradise",
+                                    "ar":  "Ø¬Ù†Ø© Ø§Ø³ØªÙˆØ§Ø¦ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  167,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  245,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2a78cf263a68.jpg",
+                      "title":  {
+                                    "en":  "Unicorn Dreams Birthday Special",
+                                    "ar":  "Ø®Ø§Øµ Ø£Ø­Ù„Ø§Ù… ÙˆØ­ÙŠØ¯ Ø§Ù„Ù‚Ø±Ù† Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  567,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_14ab07678e39.jpg",
+                      "title":  {
+                                    "en":  "Confetti Birthday Explosion",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø§Ù„Ù‚ØµØ§ØµØ§Øª Ø§Ù„Ù…Ù„ÙˆÙ†Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  213,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  298,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e3ec5258be25.jpg",
+                      "title":  {
+                                    "en":  "Sweet Birthday Memories",
+                                    "ar":  "Ø°ÙƒØ±ÙŠØ§Øª Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø­Ù„ÙˆØ©"
+                                },
+                      "price":  321,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  423,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_5eba187fa6d3.jpg",
+                      "title":  {
+                                    "en":  "Midnight Velvet Birthday Dream",
+                                    "ar":  "Ø­Ù„Ù… Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ù„ÙŠÙ„ÙŠ"
+                                },
+                      "price":  178,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  189,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_9dd4c9f35c3d.jpg",
+                      "title":  {
+                                    "en":  "Golden Sunset Birthday Layers",
+                                    "ar":  "Ø·Ø¨Ù‚Ø§Øª ØºØ±ÙˆØ¨ Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ø°Ù‡Ø¨ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  312,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8743ec7bf951.jpg",
+                      "title":  {
+                                    "en":  "Berry Bliss Birthday Symphony",
+                                    "ar":  "Ø³ÙŠÙ…ÙÙˆÙ†ÙŠØ© Ø¨Ù„Ø³ Ø§Ù„ØªÙˆØª Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  445,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b98c6d3bb84c.jpg",
+                      "title":  {
+                                    "en":  "Cloud Nine Birthday Vanilla",
+                                    "ar":  "ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ø³Ø­Ø§Ø¨Ø© Ø§Ù„ØªØ§Ø³Ø¹Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  145,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  223,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0772b25ee0ba.jpg",
+                      "title":  {
+                                    "en":  "Caramel Cascade Birthday Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø´Ù„Ø§Ù„ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  356,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_a816e23d617a.jpg",
+                      "title":  {
+                                    "en":  "Rainbow Birthday Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ù‚ÙˆØ³ Ù‚Ø²Ø­ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  278,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_cf75ada7b2ba.jpg",
+                      "title":  {
+                                    "en":  "Chocolate Birthday Decadence Tower",
+                                    "ar":  "Ø¨Ø±Ø¬ Ø§Ù†Ø­Ø·Ø§Ø· Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  523,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_88d947a16bd2.jpg",
+                      "title":  {
+                                    "en":  "Strawberry Fields Birthday Forever",
+                                    "ar":  "Ø­Ù‚ÙˆÙ„ Ø§Ù„ÙØ±Ø§ÙˆÙ„Ø© Ù„Ù„Ø£Ø¨Ø¯ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  167,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  198,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_af290a74bb28.jpg",
+                      "title":  {
+                                    "en":  "Lemon Sunshine Birthday Burst",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø£Ø´Ø¹Ø© Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  345,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  389,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8383ccdde7bc.jpg",
+                      "title":  {
+                                    "en":  "Fairy Tale Birthday Magic",
+                                    "ar":  "Ø³Ø­Ø± Ø­ÙƒØ§ÙŠØ© Ø®Ø±Ø§ÙÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_040a03312dfc.jpg",
+                      "title":  {
+                                    "en":  "Cosmic Birthday Adventure",
+                                    "ar":  "Ù…ØºØ§Ù…Ø±Ø© ÙƒÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  234,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2c187100af0f.jpg",
+                      "title":  {
+                                    "en":  "Tropical Birthday Paradise",
+                                    "ar":  "Ø¬Ù†Ø© Ø§Ø³ØªÙˆØ§Ø¦ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  412,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_73673a142aae.jpg",
+                      "title":  {
+                                    "en":  "Unicorn Dreams Birthday Special",
+                                    "ar":  "Ø®Ø§Øµ Ø£Ø­Ù„Ø§Ù… ÙˆØ­ÙŠØ¯ Ø§Ù„Ù‚Ø±Ù† Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  223,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  298,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_152ac002d258.jpg",
+                      "title":  {
+                                    "en":  "Confetti Birthday Explosion",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø§Ù„Ù‚ØµØ§ØµØ§Øª Ø§Ù„Ù…Ù„ÙˆÙ†Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  578,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_96db316ac27c.jpg",
+                      "title":  {
+                                    "en":  "Sweet Birthday Memories",
+                                    "ar":  "Ø°ÙƒØ±ÙŠØ§Øª Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø­Ù„ÙˆØ©"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  245,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_df28ab0d6331.jpg",
+                      "title":  {
+                                    "en":  "Midnight Velvet Birthday Dream",
+                                    "ar":  "Ø­Ù„Ù… Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ù„ÙŠÙ„ÙŠ"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  367,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_851c3c84b761.jpg",
+                      "title":  {
+                                    "en":  "Golden Sunset Birthday Layers",
+                                    "ar":  "Ø·Ø¨Ù‚Ø§Øª ØºØ±ÙˆØ¨ Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ø°Ù‡Ø¨ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  289,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_04e1fd5489fd.jpg",
+                      "title":  {
+                                    "en":  "Berry Bliss Birthday Symphony",
+                                    "ar":  "Ø³ÙŠÙ…ÙÙˆÙ†ÙŠØ© Ø¨Ù„Ø³ Ø§Ù„ØªÙˆØª Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  456,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_320ad99fbbe9.jpg",
+                      "title":  {
+                                    "en":  "Cloud Nine Birthday Vanilla",
+                                    "ar":  "ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ø³Ø­Ø§Ø¨Ø© Ø§Ù„ØªØ§Ø³Ø¹Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  145,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  198,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e2861ab42c6d.jpg",
+                      "title":  {
+                                    "en":  "Caramel Cascade Birthday Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø´Ù„Ø§Ù„ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  334,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_7fdff6624c10.jpg",
+                      "title":  {
+                                    "en":  "Rainbow Birthday Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ù‚ÙˆØ³ Ù‚Ø²Ø­ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  412,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_ea4a6d564644.jpg",
+                      "title":  {
+                                    "en":  "Chocolate Birthday Decadence Tower",
+                                    "ar":  "Ø¨Ø±Ø¬ Ø§Ù†Ø­Ø·Ø§Ø· Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  389,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8cd5cb96b67f.jpg",
+                      "title":  {
+                                    "en":  "Strawberry Fields Birthday Forever",
+                                    "ar":  "Ø­Ù‚ÙˆÙ„ Ø§Ù„ÙØ±Ø§ÙˆÙ„Ø© Ù„Ù„Ø£Ø¨Ø¯ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  256,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_68d5e2c9c702.jpg",
+                      "title":  {
+                                    "en":  "Lemon Sunshine Birthday Burst",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø£Ø´Ø¹Ø© Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  378,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_b5dfd678c0e6.jpg",
+                      "title":  {
+                                    "en":  "Fairy Tale Birthday Magic",
+                                    "ar":  "Ø³Ø­Ø± Ø­ÙƒØ§ÙŠØ© Ø®Ø±Ø§ÙÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  425,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  489,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_02533e67d58c.jpg",
+                      "title":  {
+                                    "en":  "Cosmic Birthday Adventure",
+                                    "ar":  "Ù…ØºØ§Ù…Ø±Ø© ÙƒÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  167,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  223,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6de3f6ab9d94.jpg",
+                      "title":  {
+                                    "en":  "Tropical Birthday Paradise",
+                                    "ar":  "Ø¬Ù†Ø© Ø§Ø³ØªÙˆØ§Ø¦ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  298,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  345,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_16e55a04c7d6.jpg",
+                      "title":  {
+                                    "en":  "Unicorn Dreams Birthday Special",
+                                    "ar":  "Ø®Ø§Øµ Ø£Ø­Ù„Ø§Ù… ÙˆØ­ÙŠØ¯ Ø§Ù„Ù‚Ø±Ù† Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  423,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_caf1d069733f.jpg",
+                      "title":  {
+                                    "en":  "Confetti Birthday Explosion",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø§Ù„Ù‚ØµØ§ØµØ§Øª Ø§Ù„Ù…Ù„ÙˆÙ†Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  245,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  298,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c56de877fddb.jpg",
+                      "title":  {
+                                    "en":  "Sweet Birthday Memories",
+                                    "ar":  "Ø°ÙƒØ±ÙŠØ§Øª Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø­Ù„ÙˆØ©"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  445,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0db6c2d471cd.jpg",
+                      "title":  {
+                                    "en":  "Midnight Velvet Birthday Dream",
+                                    "ar":  "Ø­Ù„Ù… Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯ Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ù„ÙŠÙ„ÙŠ"
+                                },
+                      "price":  198,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  267,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_95a33a1eb0e8.jpg",
+                      "title":  {
+                                    "en":  "Golden Sunset Birthday Layers",
+                                    "ar":  "Ø·Ø¨Ù‚Ø§Øª ØºØ±ÙˆØ¨ Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ø°Ù‡Ø¨ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  289,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  356,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d164e4e05f1b.jpg",
+                      "title":  {
+                                    "en":  "Berry Bliss Birthday Symphony",
+                                    "ar":  "Ø³ÙŠÙ…ÙÙˆÙ†ÙŠØ© Ø¨Ù„Ø³ Ø§Ù„ØªÙˆØª Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  512,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_0a75eb44d79d.jpg",
+                      "title":  {
+                                    "en":  "Cloud Nine Birthday Vanilla",
+                                    "ar":  "ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ø³Ø­Ø§Ø¨Ø© Ø§Ù„ØªØ§Ø³Ø¹Ø© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  167,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  234,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1a5b4dcd0e5b.jpg",
+                      "title":  {
+                                    "en":  "Caramel Cascade Birthday Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø´Ù„Ø§Ù„ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  334,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  389,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_bc4cb9a3094f.jpg",
+                      "title":  {
+                                    "en":  "Rainbow Birthday Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ù‚ÙˆØ³ Ù‚Ø²Ø­ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  312,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_208e49816731.jpg",
+                      "title":  {
+                                    "en":  "Chocolate Birthday Decadence Tower",
+                                    "ar":  "Ø¨Ø±Ø¬ Ø§Ù†Ø­Ø·Ø§Ø· Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  567,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_de2536111a7e.jpg",
+                      "title":  {
+                                    "en":  "Strawberry Fields Birthday Forever",
+                                    "ar":  "Ø­Ù‚ÙˆÙ„ Ø§Ù„ÙØ±Ø§ÙˆÙ„Ø© Ù„Ù„Ø£Ø¨Ø¯ Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  245,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_3dbfecd643e7.jpg",
+                      "title":  {
+                                    "en":  "Lemon Sunshine Birthday Burst",
+                                    "ar":  "Ø§Ù†ÙØ¬Ø§Ø± Ø£Ø´Ø¹Ø© Ø§Ù„Ø´Ù…Ø³ Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  423,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_6e3166a624dc.jpg",
+                      "title":  {
+                                    "en":  "Fairy Tale Birthday Magic",
+                                    "ar":  "Ø³Ø­Ø± Ø­ÙƒØ§ÙŠØ© Ø®Ø±Ø§ÙÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  223,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  278,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1ae9aa4ba330.jpg",
+                      "title":  {
+                                    "en":  "Cosmic Birthday Adventure",
+                                    "ar":  "Ù…ØºØ§Ù…Ø±Ø© ÙƒÙˆÙ†ÙŠØ© Ù„Ø¹ÙŠØ¯ Ø§Ù„Ù…ÙŠÙ„Ø§Ø¯"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  489,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  }
+              ]
+}

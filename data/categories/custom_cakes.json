@@ -1,0 +1,229 @@
+﻿{
+    "category":  {
+                     "name":  {
+                                  "en":  "Custom",
+                                  "ar":  "Ù…Ø®ØµØµ"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/custom.png",
+                     "count":  8,
+                     "percentage":  5
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_618f7b747914.jpg",
+                      "title":  {
+                                    "en":  "Bespoke Custom Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ù…Ø®ØµØµ Ø­Ø³Ø¨ Ø§Ù„Ø·Ù„Ø¨"
+                                },
+                      "price":  489,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  234,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2a587c1062a3.jpg",
+                      "title":  {
+                                    "en":  "Artisan Custom Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø­Ø±ÙÙŠ Ù…Ø®ØµØµ"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  189,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_630bc283a2b5.jpg",
+                      "title":  {
+                                    "en":  "Personalized Custom Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø´Ø®ØµÙŠØ© Ù…Ø®ØµØµØ©"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  167,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8224468a7ecd.jpg",
+                      "title":  {
+                                    "en":  "Unique Custom Vision",
+                                    "ar":  "Ø±Ø¤ÙŠØ© ÙØ±ÙŠØ¯Ø© Ù…Ø®ØµØµØ©"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  145,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_1ea65df99ec2.jpg",
+                      "title":  {
+                                    "en":  "Custom Dream Custom Reality",
+                                    "ar":  "Ø­Ù‚ÙŠÙ‚Ø© Ø§Ù„Ø­Ù„Ù… Ø§Ù„Ù…Ø®ØµØµ"
+                                },
+                      "price":  467,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  278,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_f6a2cb653402.jpg",
+                      "title":  {
+                                    "en":  "Tailored Custom Perfection",
+                                    "ar":  "Ø§Ù„ÙƒÙ…Ø§Ù„ Ø§Ù„Ù…ØµÙ…Ù… Ø­Ø³Ø¨ Ø§Ù„Ø·Ù„Ø¨"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  198,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d5a7fe32a69c.jpg",
+                      "title":  {
+                                    "en":  "Signature Custom Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„ØªÙˆÙ‚ÙŠØ¹ Ø§Ù„Ù…Ø®ØµØµ"
+                                },
+                      "price":  423,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  223,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_89c9b100b05.jpg",
+                      "title":  {
+                                    "en":  "Custom Art Custom Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© ÙÙ† Ù…Ø®ØµØµ"
+                                },
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  156,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  }
+              ]
+}

@@ -1,0 +1,445 @@
+﻿{
+    "category":  {
+                     "name":  {
+                                  "en":  "Corporate",
+                                  "ar":  "Ø´Ø±ÙƒØ§Øª"
+                              },
+                     "image":  "https://cakecrafter-media-web-optimized.s3-us-west-2.amazonaws.com/cake_categories_images/corporate.png",
+                     "count":  16,
+                     "percentage":  10
+                 },
+    "cakes":  [
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_397209692f7e.jpg",
+                      "title":  {
+                                    "en":  "Executive Corporate Excellence",
+                                    "ar":  "Ø§Ù„ØªÙ…ÙŠØ² Ø§Ù„ØªÙ†ÙÙŠØ°ÙŠ Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  489,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  623,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_24d7331ed06c.jpg",
+                      "title":  {
+                                    "en":  "Business Success Corporate Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ù†Ø¬Ø§Ø­ Ø§Ù„Ø£Ø¹Ù…Ø§Ù„ Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  378,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  512,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_c14977854ae2.jpg",
+                      "title":  {
+                                    "en":  "Corporate Achievement Corporate Special",
+                                    "ar":  "Ø®Ø§Øµ Ø¥Ù†Ø¬Ø§Ø² Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  334,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  445,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_15c0a82b1802.jpg",
+                      "title":  {
+                                    "en":  "Professional Corporate Milestone",
+                                    "ar":  "Ù…Ø¹Ù„Ù… Ù…Ù‡Ù†ÙŠ Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  298,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.3,
+                      "purchases":  356,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_03d34054f0e6.jpg",
+                      "title":  {
+                                    "en":  "Corporate Innovation Corporate Delight",
+                                    "ar":  "Ù…ØªØ¹Ø© Ø§Ù„Ø§Ø¨ØªÙƒØ§Ø± Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  445,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  567,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_d6ae539c9830.jpg",
+                      "title":  {
+                                    "en":  "Leadership Corporate Celebration",
+                                    "ar":  "Ø§Ø­ØªÙØ§Ù„ Ø§Ù„Ù‚ÙŠØ§Ø¯Ø© Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  267,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  298,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_4fedea5b2c5a.jpg",
+                      "title":  {
+                                    "en":  "Corporate Victory Corporate Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø§Ù†ØªØµØ§Ø± Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  412,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Red velvet base",
+                                                     "Cream cheese frosting",
+                                                     "Natural coloring",
+                                                     "Vanilla essence"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù…Ø®Ù…Ù„ Ø§Ù„Ø£Ø­Ù…Ø±",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø¬Ø¨Ù† Ø§Ù„Ù…Ø«Ù„Ø¬Ø©",
+                                                     "ØªÙ„ÙˆÙŠÙ† Ø·Ø¨ÙŠØ¹ÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  478,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_2de55b5df5fa.jpg",
+                      "title":  {
+                                    "en":  "Business Growth Corporate Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ù†Ù…Ùˆ Ø§Ù„Ø£Ø¹Ù…Ø§Ù„ Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  234,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh raspberries",
+                                                     "Greek yogurt",
+                                                     "Coconut flour",
+                                                     "Honey"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø§Ù„Ø¹Ù„ÙŠÙ‚ Ø§Ù„Ø·Ø§Ø²Ø¬",
+                                                     "Ø²Ø¨Ø§Ø¯ÙŠ ÙŠÙˆÙ†Ø§Ù†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¬ÙˆØ² Ø§Ù„Ù‡Ù†Ø¯",
+                                                     "Ø¹Ø³Ù„"
+                                                 ]
+                                      },
+                      "rating":  4.1,
+                      "purchases":  289,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_e307fc29560a.jpg",
+                      "title":  {
+                                    "en":  "Corporate Honor Corporate Tribute",
+                                    "ar":  "ØªÙƒØ±ÙŠÙ… Ø´Ø±Ù Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  356,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Espresso",
+                                                     "Tiramisu cream",
+                                                     "Ladyfingers",
+                                                     "Coffee beans"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø¥Ø³Ø¨Ø±ÙŠØ³Ùˆ",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„ØªÙŠØ±Ø§Ù…ÙŠØ³Ùˆ",
+                                                     "Ø£ØµØ§Ø¨Ø¹ Ø§Ù„Ø³Øª",
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„Ù‚Ù‡ÙˆØ©"
+                                                 ]
+                                      },
+                      "rating":  4.4,
+                      "purchases":  389,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_8f7ba1f890bb.jpg",
+                      "title":  {
+                                    "en":  "Strategic Corporate Planning",
+                                    "ar":  "Ø§Ù„ØªØ®Ø·ÙŠØ· Ø§Ù„Ø§Ø³ØªØ±Ø§ØªÙŠØ¬ÙŠ Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  189,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh mint",
+                                                     "Chocolate chips",
+                                                     "Organic sugar",
+                                                     "Natural extracts"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù†Ø¹Ù†Ø§Ø¹ Ø·Ø§Ø²Ø¬",
+                                                     "Ø±Ù‚Ø§Ø¦Ù‚ Ø§Ù„Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ©",
+                                                     "Ø³ÙƒØ± Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø®Ù„Ø§ØµØ§Øª Ø·Ø¨ÙŠØ¹ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  3.9,
+                      "purchases":  234,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_53cb8869e26c.jpg",
+                      "title":  {
+                                    "en":  "Corporate Team Corporate Unity",
+                                    "ar":  "ÙˆØ­Ø¯Ø© ÙØ±ÙŠÙ‚ Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  423,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Premium vanilla extract",
+                                                     "Fresh cream",
+                                                     "Organic eggs",
+                                                     "Belgian chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø®Ù„Ø§ØµØ© Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ù„Ø¬ÙŠÙƒÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.7,
+                      "purchases":  498,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_045531804c1a.jpg",
+                      "title":  {
+                                    "en":  "Corporate Success Corporate Story",
+                                    "ar":  "Ù‚ØµØ© Ù†Ø¬Ø§Ø­ Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  312,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Madagascar vanilla beans",
+                                                     "Butter cream",
+                                                     "Free-range eggs",
+                                                     "Swiss chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ø­Ø¨ÙˆØ¨ Ø§Ù„ÙØ§Ù†ÙŠÙ„ÙŠØ§ Ø§Ù„Ù…Ø¯ØºØ´Ù‚Ø±ÙŠØ©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø§Ù„Ø²Ø¨Ø¯Ø©",
+                                                     "Ø¨ÙŠØ¶ Ù…Ù† Ø¯Ø¬Ø§Ø¬ Ø­Ø±",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø³ÙˆÙŠØ³Ø±ÙŠØ©"
+                                                 ]
+                                      },
+                      "rating":  4.5,
+                      "purchases":  367,
+                      "is_new":  false,
+                      "is_in_stock":  false
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_a1b702d50eb2.jpg",
+                      "title":  {
+                                    "en":  "Corporate Excellence Corporate Special",
+                                    "ar":  "Ø®Ø§Øµ Ø§Ù„ØªÙ…ÙŠØ² Ù„Ù„Ø´Ø±ÙƒØ§Øª"
+                                },
+                      "price":  467,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh strawberries",
+                                                     "Whipped cream",
+                                                     "Farm eggs",
+                                                     "Dark chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ÙØ±Ø§ÙˆÙ„Ø© Ø·Ø§Ø²Ø¬Ø©",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ù…Ø®ÙÙˆÙ‚Ø©",
+                                                     "Ø¨ÙŠØ¶ Ø§Ù„Ù…Ø²Ø±Ø¹Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¯Ø§ÙƒÙ†Ø©"
+                                                 ]
+                                      },
+                      "rating":  4.8,
+                      "purchases":  545,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fc3f06f1adb2.jpg",
+                      "title":  {
+                                    "en":  "Corporate Vision Corporate Cake",
+                                    "ar":  "ÙƒØ¹ÙƒØ© Ø±Ø¤ÙŠØ© Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  278,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Lemon zest",
+                                                     "Cream cheese",
+                                                     "Organic flour",
+                                                     "White chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "Ù‚Ø´Ø± Ø§Ù„Ù„ÙŠÙ…ÙˆÙ†",
+                                                     "Ø¬Ø¨Ù† ÙƒØ±ÙŠÙ…ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø¹Ø¶ÙˆÙŠ",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨ÙŠØ¶Ø§Ø¡"
+                                                 ]
+                                      },
+                      "rating":  4.2,
+                      "purchases":  323,
+                      "is_new":  true,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_4257b625006f.jpg",
+                      "title":  {
+                                    "en":  "Corporate Milestone Corporate Creation",
+                                    "ar":  "Ø¥Ø¨Ø¯Ø§Ø¹ Ù…Ø¹Ù„Ù… Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  398,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Fresh blueberries",
+                                                     "Heavy cream",
+                                                     "Premium butter",
+                                                     "Milk chocolate"
+                                                 ],
+                                          "ar":  [
+                                                     "ØªÙˆØª Ø£Ø²Ø±Ù‚ Ø·Ø§Ø²Ø¬",
+                                                     "ÙƒØ±ÙŠÙ…Ø© Ø«Ù‚ÙŠÙ„Ø©",
+                                                     "Ø²Ø¨Ø¯Ø© Ù…Ù…ØªØ§Ø²Ø©",
+                                                     "Ø´ÙˆÙƒÙˆÙ„Ø§ØªØ© Ø¨Ø§Ù„Ø­Ù„ÙŠØ¨"
+                                                 ]
+                                      },
+                      "rating":  4.6,
+                      "purchases":  434,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  },
+                  {
+                      "image_url":  "https://cakecrafter-media-web-optimized.s3.amazonaws.com/generated_images/cake_gen_fbe95dc89fd5.jpg",
+                      "title":  {
+                                    "en":  "Corporate Legacy Corporate Masterpiece",
+                                    "ar":  "ØªØ­ÙØ© Ø¥Ø±Ø« Ø§Ù„Ø´Ø±ÙƒØ©"
+                                },
+                      "price":  456,
+                      "currency":  "QAR",
+                      "ingredients":  {
+                                          "en":  [
+                                                     "Caramel sauce",
+                                                     "Mascarpone",
+                                                     "Almond flour",
+                                                     "Cocoa powder"
+                                                 ],
+                                          "ar":  [
+                                                     "ØµÙˆØµ Ø§Ù„ÙƒØ±Ø§Ù…ÙŠÙ„",
+                                                     "Ù…Ø§Ø³ÙƒØ§Ø±Ø¨ÙˆÙ†ÙŠ",
+                                                     "Ø¯Ù‚ÙŠÙ‚ Ø§Ù„Ù„ÙˆØ²",
+                                                     "Ù…Ø³Ø­ÙˆÙ‚ Ø§Ù„ÙƒØ§ÙƒØ§Ùˆ"
+                                                 ]
+                                      },
+                      "rating":  4.9,
+                      "purchases":  589,
+                      "is_new":  false,
+                      "is_in_stock":  true
+                  }
+              ]
+}
