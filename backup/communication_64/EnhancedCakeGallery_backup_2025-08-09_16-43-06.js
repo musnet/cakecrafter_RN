@@ -1,12 +1,11 @@
 // src/components/gallery/EnhancedCakeGallery.js
-// Communication #64.3 - UI/UX ENHANCED: Improved price visibility & add-to-cart button
+// Communication #62.4 - NUCLEAR FIXED: Local JSON data integration
 // 🚀 FIXED: Now uses local JSON data from SuperDuperHomeScreen instead of API
 // ⚡ OPTIMIZED: Loads 12 images per batch, infinite scroll pagination
 // 🎨 LUXURY: Qatar-branded masonry layout with beautiful animations
 // 🌐 i18n: Full Arabic/English RTL/LTR support
 // ✨ LAZY: LazyImage component prevents memory overload
 // 🔧 DATA FLOW: Uses cakes prop directly, API as fallback
-// 🛒 NEW: Enhanced price display & add-to-cart functionality
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
@@ -42,13 +41,12 @@ const PERFORMANCE_CONFIG = {
 };
 
 // ================================
-// ENHANCED CAKE GALLERY COMPONENT - Communication #64.3
+// NUCLEAR FIXED CAKE GALLERY COMPONENT
 // ================================
 const EnhancedCakeGallery = ({ 
   galleryImages = [], 
   cakes = [], 
   onCakePress,
-  onAddToCart, // 🛒 NEW: Add-to-cart handler
   currentLanguage = 'en',
   style,
   selectedCategory = null,
@@ -86,9 +84,6 @@ const EnhancedCakeGallery = ({
   const scrollY = useRef(new Animated.Value(0)).current;
   const galleryOpacity = useRef(new Animated.Value(0)).current;
   const headerScale = useRef(new Animated.Value(0.8)).current;
-  
-  // 🛒 NEW: Add-to-cart animation refs - Communication #64.3
-  const addToCartScale = useRef(new Animated.Value(1)).current;
   
   // Performance refs
   const imageLoadQueue = useRef([]);
@@ -395,43 +390,6 @@ const EnhancedCakeGallery = ({
   }, [totalImageCount, dataSource]);
   
   // ============================================================================
-  // 🛒 NEW: ADD-TO-CART FUNCTIONALITY - Communication #64.3
-  // ============================================================================
-  
-  const handleAddToCartPress = useCallback((item, event) => {
-    // Stop event propagation to prevent triggering onCakePress
-    if (event) {
-      event.stopPropagation();
-    }
-    
-    // Animate button press
-    Animated.sequence([
-      Animated.timing(addToCartScale, {
-        toValue: 0.9,
-        duration: 100,
-        useNativeDriver: true,
-      }),
-      Animated.timing(addToCartScale, {
-        toValue: 1,
-        duration: 100,
-        useNativeDriver: true,
-      }),
-    ]).start();
-    
-    // Call parent handler if provided
-    if (onAddToCart) {
-      console.log(`🛒 Communication #64.3 - Add to cart: ${item.name} (${item.price})`);
-      onAddToCart(item);
-    } else {
-      // Fallback: use onCakePress with action type
-      console.log(`🛒 Communication #64.3 - Add to cart fallback: ${item.name}`);
-      if (onCakePress) {
-        onCakePress(item, { action: 'addToCart' });
-      }
-    }
-  }, [onAddToCart, onCakePress, addToCartScale]);
-  
-  // ============================================================================
   // PRESERVED METHODS - Communication #62.4
   // ============================================================================
   
@@ -519,7 +477,7 @@ const EnhancedCakeGallery = ({
   }, [selectedCategory]);
   
   // ============================================================================
-  // ✨ OPTIMIZED RENDER METHODS - Communication #62.4 & #64.3
+  // ✨ OPTIMIZED RENDER METHODS - Communication #62.4
   // ============================================================================
   
   const renderGalleryHeader = () => (
@@ -592,7 +550,6 @@ const EnhancedCakeGallery = ({
     </Animated.View>
   );
   
-  // 🎨 ENHANCED: Gallery item with improved price display and add-to-cart - Communication #64.3
   const renderOptimizedGalleryItem = ({ item, index }) => {
     const column = index % COLUMN_COUNT;
     const itemStyle = {
@@ -614,48 +571,22 @@ const EnhancedCakeGallery = ({
           onPress={() => onCakePress && onCakePress(item)}
           fallbackUri={`https://via.placeholder.com/300x${item.height}/f0f0f0/999?text=Cake`}
         >
-          {/* Enhanced overlay content - Communication #64.3 */}
+          {/* Overlay content */}
           <View style={styles.itemOverlay}>
             <LinearGradient
               colors={['transparent', 'rgba(0,0,0,0.7)']}
               style={styles.overlayGradient}
             >
               <View style={styles.itemContent}>
-                {/* 🛒 NEW: Add to Cart Button - Communication #64.3 */}
-                {item.type === 'cake' && (
-                  <Animated.View 
-                    style={[
-                      styles.addToCartButton,
-                      { transform: [{ scale: addToCartScale }] }
-                    ]}
-                  >
-                    <TouchableOpacity
-                      style={styles.addToCartTouchable}
-                      onPress={(event) => handleAddToCartPress(item, event)}
-                      activeOpacity={0.8}
-                    >
-                      <Text style={styles.addToCartIcon}>+</Text>
-                    </TouchableOpacity>
-                  </Animated.View>
-                )}
-                
-                {/* Main content area */}
-                <View style={styles.itemMainContent}>
-                  <Text style={styles.itemName} numberOfLines={2}>
-                    {currentLanguage === 'ar' ? item.nameAr || item.name : item.name}
-                  </Text>
-                  {item.rating && (
-                    <Text style={styles.itemRating}>⭐ {item.rating}</Text>
-                  )}
-                </View>
-                
-                {/* 💰 ENHANCED: Price Display - Communication #64.3 */}
+                <Text style={styles.itemName} numberOfLines={2}>
+                  {currentLanguage === 'ar' ? item.nameAr || item.name : item.name}
+                </Text>
                 {item.price && (
-                  <View style={styles.enhancedPriceContainer}>
-                    <Text style={styles.enhancedPriceText}>{item.price}</Text>
-                  </View>
+                  <Text style={styles.itemPrice}>{item.price}</Text>
                 )}
-                
+                {item.rating && (
+                  <Text style={styles.itemRating}>⭐ {item.rating}</Text>
+                )}
                 {/* ✨ DEBUG: Show data source */}
                 <Text style={styles.dataSourceBadge}>
                   {item.dataSource || dataSource}
@@ -755,7 +686,7 @@ const EnhancedCakeGallery = ({
 };
 
 // ============================================================================
-// ✨ ENHANCED STYLES WITH NEW UI/UX COMPONENTS - Communication #64.3
+// ✨ PERFORMANCE OPTIMIZED STYLES - Communication #62.4
 // ============================================================================
 
 const styles = {
@@ -867,41 +798,6 @@ const styles = {
   
   itemContent: {
     padding: Spacing.sm,
-    position: 'relative',
-  },
-  
-  // 🛒 NEW: Add to Cart Button Styles - Communication #64.3
-  addToCartButton: {
-    position: 'absolute',
-    top: 8,
-    left: 8,
-    zIndex: 10,
-  },
-  
-  addToCartTouchable: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: QatarColors.primary || '#8B0000', // Qatar Maroon
-    justifyContent: 'center',
-    alignItems: 'center',
-    elevation: 4,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-  },
-  
-  addToCartIcon: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
-  },
-  
-  // Enhanced main content area
-  itemMainContent: {
-    marginTop: 44 + 8, // Account for add-to-cart button
-    marginBottom: 8,
   },
   
   itemName: {
@@ -911,44 +807,16 @@ const styles = {
     marginBottom: 4,
   },
   
-  itemRating: {
-    fontSize: Typography.fontSize.xs,
-    color: QatarColors.textOnPrimary,
-    marginTop: 2,
-  },
-  
-  // 💰 ENHANCED: Price Display Styles - Communication #64.3
-  enhancedPriceContainer: {
-    position: 'absolute',
-    bottom: 8,
-    right: 8,
-    backgroundColor: 'rgba(212, 175, 55, 0.95)', // Qatar Gold with transparency
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 16,
-    elevation: 3,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.2,
-    shadowRadius: 2,
-    borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
-  },
-  
-  enhancedPriceText: {
-    fontSize: Typography.fontSize.md, // Larger than before (was xs)
-    fontWeight: Typography.fontWeight.bold,
-    color: '#FFFFFF',
-    textShadowColor: 'rgba(0, 0, 0, 0.5)',
-    textShadowOffset: { width: 1, height: 1 },
-    textShadowRadius: 2,
-  },
-  
-  // ✨ PRESERVED: Original price style (fallback)
   itemPrice: {
     fontSize: Typography.fontSize.xs,
     color: QatarColors.secondary,
     fontWeight: Typography.fontWeight.medium,
+  },
+  
+  itemRating: {
+    fontSize: Typography.fontSize.xs,
+    color: QatarColors.textOnPrimary,
+    marginTop: 2,
   },
   
   // ✨ NEW: Data source debug badge
