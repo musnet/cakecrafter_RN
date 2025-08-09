@@ -1,10 +1,10 @@
-// src/screens/SuperDuperHomeScreen.js - Communication #60.11: TEMPORARY VERSION (No Cart)
-// ⚠️ TEMPORARY: This version has NO cart functionality to fix useCart import errors
+// src/screens/SuperDuperHomeScreen.js - Communication #60.7: Enhanced with Shopping Cart Integration
+// 🛒 NEW: Complete shopping cart integration with CartContext
 // 🎨 LUXURY: Premium dark theme with Qatar branding and stunning visuals
 // 🌐 i18n: Full Arabic/English support with LanguageSwitcher integration
 // 🍰 JSON DATA: Real cake data from 6 category JSON files - NO HARDCODED DATA
-// ✨ CLEAN: Simple category selection with JSON data display
-// 📱 CATEGORIES: Load from data/categories/*.json files
+// ✨ ENHANCED: Cart icon and add-to-cart functionality
+// 📱 CATEGORIES: Load from data/categories/*.json files with cart integration
 
 import React, { useState, useEffect, useRef } from 'react';
 import {
@@ -32,9 +32,10 @@ import { useTranslation } from 'react-i18next';
 import { QatarColors, Spacing, Typography, ComponentStyles, Layout } from '../styles/theme';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 
-// ✨ NO CART IMPORTS - For temporary use only
-// import { useCart } from '../context/CartContext'; // ❌ REMOVED TEMPORARILY
-// import CartIcon from '../components/cart/CartIcon'; // ❌ REMOVED TEMPORARILY
+// ✨ NEW: Import cart components - Communication #60.7
+import { useCart } from '../context/CartContext';
+import CartIcon from '../components/cart/CartIcon';
+import CartDrawer from '../components/cart/CartDrawer';
 
 // Import gallery component
 import EnhancedCakeGallery from '../components/gallery/EnhancedCakeGallery';
@@ -84,8 +85,6 @@ const CATEGORY_COLORS = {
 };
 
 // Categories configuration
-
-
 const CAKE_CATEGORIES = [
   {
     key: 'birthday',
@@ -143,28 +142,29 @@ const CAKE_CATEGORIES = [
   },
 ];
 
+
 // ================================
-// MAIN COMPONENT - Communication #60.11 (TEMPORARY NO CART)
+// MAIN COMPONENT - Communication #60.7
 // ================================
 const SuperDuperHomeScreen = ({ navigation }) => {
   
   // ============================================================================
-  // HOOKS & CONTEXT - Communication #60.11 (NO CART)
+  // HOOKS & CONTEXT - Communication #60.7
   // ============================================================================
   
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language || 'en';
   const isRTL = currentLanguage === 'ar';
   
-  // ❌ TEMPORARILY REMOVED: Cart context integration
-  // const {
-  //   addToCart,
-  //   totalItems,
-  //   isCartVisible,
-  //   setCartVisible,
-  //   hasItems,
-  //   formattedTotalWithCurrency,
-  // } = useCart();
+  // ✨ NEW: Cart context integration - Communication #60.7
+  const {
+    addToCart,
+    totalItems,
+    isCartVisible,
+    setCartVisible,
+    hasItems,
+    formattedTotalWithCurrency,
+  } = useCart();
   
   // ============================================================================
   // STATE MANAGEMENT
@@ -177,6 +177,9 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [showLanguageSwitcher, setShowLanguageSwitcher] = useState(false);
+  
+  // ✨ NEW: Cart UI state - Communication #60.7
+  const [showCartDrawer, setShowCartDrawer] = useState(false);
   
   // Animation refs
   const categoryScale = useRef(new Animated.Value(0.8)).current;
@@ -206,7 +209,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   const loadInitialData = async () => {
     try {
       setIsLoading(true);
-      console.log('🏠 Communication #60.11 - Loading SuperDuperHomeScreen (TEMPORARY - no cart)');
+      console.log('🏠 Communication #60.7 - Loading SuperDuperHomeScreen with cart integration');
       
       // Load categories with cake counts
       const categoriesWithCounts = CAKE_CATEGORIES.map(category => {
@@ -228,10 +231,10 @@ const SuperDuperHomeScreen = ({ navigation }) => {
         setSelectedCategory(categoriesWithCounts[0]);
       }
       
-      console.log('✅ Communication #60.11 - Initial data loaded (TEMPORARY - no cart)');
+      console.log('✅ Communication #60.7 - Initial data loaded with cart support');
       
     } catch (error) {
-      console.error('❌ Communication #60.11 - Failed to load initial data:', error);
+      console.error('❌ Communication #60.7 - Failed to load initial data:', error);
     } finally {
       setIsLoading(false);
     }
@@ -239,19 +242,19 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   
   const loadCategoryData = (category) => {
     try {
-      console.log(`🍰 Communication #60.11 - Loading category: ${category.name} (no cart integration)`);
+      console.log(`🍰 Communication #60.7 - Loading category: ${category.name} for cart integration`);
       
       const categoryData = CATEGORY_DATA_MAP[category.key];
       if (validateCategoryData(category.key, categoryData)) {
         setCakes(categoryData.cakes || []);
-        console.log(`✅ Communication #60.11 - Loaded ${categoryData.cakes.length} cakes from ${category.name}`);
+        console.log(`✅ Communication #60.7 - Loaded ${categoryData.cakes.length} cakes from ${category.name}`);
       } else {
         setCakes([]);
-        console.log(`⚠️ Communication #60.11 - No valid cakes found for ${category.name}`);
+        console.log(`⚠️ Communication #60.7 - No valid cakes found for ${category.name}`);
       }
       
     } catch (error) {
-      console.error(`❌ Communication #60.11 - Error loading category ${category.name}:`, error);
+      console.error(`❌ Communication #60.7 - Error loading category ${category.name}:`, error);
       setCakes([]);
     }
   };
@@ -280,18 +283,63 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   };
   
   // ============================================================================
-  // ❌ TEMPORARILY DISABLED: CART EVENT HANDLERS
+  // ✨ NEW: CART EVENT HANDLERS - Communication #60.7
   // ============================================================================
   
   const handleAddToCart = (item) => {
-    console.log(`🚫 Communication #60.11 - Cart disabled: Would add ${item.name}`);
+    console.log(`🛒 Communication #60.7 - Adding to cart from SuperDuperHome: ${item.name}`);
     
-    // Show temporary message
+    try {
+      addToCart(item, 1, true); // Add 1 item with toast notification
+      
+      // Optional: Show cart drawer briefly when item is added
+      // setShowCartDrawer(true);
+      // setTimeout(() => setShowCartDrawer(false), 2000);
+      
+    } catch (error) {
+      console.error('❌ Communication #60.7 - Error adding to cart:', error);
+      Alert.alert(
+        isRTL ? 'خطأ' : 'Error',
+        isRTL ? 'فشل في إضافة العنصر للسلة' : 'Failed to add item to cart',
+        [{ text: isRTL ? 'موافق' : 'OK' }]
+      );
+    }
+  };
+  
+  const handleCartIconPress = () => {
+    console.log(`🛒 Communication #60.7 - Cart icon pressed (${totalItems} items)`);
+    setShowCartDrawer(true);
+  };
+  
+  const handleCartDrawerClose = () => {
+    console.log('🛒 Communication #60.7 - Cart drawer closed');
+    setShowCartDrawer(false);
+  };
+  
+  const handleCheckout = (items, total) => {
+    console.log(`💳 Communication #60.7 - Checkout initiated: ${items.length} items, total: ${total}`);
+    
+    // Close cart drawer
+    setShowCartDrawer(false);
+    
+    // Show checkout modal/screen
     Alert.alert(
-      '🛒 Cart Feature',
-      `Cart functionality is temporarily disabled.\n\nWould add: ${item.name}\nPrice: ${item.price}`,
+      isRTL ? 'الخروج للدفع' : 'Checkout',
+      isRTL 
+        ? `المتابعة للدفع بإجمالي ${formattedTotalWithCurrency}؟`
+        : `Proceed to checkout with ${items.length} items (${formattedTotalWithCurrency})?`,
       [
-        { text: 'OK', style: 'default' }
+        { text: isRTL ? 'إلغاء' : 'Cancel', style: 'cancel' },
+        { 
+          text: isRTL ? 'متابعة' : 'Continue',
+          onPress: () => {
+            // Navigate to checkout screen
+            Alert.alert(
+              isRTL ? 'قريباً' : 'Coming Soon',
+              isRTL ? 'ميزة الدفع قيد التطوير' : 'Checkout functionality coming soon!'
+            );
+          }
+        },
       ]
     );
   };
@@ -308,30 +356,30 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   
   const handleSearch = (query) => {
     setSearchQuery(query);
-    console.log('🔍 Communication #60.11 - Searching for:', query);
+    console.log('🔍 Communication #60.7 - Searching for:', query);
     // TODO: Implement real search functionality
   };
   
   const handleLanguageChange = (languageCode) => {
-    console.log('🌐 Communication #60.11 - Language changed to:', languageCode);
+    console.log('🌐 Communication #60.7 - Language changed to:', languageCode);
   };
   
   const handleCategoryPress = (category) => {
     setSelectedCategory(category);
     const categoryName = isRTL ? category.nameAr : category.name;
-    console.log(`📱 Communication #60.11 - Category selected: ${categoryName} (${category.count} cakes)`);
+    console.log(`📱 Communication #60.7 - Category selected: ${categoryName} (${category.count} cakes)`);
   };
   
   const handleCakePress = (cake) => {
-    console.log(`🍰 Communication #60.11 - Cake pressed: ${cake.name}`);
+    console.log(`🍰 Communication #60.7 - Cake pressed: ${cake.name}`);
     // Navigate to cake details or show modal
     Alert.alert(
       cake.name,
-      `${cake.description || 'Delicious cake'}\nPrice: ${cake.price || 'QAR 199'}\n\n⚠️ Cart features temporarily disabled`,
+      `${cake.description || 'Delicious cake'}\nPrice: ${cake.price || 'QAR 199'}`,
       [
         { text: isRTL ? 'إغلاق' : 'Close', style: 'cancel' },
         { 
-          text: isRTL ? 'محاكاة الإضافة' : 'Simulate Add',
+          text: isRTL ? 'إضافة للسلة' : 'Add to Cart',
           onPress: () => handleAddToCart(cake)
         },
       ]
@@ -366,12 +414,20 @@ const SuperDuperHomeScreen = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           
-          {/* ⚠️ TEMPORARY: Cart disabled notice */}
-          <View style={styles.tempCartNotice}>
-            <Text style={styles.tempCartText}>
-              🛒 Cart: Disabled
-            </Text>
-          </View>
+          {/* ✨ NEW: Cart summary in header - Communication #60.7 */}
+          {hasItems && (
+            <TouchableOpacity
+              style={styles.headerCartSummary}
+              onPress={handleCartIconPress}
+            >
+              <Text style={styles.headerCartText}>
+                {isRTL ? `${totalItems} عنصر` : `${totalItems} items`}
+              </Text>
+              <Text style={styles.headerCartTotal}>
+                {formattedTotalWithCurrency}
+              </Text>
+            </TouchableOpacity>
+          )}
         </View>
       </View>
       
@@ -449,7 +505,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
         cakes={cakes}
         selectedCategory={selectedCategory}
         onCakePress={handleCakePress}
-        onAddToCart={handleAddToCart} // ⚠️ TEMPORARY: Points to disabled handler
+        onAddToCart={handleAddToCart} // ✨ NEW: Cart integration - Communication #60.7
         currentLanguage={currentLanguage}
         style={styles.gallery}
       />
@@ -457,7 +513,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   );
   
   // ============================================================================
-  // MAIN RENDER - Communication #60.11 (TEMPORARY)
+  // MAIN RENDER - Communication #60.7
   // ============================================================================
   
   return (
@@ -505,20 +561,21 @@ const SuperDuperHomeScreen = ({ navigation }) => {
                 </Text>
               </View>
             )}
-            
-            {/* ⚠️ TEMPORARY NOTICE */}
-            <View style={styles.tempNotice}>
-              <Text style={styles.tempNoticeTitle}>
-                ⚠️ TEMPORARY VERSION
-              </Text>
-              <Text style={styles.tempNoticeText}>
-                Cart functionality is disabled until all cart components are ready.{'\n'}
-                Plus buttons will show simulation dialogs only.
-              </Text>
-            </View>
           </ScrollView>
           
-          {/* ❌ TEMPORARILY REMOVED: Cart Icon & Drawer */}
+          {/* ✨ NEW: Cart Icon - Communication #60.7 */}
+          <CartIcon
+            onPress={handleCartIconPress}
+            position="fixed"
+            size="medium"
+          />
+          
+          {/* ✨ NEW: Cart Drawer - Communication #60.7 */}
+          <CartDrawer
+            visible={showCartDrawer}
+            onClose={handleCartDrawerClose}
+            onCheckout={handleCheckout}
+          />
           
           {/* Language Switcher Modal */}
           <LanguageSwitcher
@@ -533,7 +590,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
 };
 
 // ============================================================================
-// STYLES - Communication #60.11
+// STYLES - Communication #60.7
 // ============================================================================
 
 const styles = StyleSheet.create({
@@ -604,20 +661,26 @@ const styles = StyleSheet.create({
     fontWeight: Typography.fontWeight.medium,
   },
   
-  // ⚠️ TEMPORARY: Cart disabled notice
-  tempCartNotice: {
-    backgroundColor: '#FFF3CD',
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 4,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: '#FFEAA7',
+  // ✨ NEW: Header cart summary - Communication #60.7
+  headerCartSummary: {
+    backgroundColor: QatarColors.primary,
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.sm,
+    borderRadius: 16,
+    alignItems: 'center',
+    minWidth: 80,
   },
   
-  tempCartText: {
-    color: '#856404',
+  headerCartText: {
+    color: QatarColors.textOnPrimary,
     fontSize: Typography.fontSize.xs,
     fontWeight: Typography.fontWeight.medium,
+  },
+  
+  headerCartTotal: {
+    color: QatarColors.textOnPrimary,
+    fontSize: Typography.fontSize.sm,
+    fontWeight: Typography.fontWeight.bold,
   },
   
   // Search Styles
@@ -746,33 +809,6 @@ const styles = StyleSheet.create({
     fontSize: Typography.fontSize.md,
     color: QatarColors.textSecondary,
     marginTop: Spacing.md,
-  },
-  
-  // ⚠️ TEMPORARY NOTICE
-  tempNotice: {
-    backgroundColor: '#FFF3CD',
-    borderColor: '#FFEAA7',
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.md,
-    marginHorizontal: Spacing.lg,
-    marginVertical: Spacing.xl,
-  },
-  
-  tempNoticeTitle: {
-    fontSize: Typography.fontSize.md,
-    fontWeight: Typography.fontWeight.bold,
-    color: '#856404',
-    textAlign: 'center',
-    marginBottom: 8,
-  },
-  
-  tempNoticeText: {
-    fontSize: Typography.fontSize.sm,
-    color: '#856404',
-    textAlign: 'center',
-    lineHeight: 20,
   },
 });
 
