@@ -21,7 +21,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.musnet.cakecrafterreactnative"
+      "package": "com.musnet.cakecrafter_react_native"
     },
     "web": {
       "favicon": "./assets/favicon.png"

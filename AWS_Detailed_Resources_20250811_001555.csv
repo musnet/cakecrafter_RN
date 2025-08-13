@@ -1,0 +1,6 @@
+"ResourceType","Region","ResourceId","Name","Type","State","PrivateIP","PublicIP","VPC","LaunchTime","Platform"
+"EC2","ap-south-1","i-073a783d6474cd3aa","Ec2MumbaiSuseV4","t2.micro","terminated",,,,"2024-11-28T14:33:29+00:00",
+"EC2","ap-south-1","i-0f3e0063c31ee03e6","tradingview-webhook-server-v2","t2.micro","stopped","10.0.1.73",,"vpc-05f6a3d7e1f9c40b2","2025-07-13T00:28:03+00:00",
+"EC2","ap-south-1","i-07de4f0cc42dcd2db","trading-app-qc","t2.nano","stopped","10.0.1.123",,"vpc-05f6a3d7e1f9c40b2","2025-07-16T23:10:01+00:00",
+"RDS","ap-south-1","photofish-db","photofish-db","db.t4g.micro","available",,,,,
+"RDS","ap-south-1","tradingview-webhook-db","tradingview-webhook-db","db.t3.micro","available",,,,,

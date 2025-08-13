@@ -581,6 +581,63 @@ const CakeDetailScreen = ({ navigation, route }) => {
     </View>
   );
 
+  const renderIngredients = () => (
+    <View style={styles.ingredientsSection}>
+      <Text style={styles.sectionTitle}>
+        {isRTL ? 'المكونات' : 'Ingredients'}
+      </Text>
+      
+      <View style={styles.ingredientsContainer}>
+        {(cakeData.ingredients || ['flour', 'sugar', 'eggs', 'butter', 'vanilla', 'cream']).map((ingredient, index) => (
+          <View key={index} style={styles.ingredientChip}>
+            <LinearGradient
+              colors={['#F8F9FA', '#FFFFFF']}
+              style={styles.ingredientChipGradient}
+            >
+              <Text style={styles.ingredientEmoji}>🥄</Text>
+              <Text style={styles.ingredientText}>
+                {isRTL ? getArabicIngredient(ingredient) : ingredient.charAt(0).toUpperCase() + ingredient.slice(1)}
+              </Text>
+            </LinearGradient>
+          </View>
+        ))}
+      </View>
+      
+      {/* Allergen info */}
+      <View style={styles.allergenInfo}>
+        <Text style={styles.allergenTitle}>
+          {isRTL ? 'تحذير من الحساسية:' : 'Allergen Information:'}
+        </Text>
+        <Text style={styles.allergenText}>
+          {isRTL ? 'يحتوي على البيض والحليب والقمح. قد يحتوي على المكسرات.' : 'Contains eggs, milk, and wheat. May contain nuts.'}
+        </Text>
+      </View>
+    </View>
+  );
+
+  // Helper function for Arabic ingredient names
+  const getArabicIngredient = (ingredient) => {
+    const arabicIngredients = {
+      'flour': 'دقيق',
+      'sugar': 'سكر', 
+      'eggs': 'بيض',
+      'butter': 'زبدة',
+      'vanilla': 'فانيليا',
+      'cream': 'كريمة',
+      'chocolate': 'شوكولاتة',
+      'milk': 'حليب',
+      'cocoa': 'كاكاو',
+      'nuts': 'مكسرات',
+      'honey': 'عسل',
+      'cinnamon': 'قرفة',
+      'lemon': 'ليمون',
+      'strawberry': 'فراولة',
+      'orange': 'برتقال',
+      'coconut': 'جوز الهند'
+    };
+    return arabicIngredients[ingredient.toLowerCase()] || ingredient;
+  };
+
   const renderActionButtons = () => (
     <View style={styles.actionButtonsContainer}>
       <View style={styles.infoButtonsRow}>
@@ -681,6 +738,7 @@ const CakeDetailScreen = ({ navigation, route }) => {
           {renderProductInfo()}
           {renderSizeSelector()}
           {renderQuantitySelector()}
+          {renderIngredients()}
           {renderActionButtons()}
           
           {/* Bottom spacing */}
@@ -1241,6 +1299,70 @@ const styles = StyleSheet.create({
 
   bottomSpacing: {
     height: 50,
+  },
+
+  // Ingredients Section
+  ingredientsSection: {
+    marginBottom: 30,
+  },
+
+  ingredientsContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginBottom: 16,
+  },
+
+  ingredientChip: {
+    marginRight: 8,
+    marginBottom: 8,
+    borderRadius: 20,
+    overflow: 'hidden',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+  },
+
+  ingredientChipGradient: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+  },
+
+  ingredientEmoji: {
+    fontSize: 14,
+    marginRight: 6,
+  },
+
+  ingredientText: {
+    fontSize: 14,
+    color: '#2C3E50',
+    fontWeight: '500',
+  },
+
+  allergenInfo: {
+    backgroundColor: '#FFF3CD',
+    borderColor: '#FFEAA7',
+    borderWidth: 1,
+    borderRadius: 12,
+    padding: 12,
+  },
+
+  allergenTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#856404',
+    marginBottom: 4,
+  },
+
+  allergenText: {
+    fontSize: 12,
+    color: '#856404',
+    lineHeight: 16,
   },
 
   // Modal Styles

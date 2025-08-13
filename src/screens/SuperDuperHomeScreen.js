@@ -1,10 +1,11 @@
-// src/screens/SuperDuperHomeScreen.js - Communication #60.7: Enhanced with Shopping Cart Integration
-// 🛒 NEW: Complete shopping cart integration with CartContext
-// 🎨 LUXURY: Premium dark theme with Qatar branding and stunning visuals
-// 🌐 i18n: Full Arabic/English support with LanguageSwitcher integration
-// 🍰 JSON DATA: Real cake data from 6 category JSON files - NO HARDCODED DATA
-// ✨ ENHANCED: Cart icon and add-to-cart functionality
-// 📱 CATEGORIES: Load from data/categories/*.json files with cart integration
+// src/screens/SuperDuperHomeScreen.js - Communication #61.1: Enhanced with AI Cake Studio
+// 🤖 NEW: AI Cake Studio featured section with premium design
+// 🛒 PRESERVED: Complete shopping cart integration with CartContext
+// 🎨 PRESERVED: Premium dark theme with Qatar branding and stunning visuals
+// 🌐 PRESERVED: Full Arabic/English support with LanguageSwitcher integration
+// 🍰 PRESERVED: Real cake data from 6 category JSON files - NO HARDCODED DATA
+// ✨ PRESERVED: Cart icon and add-to-cart functionality
+// 📱 PRESERVED: All existing categories and functionality
 
 import React, { useState, useEffect, useRef } from 'react';
 import {
@@ -32,7 +33,7 @@ import { useTranslation } from 'react-i18next';
 import { QatarColors, Spacing, Typography, ComponentStyles, Layout } from '../styles/theme';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 
-// ✨ NEW: Import cart components - Communication #60.7
+// ✨ PRESERVED: Import cart components - Communication #60.7
 import { useCart } from '../context/CartContext';
 import CartIcon from '../components/cart/CartIcon';
 import CartDrawer from '../components/cart/CartDrawer';
@@ -144,19 +145,19 @@ const CAKE_CATEGORIES = [
 
 
 // ================================
-// MAIN COMPONENT - Communication #60.7
+// MAIN COMPONENT - Communication #61.1
 // ================================
 const SuperDuperHomeScreen = ({ navigation }) => {
   
   // ============================================================================
-  // HOOKS & CONTEXT - Communication #60.7
+  // HOOKS & CONTEXT - Communication #61.1
   // ============================================================================
   
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language || 'en';
   const isRTL = currentLanguage === 'ar';
   
-  // ✨ NEW: Cart context integration - Communication #60.7
+  // ✨ PRESERVED: Cart context integration - Communication #60.7
   const {
     addToCart,
     totalItems,
@@ -178,7 +179,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showLanguageSwitcher, setShowLanguageSwitcher] = useState(false);
   
-  // ✨ NEW: Cart UI state - Communication #60.7
+  // ✨ PRESERVED: Cart UI state - Communication #60.7
   const [showCartDrawer, setShowCartDrawer] = useState(false);
   
   // Animation refs
@@ -209,7 +210,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   const loadInitialData = async () => {
     try {
       setIsLoading(true);
-      console.log('🏠 Communication #60.7 - Loading SuperDuperHomeScreen with cart integration');
+      console.log('🏠 Communication #61.1 - Loading SuperDuperHomeScreen with AI Studio integration');
       
       // Load categories with cake counts
       const categoriesWithCounts = CAKE_CATEGORIES.map(category => {
@@ -231,10 +232,10 @@ const SuperDuperHomeScreen = ({ navigation }) => {
         setSelectedCategory(categoriesWithCounts[0]);
       }
       
-      console.log('✅ Communication #60.7 - Initial data loaded with cart support');
+      console.log('✅ Communication #61.1 - Initial data loaded with AI Studio support');
       
     } catch (error) {
-      console.error('❌ Communication #60.7 - Failed to load initial data:', error);
+      console.error('❌ Communication #61.1 - Failed to load initial data:', error);
     } finally {
       setIsLoading(false);
     }
@@ -242,19 +243,19 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   
   const loadCategoryData = (category) => {
     try {
-      console.log(`🍰 Communication #60.7 - Loading category: ${category.name} for cart integration`);
+      console.log(`🍰 Communication #61.1 - Loading category: ${category.name} for cart integration`);
       
       const categoryData = CATEGORY_DATA_MAP[category.key];
       if (validateCategoryData(category.key, categoryData)) {
         setCakes(categoryData.cakes || []);
-        console.log(`✅ Communication #60.7 - Loaded ${categoryData.cakes.length} cakes from ${category.name}`);
+        console.log(`✅ Communication #61.1 - Loaded ${categoryData.cakes.length} cakes from ${category.name}`);
       } else {
         setCakes([]);
-        console.log(`⚠️ Communication #60.7 - No valid cakes found for ${category.name}`);
+        console.log(`⚠️ Communication #61.1 - No valid cakes found for ${category.name}`);
       }
       
     } catch (error) {
-      console.error(`❌ Communication #60.7 - Error loading category ${category.name}:`, error);
+      console.error(`❌ Communication #61.1 - Error loading category ${category.name}:`, error);
       setCakes([]);
     }
   };
@@ -283,11 +284,11 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   };
   
   // ============================================================================
-  // ✨ NEW: CART EVENT HANDLERS - Communication #60.7
+  // ✨ PRESERVED: CART EVENT HANDLERS - Communication #60.7
   // ============================================================================
   
   const handleAddToCart = (item) => {
-    console.log(`🛒 Communication #60.7 - Adding to cart from SuperDuperHome: ${item.name}`);
+    console.log(`🛒 Communication #61.1 - Adding to cart from SuperDuperHome: ${item.name}`);
     
     try {
       addToCart(item, 1, true); // Add 1 item with toast notification
@@ -297,7 +298,7 @@ const SuperDuperHomeScreen = ({ navigation }) => {
       // setTimeout(() => setShowCartDrawer(false), 2000);
       
     } catch (error) {
-      console.error('❌ Communication #60.7 - Error adding to cart:', error);
+      console.error('❌ Communication #61.1 - Error adding to cart:', error);
       Alert.alert(
         isRTL ? 'خطأ' : 'Error',
         isRTL ? 'فشل في إضافة العنصر للسلة' : 'Failed to add item to cart',
@@ -307,17 +308,17 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   };
   
   const handleCartIconPress = () => {
-    console.log(`🛒 Communication #60.7 - Cart icon pressed (${totalItems} items)`);
+    console.log(`🛒 Communication #61.1 - Cart icon pressed (${totalItems} items)`);
     setShowCartDrawer(true);
   };
   
   const handleCartDrawerClose = () => {
-    console.log('🛒 Communication #60.7 - Cart drawer closed');
+    console.log('🛒 Communication #61.1 - Cart drawer closed');
     setShowCartDrawer(false);
   };
   
   const handleCheckout = (items, total) => {
-    console.log(`💳 Communication #60.7 - Checkout initiated: ${items.length} items, total: ${total}`);
+    console.log(`💳 Communication #61.1 - Checkout initiated: ${items.length} items, total: ${total}`);
     
     // Close cart drawer
     setShowCartDrawer(false);
@@ -345,6 +346,31 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   };
   
   // ============================================================================
+  // ✨ NEW: AI STUDIO EVENT HANDLERS - Communication #61.1
+  // ============================================================================
+  
+const handleAIStudioPress = () => {
+  console.log('🤖 Communication #62.3 - Navigating to AI Cake Studio');
+  
+  try {
+    // Navigate to AI Studio screen
+    navigation.navigate('AIStudio');
+    console.log('✅ Communication #62.3 - Successfully navigated to AI Studio');
+  } catch (error) {
+    console.error('❌ Communication #62.3 - Navigation error:', error);
+    
+    // Fallback to coming soon alert if navigation fails
+    Alert.alert(
+      isRTL ? 'خطأ في التنقل' : 'Navigation Error',
+      isRTL 
+        ? 'فشل في فتح استوديو الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.'
+        : 'Failed to open AI Studio. Please try again.',
+      [{ text: isRTL ? 'موافق' : 'OK' }]
+    );
+  }
+};
+  
+  // ============================================================================
   // OTHER EVENT HANDLERS
   // ============================================================================
   
@@ -356,22 +382,22 @@ const SuperDuperHomeScreen = ({ navigation }) => {
   
   const handleSearch = (query) => {
     setSearchQuery(query);
-    console.log('🔍 Communication #60.7 - Searching for:', query);
+    console.log('🔍 Communication #61.1 - Searching for:', query);
     // TODO: Implement real search functionality
   };
   
   const handleLanguageChange = (languageCode) => {
-    console.log('🌐 Communication #60.7 - Language changed to:', languageCode);
+    console.log('🌐 Communication #61.1 - Language changed to:', languageCode);
   };
   
   const handleCategoryPress = (category) => {
     setSelectedCategory(category);
     const categoryName = isRTL ? category.nameAr : category.name;
-    console.log(`📱 Communication #60.7 - Category selected: ${categoryName} (${category.count} cakes)`);
+    console.log(`📱 Communication #61.1 - Category selected: ${categoryName} (${category.count} cakes)`);
   };
   
 const handleCakePress = (cake) => {
-  console.log(`🍰 Communication #60.6 - Navigating to product detail: ${cake.name || cake.title?.en}`);
+  console.log(`🍰 Communication #61.1 - Navigating to product detail: ${cake.name || cake.title?.en}`);
   
   try {
     // Prepare cake data for detail screen
@@ -399,7 +425,7 @@ const handleCakePress = (cake) => {
     navigation.navigate('CakeDetail', { cakeData });
     
   } catch (error) {
-    console.error('❌ Communication #60.6 - Navigation error:', error);
+    console.error('❌ Communication #61.1 - Navigation error:', error);
     // Fallback to original alert behavior
     Alert.alert(
       cake.name || 'Cake',
@@ -443,7 +469,7 @@ const handleCakePress = (cake) => {
             </Text>
           </TouchableOpacity>
           
-          {/* ✨ NEW: Cart summary in header - Communication #60.7 */}
+          {/* ✨ PRESERVED: Cart summary in header - Communication #60.7 */}
           {hasItems && (
             <TouchableOpacity
               style={styles.headerCartSummary}
@@ -472,6 +498,58 @@ const handleCakePress = (cake) => {
         />
         <Text style={styles.searchIcon}>🔍</Text>
       </View>
+    </View>
+  );
+  
+  // ============================================================================
+  // ✨ NEW: AI CAKE STUDIO RENDER - Communication #61.1
+  // ============================================================================
+  
+  const renderAIStudio = () => (
+    <View style={styles.aiStudioSection}>
+      <Animated.View style={{ transform: [{ scale: featuredScale }] }}>
+        <TouchableOpacity
+          style={styles.aiStudioCard}
+          onPress={handleAIStudioPress}
+          activeOpacity={0.8}
+        >
+          <LinearGradient
+            colors={['#667eea', '#764ba2', '#f093fb']}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={styles.aiStudioGradient}
+          >
+            <BlurView intensity={20} style={styles.aiStudioBlur}>
+              <View style={styles.aiStudioContent}>
+                <View style={styles.aiStudioIconContainer}>
+                  <Text style={styles.aiStudioIcon}>🤖</Text>
+                  <View style={styles.aiStudioIconBadge}>
+                    <Text style={styles.aiStudioIconBadgeText}>AI</Text>
+                  </View>
+                </View>
+                
+                <View style={styles.aiStudioTextContainer}>
+                  <Text style={styles.aiStudioTitle}>
+                    {isRTL ? 'استوديو الكيك بالذكاء الاصطناعي' : 'AI Cake Studio'}
+                  </Text>
+                  <Text style={styles.aiStudioSubtitle}>
+                    {isRTL 
+                      ? 'صمم كيكتك المثالية بالذكاء الاصطناعي' 
+                      : 'Design your perfect cake with AI'
+                    }
+                  </Text>
+                </View>
+                
+                <View style={styles.aiStudioArrow}>
+                  <Text style={styles.aiStudioArrowText}>
+                    {isRTL ? '◀' : '▶'}
+                  </Text>
+                </View>
+              </View>
+            </BlurView>
+          </LinearGradient>
+        </TouchableOpacity>
+      </Animated.View>
     </View>
   );
   
@@ -542,7 +620,7 @@ const handleCakePress = (cake) => {
   );
   
   // ============================================================================
-  // MAIN RENDER - Communication #60.7
+  // MAIN RENDER - Communication #61.1
   // ============================================================================
   
   return (
@@ -575,6 +653,9 @@ const handleCakePress = (cake) => {
             {/* Header */}
             {renderHeader()}
             
+            {/* ✨ NEW: AI Cake Studio - Communication #61.1 */}
+            {renderAIStudio()}
+            
             {/* Categories */}
             {renderCategories()}
             
@@ -592,14 +673,14 @@ const handleCakePress = (cake) => {
             )}
           </ScrollView>
           
-          {/* ✨ NEW: Cart Icon - Communication #60.7 */}
+          {/* ✨ PRESERVED: Cart Icon - Communication #60.7 */}
           <CartIcon
             onPress={handleCartIconPress}
             position="fixed"
             size="medium"
           />
           
-          {/* ✨ NEW: Cart Drawer - Communication #60.7 */}
+          {/* ✨ PRESERVED: Cart Drawer - Communication #60.7 */}
           <CartDrawer
             visible={showCartDrawer}
             onClose={handleCartDrawerClose}
@@ -619,7 +700,7 @@ const handleCakePress = (cake) => {
 };
 
 // ============================================================================
-// STYLES - Communication #60.7
+// STYLES - Communication #61.1
 // ============================================================================
 
 const styles = StyleSheet.create({
@@ -690,7 +771,7 @@ const styles = StyleSheet.create({
     fontWeight: Typography.fontWeight.medium,
   },
   
-  // ✨ NEW: Header cart summary - Communication #60.7
+  // ✨ PRESERVED: Header cart summary - Communication #60.7
   headerCartSummary: {
     backgroundColor: QatarColors.primary,
     paddingHorizontal: Spacing.md,
@@ -826,6 +907,97 @@ const styles = StyleSheet.create({
   
   gallery: {
     flex: 1,
+  },
+  
+  // ✨ NEW: AI Studio Styles - Communication #61.1
+  aiStudioSection: {
+    marginHorizontal: Spacing.lg,
+    marginBottom: Spacing.xl,
+    marginTop: Spacing.md,
+  },
+  
+  aiStudioCard: {
+    borderRadius: ComponentStyles.borderRadius.xl,
+    overflow: 'hidden',
+    ...ComponentStyles.shadows.large,
+  },
+  
+  aiStudioGradient: {
+    borderRadius: ComponentStyles.borderRadius.xl,
+  },
+  
+  aiStudioBlur: {
+    borderRadius: ComponentStyles.borderRadius.xl,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.2)',
+  },
+  
+  aiStudioContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.xl,
+    minHeight: 100,
+  },
+  
+  aiStudioIconContainer: {
+    position: 'relative',
+    marginRight: Spacing.lg,
+  },
+  
+  aiStudioIcon: {
+    fontSize: 48,
+    textAlign: 'center',
+  },
+  
+  aiStudioIconBadge: {
+    position: 'absolute',
+    top: -4,
+    right: -4,
+    backgroundColor: QatarColors.secondary,
+    borderRadius: 12,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    ...ComponentStyles.shadows.small,
+  },
+  
+  aiStudioIconBadgeText: {
+    color: QatarColors.textOnSecondary,
+    fontSize: Typography.fontSize.xs,
+    fontWeight: Typography.fontWeight.bold,
+  },
+  
+  aiStudioTextContainer: {
+    flex: 1,
+    marginRight: Spacing.md,
+  },
+  
+  aiStudioTitle: {
+    fontSize: Typography.fontSize.xl,
+    fontWeight: Typography.fontWeight.bold,
+    color: QatarColors.textOnPrimary,
+    marginBottom: 4,
+  },
+  
+  aiStudioSubtitle: {
+    fontSize: Typography.fontSize.md,
+    color: 'rgba(255, 255, 255, 0.9)',
+    lineHeight: Typography.fontSize.md * 1.3,
+  },
+  
+  aiStudioArrow: {
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    borderRadius: 20,
+    width: 40,
+    height: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
+  aiStudioArrowText: {
+    color: QatarColors.textOnPrimary,
+    fontSize: Typography.fontSize.lg,
+    fontWeight: Typography.fontWeight.bold,
   },
   
   // Loading Styles
